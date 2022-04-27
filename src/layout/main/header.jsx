@@ -35,6 +35,7 @@ export const Header = () => {
               Who we work with
             </Typography>
           </div>
+
           <div className="flex items-center h-full px-[35px] border-transparent hover: text-white border-b-2 hover:border-primary-yellow   hover:bg-textColor-secondary-darkGray hover:cursor-pointer">
             <Typography variant="p-small" className="text-textColor-secondary-lightGray">
               Naadam
