@@ -1,9 +1,9 @@
-import { Hello } from 'components'
+import { MainLayout } from 'layout'
 
 export default function Home() {
   return (
     <div>
-      <Hello />
+      <MainLayout />
     </div>
   )
 }
