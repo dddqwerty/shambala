@@ -1,9 +1,13 @@
 import { Header } from './main'
 
-export const MainLayout = () => {
+export const MainLayout = (props) => {
+  const { children } = props
+
   return (
-    <div>
+    <div id="Main Layout">
       <Header />
+
+      {children}
     </div>
   )
 }

@@ -19,6 +19,7 @@ module.exports = {
         },
         textColor: {
           secondary: {
+            gray: colors.textColor.secondary['gray'],
             lightGray: colors.textColor.secondary['light-gray'],
             darkGray: colors.textColor.secondary['dark-gray'],
           },
@@ -45,6 +46,7 @@ module.exports = {
         p1: '0.875rem',
         p2: '0.75rem',
         bodyMobile: '0.875rem',
+        header: '0.625rem',
       },
     },
     borderRadius: {
