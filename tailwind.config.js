@@ -46,7 +46,6 @@ module.exports = {
         p1: '0.875rem',
         p2: '0.75rem',
         bodyMobile: '0.875rem',
-        header: '0.625rem',
       },
     },
     borderRadius: {
