@@ -1,9 +1,14 @@
 const colors = require('./src/theme/colors')
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   content: ['./src/**/**/*.{js,ts,jsx,tsx}'],
   important: true,
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Poppins', ...defaultTheme.fontFamily.sans],
+      },
       colors: {
         primary: {
           white: colors.primary.white,
@@ -32,6 +37,7 @@ module.exports = {
         body: '0.875rem',
         p1: '0.875rem',
         p2: '0.75rem',
+        bodyMobile: '0.875rem',
       },
     },
   },
