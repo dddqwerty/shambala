@@ -41,6 +41,34 @@ export const Header = () => {
               Naadam
             </Typography>
           </div>
+          <div className="flex items-center h-full px-[35px] hover: text-white hover:border-b-2 hover:border-primary-yellow hover:shadow-lg hover:shadow-primary-yellow  hover:bg-textColor-secondary-darkGray hover:cursor-pointer">
+            <Typography variant="p-small" className="text-textColor-secondary-lightGray">
+              Naadam
+            </Typography>
+          </div>
+        </div>
+
+        <div id="icons" className="flex gap-[30px] ml-20 mr-20">
+          {handleIcon({
+            icon: 'facebook',
+            size: 16,
+            className: 'text-white',
+          })}
+          {handleIcon({
+            icon: 'twitter',
+            size: 16,
+            className: 'text-white',
+          })}
+          {handleIcon({
+            icon: 'mail',
+            size: 16,
+            className: 'text-white',
+          })}
+          {handleIcon({
+            icon: 'instagram',
+            size: 16,
+            className: 'text-white',
+          })}
         </div>
 
         <div id="icons" className="flex gap-[30px] ml-20 mr-20">

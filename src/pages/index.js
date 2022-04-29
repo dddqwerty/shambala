@@ -1,5 +1,4 @@
 import { MainLayout } from 'layout'
-import { handleIcon } from 'utils'
 export default function Home() {
   return (
     <div>
