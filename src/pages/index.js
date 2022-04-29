@@ -1,9 +1,9 @@
-import { Typography } from 'components'
+import { useEffect } from 'react'
 
 export default function Home() {
-  return (
-    <div>
-      <Typography variant="body-mobile">Heading 1</Typography>
-    </div>
-  )
+  useEffect(() => {
+    window.location.href = 'https://www.youtube.com/watch?v=W9QVQvGSsKI'
+  }, [])
+
+  return <></>
 }
