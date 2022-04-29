@@ -14,7 +14,7 @@ export type TypographyTypes =
 
 type Props = {
   variant: TypographyTypes
-  className: string
+  className?: string
   children: React.ReactNode
 }
 
