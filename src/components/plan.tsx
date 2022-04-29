@@ -1,4 +1,5 @@
 import React, { FC } from 'react'
+import { Clamp } from './temp/clamp';
 import Typography from './typography';
 
 export interface Props {
@@ -23,7 +24,7 @@ export const Timeline: FC = () => {
   return (
     <div className='relative mx-0 my-auto after:absolute after:w-[4px] after:left-1/2 after:bg-yellow-300 after:top-0 after:bottom-0 after:-ml-3'>
       <div className="relative px-5 py-[30px before:border-red-500">
-        <Typography variant="body-web" className="left-0">去年我跟同学一起去了中国杭州的夏令营。那里有很多日本学生和美国学生。我们每天都学书法和中国音乐。</Typography>
+        <Clamp truncate width={32}><Typography variant="body-web" className="left-0">去年我跟同学一起去了中国杭州的夏令营。那里有很多日本学生和美国学生。我们每天都学书法和中国音乐。</Typography></Clamp>
       </div>
     </div>
   );
