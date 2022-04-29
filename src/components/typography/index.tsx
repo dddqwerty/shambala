@@ -37,11 +37,19 @@ const Typography: FC<Props> = ({ variant = 'h1', className = '', children }) => 
       case 'p-big':
         return 'font-medium text-p1'
       case 'p-small':
+<<<<<<< HEAD
         return ' text-p2'
       case 'body-web':
         return 'text-body'
       case 'body-mobile':
         return 'text-bodyMobilef'
+=======
+        return 'font-semibold text-p2'
+      case 'body-web':
+        return 'text-body'
+      case 'body-mobile':
+        return 'text-bodyMobile font-normal'
+>>>>>>>  This is a combination of 2 commits.
     }
   }
 
