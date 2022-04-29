@@ -7,6 +7,10 @@ export interface Props {
   description: string;
 }
 
+/**
+ * Tsogt fix this shit i give up my brain is on fire.
+ * I found this video that will prove very helpful https://www.youtube.com/watch?v=W9QVQvGSsKI
+ */
 export const Plan: FC = () => {
   return (
     <div className="w-full pl-[72px] pr-6 before:left-16 before:border-red-500">
