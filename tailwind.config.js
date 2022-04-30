@@ -25,6 +25,13 @@ module.exports = {
         },
         backgroundColor: {
           darkGray: colors.backgroundColor['dark-gray'],
+          hover: colors.backgroundColor.hover,
+        },
+        button: {
+          hover: colors.button.hover,
+          ghost: {
+            hover: 'rgba(255, 255, 255, 0.3)',
+          },
         },
       },
       fontSize: {
@@ -39,6 +46,9 @@ module.exports = {
         p2: '0.75rem',
         bodyMobile: '0.875rem',
       },
+    },
+    borderRadius: {
+      buttonRadius: '8px',
     },
   },
   plugins: [],

@@ -1,3 +1,4 @@
+import { Typography } from 'components'
 import { useEffect } from 'react'
 
 export default function Home() {
@@ -5,5 +6,10 @@ export default function Home() {
     window.location.href = 'https://www.youtube.com/watch?v=W9QVQvGSsKI'
   }, [])
 
-  return <></>
+  return (
+    <div>
+      <Typography variant="body-mobile">Heading 1</Typography>
+      <Typography variant="body-web">Heading 2</Typography>
+    </div>
+  )
 }
