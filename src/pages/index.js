@@ -1,5 +1,4 @@
-import { Typography } from 'components'
-import { useEffect } from 'react'
+import { MainLayout } from 'layout'
 
 export default function Home() {
   useEffect(() => {
@@ -8,8 +7,7 @@ export default function Home() {
 
   return (
     <div>
-      <Typography variant="body-mobile">Heading 1</Typography>
-      <Typography variant="body-web">Heading 2</Typography>
+      <MainLayout></MainLayout>
     </div>
   )
 }
