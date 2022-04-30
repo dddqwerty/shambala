@@ -1,4 +1,5 @@
 import { Header } from './main'
+import { Footer } from './main'
 
 export const MainLayout = (props) => {
   const { children } = props
@@ -8,6 +9,8 @@ export const MainLayout = (props) => {
       <Header />
 
       {children}
+
+      <Footer />
     </div>
   )
 }
