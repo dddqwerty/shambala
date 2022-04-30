@@ -4,10 +4,10 @@
 
 body, #__next {
     height: 100vh;
-    @apply bg-gray-800 text-white;
+    /* @apply bg-gray-800 text-white; */
 }
 
 /** i hate this and you'll probably hate this too */
-* {
+/* * {
     border: 1px solid red;
-}
+} */

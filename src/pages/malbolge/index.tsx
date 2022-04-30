@@ -1,4 +1,4 @@
-import { Timeline } from 'components/plan'
+import { Emphasis } from 'components/ligature/emphasis'
 import React from 'react'
 
 /**
@@ -7,6 +7,6 @@ import React from 'react'
  */
 export default function Malbolge() {
   return (
-    <Timeline />
+    <Emphasis left>Я тебя люблю</Emphasis>
   )
 }
