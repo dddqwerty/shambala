@@ -19,6 +19,7 @@ module.exports = {
         },
         textColor: {
           secondary: {
+            gray: colors.textColor.secondary['gray'],
             lightGray: colors.textColor.secondary['light-gray'],
             darkGray: colors.textColor.secondary['dark-gray'],
           },
