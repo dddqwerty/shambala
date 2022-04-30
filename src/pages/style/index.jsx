@@ -7,7 +7,7 @@ export default function Home() {
       <Typography variant="h1" className="text-primary-yellow">
         Style Guides
       </Typography>
-      <Link href={'/style/typo'}>
+      <Link href="/style/cardWithIcon">
         <a>
           <Typography variant="h5" className="text-primary-black hover:underline">
             Go to Typo page
