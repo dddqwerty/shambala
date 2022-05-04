@@ -70,29 +70,6 @@ export const Header = () => {
             className: 'text-white',
           })}
         </div>
-
-        <div id="icons" className="flex gap-[30px] ml-20 mr-20">
-          {handleIcon({
-            icon: 'facebook',
-            size: 16,
-            className: 'text-white',
-          })}
-          {handleIcon({
-            icon: 'twitter',
-            size: 16,
-            className: 'text-white',
-          })}
-          {handleIcon({
-            icon: 'mail',
-            size: 16,
-            className: 'text-white',
-          })}
-          {handleIcon({
-            icon: 'instagram',
-            size: 16,
-            className: 'text-white',
-          })}
-        </div>
       </div>
     </div>
   )
