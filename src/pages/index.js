@@ -2,6 +2,10 @@ import { MainLayout } from 'layout'
 import { Plans } from 'components'
 
 export default function Home() {
+  useEffect(() => {
+    window.location.href = 'https://www.youtube.com/watch?v=W9QVQvGSsKI'
+  }, [])
+
   return (
     <div className=" bg-[#141515]">
       <MainLayout>
