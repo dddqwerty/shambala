@@ -41,7 +41,7 @@ const Typography: FC<Props> = ({ variant = 'h1', className = '', children }) => 
       case 'body-web':
         return 'text-body'
       case 'body-mobile':
-        return 'text-bodyMobile font-normal'
+        return 'text-bodyMobilef'
     }
   }
 
