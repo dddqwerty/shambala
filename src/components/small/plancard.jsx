@@ -13,11 +13,16 @@ export const Plancard = (props) => {
           A Green zone will be established on an area of 16 hectares.
         </div>
       </div>
-      <div id="spliter">
-        <div id="line" className="w-[6px] h-full bg-gray-600"></div>
-        <div id="icon"></div>
+      <div id="spliter" className="w-fit flex justify-center items-center flex-col">
+        <div id="line" className="w-[10px] h-[calc(50%-25px)] bg-gray-600"></div>
+        <div id="icon" className="h-[50px] w-[50px] bg-white rounded-full"></div>
+        <div id="line" className="w-[10px] h-[calc(50%-25px)] bg-gray-600"></div>
       </div>
-      <div id="date-half"></div>
+      <div id="date-half" className=" w-1/4 h-full flex justify-center items-center">
+        <div id="actual date " className="font-medium text-p2 text-primary-white/50">
+          Apr 15, 2020 - Nov 1, 2024
+        </div>
+      </div>
     </div>
   )
 }
