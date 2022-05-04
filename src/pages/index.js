@@ -1,10 +1,11 @@
-import { Typography } from 'components'
+import { MainLayout } from 'layout'
 
 export default function Home() {
   return (
     <div>
-      <Typography variant="body-mobile">Heading 1</Typography>
-      <Typography variant="body-web">Heading 2</Typography>
+      <MainLayout>
+        <div className="w-[500px] h-[500px] bg-red-800" />
+      </MainLayout>
     </div>
   )
 }

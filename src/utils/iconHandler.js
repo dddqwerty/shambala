@@ -1,16 +1,17 @@
-import { FaFacebookF } from 'react-icons/fa'
-import { BsInstagram, BsTwitter, BsDiscord } from 'react-icons/bs'
+import { SiGmail } from 'react-icons/si'
+import { BsTwitter, BsFacebook } from 'react-icons/bs'
+import { RiInstagramFill } from 'react-icons/ri'
 
 export const handleIcon = ({ icon, size = 24, className = '' }) => {
   switch (icon) {
   case 'instagram':
-    return <BsInstagram className={className} style={{ width: size, height: size }} />
+    return <RiInstagramFill className={className} style={{ width: size, height: size }} />
   case 'twitter':
     return <BsTwitter className={className} style={{ width: size, height: size }} />
-  case 'discord':
-    return <BsDiscord className={className} style={{ width: size, height: size }} />
+  case 'mail':
+    return <SiGmail className={className} style={{ width: size, height: size }} />
   case 'facebook':
-    return <FaFacebookF className={className} style={{ width: size, height: size }} />
+    return <BsFacebook className={className} style={{ width: size, height: size }} />
   default:
     return <></>
   }
