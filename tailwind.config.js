@@ -46,9 +46,13 @@ module.exports = {
         p2: '12px',
         bodyMobile: '14px',
       },
-    },
-    borderRadius: {
-      buttonRadius: '8px',
+      borderRadius: {
+        buttonRadius: '8px',
+      },
+
+      maxWidth: {
+        shambWidth: '1200px',
+      },
     },
   },
   plugins: [],
