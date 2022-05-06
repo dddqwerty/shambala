@@ -1,5 +1,4 @@
-import { Header } from './main'
-import { Footer } from './main'
+import { Header, Footer } from './main'
 
 export const MainLayout = (props) => {
   const { children } = props
