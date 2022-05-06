@@ -1,17 +1,12 @@
 import { MainLayout } from 'layout'
-// import { Plans } from 'components'
+import Titi from 'layout/bobo'
 
-// import Lightbulb from 'components/telmun/lightspeed'
 export default function Home() {
-  // useEffect(() => {
-  //   window.location.href = 'https://www.youtube.com/watch?v=W9QVQvGSsKI'
-  // }, [])
-
   return (
-    <div className=" bg-[#141515]">
-      <MainLayout>
+    <div>
+      <MainLayout classname={'bg-backgroundColor-darkGray'}>
         <div className="w-[500px] h-[500px] bg-red-800" />
-        {/* <Plans /> */}
+        <Titi />
       </MainLayout>
     </div>
   )
