@@ -61,6 +61,8 @@ module.exports = {
       },
       animation: {
         'spin-slow': 'spin 40s linear infinite',
+      width: {
+        planWidth: '100%',
       },
     },
   },

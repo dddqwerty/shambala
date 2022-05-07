@@ -14,3 +14,5 @@ export {default as BidYuHiijBainaVeCard} from './globeCard/cards'
 export { default as Buurunhii} from './globeCard/buurunhiinuud'
 export { default as Emphasis } from './ligature'
 export { default as Yellow } from './yellowtitle'
+export {default as MemberCard} from './memberCard'
+export {default as Plans} from "./Plans"
