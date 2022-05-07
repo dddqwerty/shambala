@@ -3,6 +3,7 @@ import Fournumber from 'components/telmun/hedentoo'
 import FirstPart from 'layout/indexPageComponents/first'
 import OurGoalsPart from 'layout/indexPageComponents/ourGoalsPart'
 
+import Fournumber from 'components/telmun/hedentoo'
 export default function Home() {
   return (
     <MainLayout>
