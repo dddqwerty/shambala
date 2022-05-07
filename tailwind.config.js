@@ -2,6 +2,7 @@ const colors = require('./src/theme/colors')
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
+  important: true,
   content: ['./src/**/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
@@ -33,6 +34,7 @@ module.exports = {
             hover: 'rgba(255, 255, 255, 0.3)',
           },
         },
+        earthBg: 'rgba(0, 0, 0, 0.71)',
       },
       fontSize: {
         h1: '64px',
