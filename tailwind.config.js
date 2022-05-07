@@ -53,6 +53,9 @@ module.exports = {
       maxWidth: {
         shambWidth: '1200px',
       },
+      width: {
+        planWidth: '100%',
+      },
     },
   },
   plugins: [],

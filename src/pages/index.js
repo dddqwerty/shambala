@@ -1,12 +1,12 @@
 import { MainLayout } from 'layout'
-import Titi from 'layout/bobo'
+import { Plans } from 'components'
 
 export default function Home() {
   return (
     <div>
       <MainLayout classname={'bg-backgroundColor-darkGray'}>
         <div className="w-[500px] h-[500px] bg-red-800" />
-        <Titi />
+        <Plans />
       </MainLayout>
     </div>
   )
