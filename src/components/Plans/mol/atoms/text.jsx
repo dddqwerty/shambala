@@ -1,7 +1,7 @@
-export const atText = (props) => {
+export const AtText = (props) => {
   const { headText, bodyText } = props
   return (
-    <div id="text-half" className="w-planWidth h-full flex flex-col justify-center">
+    <div id="text-half" className="w-planWidth mx-[20px] h-full flex flex-col justify-center">
       <div id="header text" className="text-semibold text-title1 text-white">
         {headText}
       </div>
@@ -11,4 +11,4 @@ export const atText = (props) => {
     </div>
   )
 }
-export default atText
+export default AtText

@@ -1,7 +1,10 @@
-export const atLine = (props) => {
-  const { icon, style, t = true } = props
+import { backdropClasses } from '@mui/material'
+import { handleIcon } from 'utils'
 
-  if (t) {
+export const AtLine = (props) => {
+  const { icon, style, b = false } = props
+
+  if (!b) {
     return (
       <div id="spliter" className="w-fit flex justify-center items-center flex-col">
         <div id="line" className={`w-[10px] h-[calc(50%-25px)] bg-[#C5C6CD]/30 ${style}`}></div>
@@ -37,4 +40,4 @@ export const atLine = (props) => {
     )
   }
 }
-export default atLine
+export default AtLine
