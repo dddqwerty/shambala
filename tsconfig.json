@@ -16,7 +16,7 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.jsx", "**/*.js", "src/theme/colors.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.jsx", "**/*.js", "src/theme/colors.js", "src/components/small/index.tss"],
   "typeRoots": ["node_modules/@types", "@types"],
   "exclude": ["node_modules"]
 }

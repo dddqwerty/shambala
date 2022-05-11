@@ -5,6 +5,7 @@ import { MdLocationPin } from 'react-icons/md'
 import { GrSend } from 'react-icons/gr'
 import { IoMdRocket } from 'react-icons/io'
 import { AiOutlineMenu } from 'react-icons/ai'
+import { BsMouse } from 'react-icons/bs'
 
 export const handleIcon = ({ icon, size = 24, className = '' }) => {
   switch (icon) {
@@ -24,6 +25,9 @@ export const handleIcon = ({ icon, size = 24, className = '' }) => {
     return <IoMdRocket className={className} style={{ width: size, height: size }} />
   case 'menu':
     return <AiOutlineMenu className={className} style={{ width: size, height: size }} />
+  case 'mouse':
+    return <BsMouse className={className} style={{ width: size, height: size }} />
+
   default:
     return <></>
   }

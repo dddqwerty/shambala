@@ -60,13 +60,13 @@ export const Clamp = (props: Props) => {
     if (clampRef.current.scrollWidth > trueWidth)
       info(
         `CLAMP width exceeded by ${clampRef.current.scrollWidth -
-          trueWidth} pixels`
+        trueWidth} pixels`
       );
 
     if (clampRef.current.scrollHeight > trueHeight)
       info(
         `CLAMP width exceeded by ${clampRef.current.scrollHeight -
-          trueHeight} pixels`
+        trueHeight} pixels`
       );
   }, [trueHeight, trueWidth]);
 
