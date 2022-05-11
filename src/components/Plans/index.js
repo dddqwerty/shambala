@@ -1,5 +1,6 @@
 import React from 'react'
 import { Dir } from './director'
+import { Phone } from './phone'
 
 export const Plans = () => {
   return (
@@ -13,12 +14,40 @@ export const Plans = () => {
 
         <div id="spacer" className=" h-[100px]"></div>
 
+        <Phone
+          className="md:shrik-0"
+          index={'middle'}
+          icon={'plane'}
+          headText={'The second four years'}
+          bodyText={'The infrastructure of the Renewable Energy Research Center.'}
+          date={'Apr 15, 2020 - Nov 1, 2024'}
+          top
+        />
+        <Phone
+          className="md:shrik-0"
+          index={'middle'}
+          icon={'plane'}
+          headText={'The second four years'}
+          bodyText={'The infrastructure of the Renewable Energy Research Center.'}
+          date={'Apr 15, 2020 - Nov 1, 2024'}
+        />
+        <Phone
+          className="md:shrik-0"
+          index={'middle'}
+          icon={'plane'}
+          headText={'The second four years'}
+          bodyText={'The infrastructure of the Renewable Energy Research Center.'}
+          date={'Apr 15, 2020 - Nov 1, 2024'}
+        />
+
         <Dir
           index={'first'}
           icon={'location'}
           headText={'The first four years'}
           bodyText={'A Green zone will be established on an area of 16 hectares.'}
           date={'Apr 15, 2020 - Nov 1, 2024'}
+          top
+          active
         />
         <Dir
           l

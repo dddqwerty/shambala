@@ -4,6 +4,7 @@ import { RiInstagramFill } from 'react-icons/ri'
 import { MdLocationPin } from 'react-icons/md'
 import { GrSend } from 'react-icons/gr'
 import { IoMdRocket } from 'react-icons/io'
+import { BsArrowDownShort } from 'react-icons/bs'
 
 export const handleIcon = ({ icon, size = 24, className = '' }) => {
   switch (icon) {
@@ -21,6 +22,8 @@ export const handleIcon = ({ icon, size = 24, className = '' }) => {
     return <GrSend className={className} style={{ width: size, height: size }} />
   case 'rocket':
     return <IoMdRocket className={className} style={{ width: size, height: size }} />
+  case 'arrow':
+    return <BsArrowDownShort className={className} style={{ width: size, height: size }} />
 
   default:
     return <></>
