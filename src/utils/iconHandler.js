@@ -8,6 +8,7 @@ import { FiGlobe } from 'react-icons/fi'
 import { AiOutlineMenu } from 'react-icons/ai'
 import { BsMouse } from 'react-icons/bs'
 import { BiMap } from 'react-icons/bi'
+
 import { BsArrowDownShort } from 'react-icons/bs'
 
 export const handleIcon = ({ icon, size = 24, className = '' }) => {
@@ -46,7 +47,6 @@ export const handleIcon = ({ icon, size = 24, className = '' }) => {
     return <BiMap className={className} style={{ width: size, height: size }} />
   case 'arrow':
     return <BsArrowDownShort className={className} style={{ width: size, height: size }} />
-
   default:
     return <></>
   }
