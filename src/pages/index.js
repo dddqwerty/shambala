@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div>
       <MainLayout classname={'bg-backgroundColor-darkGray'}>
-        <div className="w-[500px] h-[500px] bg-red-800" />
+        <div className=" w-1/2 h-[500px] bg-red-600"></div>
         <Plans />
       </MainLayout>
     </div>

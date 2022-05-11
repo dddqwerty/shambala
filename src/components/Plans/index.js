@@ -7,8 +7,8 @@ export const Plans = () => {
       <div className=" max-w-shambWidth flex flex-col items-center">
         <div id="headers" className="flex justify-center items-center flex-col">
           <div id="backthing" className="absolute blur-3xl bg-white/20 w-[15%] h-[10%]"></div>
-          <div className=" z-2 font-semibold text-h1 text-white">Our future plan</div>
-          <div className="z-2 font-semibold text-h3 text-white">2020 - 2032</div>
+          <div className=" z-2 text-center font-semibold text-h1 text-white">Our future plan</div>
+          <div className="z-2 text-center font-semibold text-h3 text-white">2020 - 2032</div>
         </div>
 
         <div id="spacer" className=" h-[100px]"></div>
