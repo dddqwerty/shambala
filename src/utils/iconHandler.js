@@ -28,6 +28,8 @@ export const handleIcon = ({ icon, size = 24, className = '' }) => {
   case 'mouse':
     return <BsMouse className={className} style={{ width: size, height: size }} />
 
+  case 'menu':
+    return <AiOutlineMenu className={className} style={{ width: size, height: size }} />
   default:
     return <></>
   }

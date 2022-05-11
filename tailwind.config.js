@@ -51,7 +51,6 @@ module.exports = {
       borderRadius: {
         buttonRadius: '8px',
       },
-
       maxWidth: {
         shambWidth: '1200px',
       },
