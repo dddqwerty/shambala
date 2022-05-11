@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div>
       <MainLayout classname={'bg-backgroundColor-darkGray'}>
-        <div className="h-[500px]" />
+        <div className="h-[500px] w-[500px] bg-primary-yellow" />
 
         <Fournumber />
       </MainLayout>
