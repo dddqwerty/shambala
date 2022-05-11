@@ -1,17 +1,13 @@
 import { MainLayout } from 'layout'
-// import { Plans } from 'components'
 
-// import Lightbulb from 'components/telmun/lightspeed'
+import Fournumber from 'components/telmun/hedentoo'
 export default function Home() {
-  // useEffect(() => {
-  //   window.location.href = 'https://www.youtube.com/watch?v=W9QVQvGSsKI'
-  // }, [])
-
   return (
-    <div className=" bg-[#141515]">
-      <MainLayout>
-        <div className="w-[500px] h-[500px] bg-red-800" />
-        {/* <Plans /> */}
+    <div>
+      <MainLayout classname={'bg-backgroundColor-darkGray'}>
+        <div className="h-[500px] w-[500px] bg-primary-yellow" />
+
+        <Fournumber />
       </MainLayout>
     </div>
   )
