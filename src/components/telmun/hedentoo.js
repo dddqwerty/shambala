@@ -8,7 +8,6 @@ const Fournumber = () => {
   const matches = useMediaQuery(theme.breakpoints.down('sm'))
 
   const container = {
-    hidden: { opacity: 0 },
     visible: {
       opacity: 1,
       transition: {
@@ -31,7 +30,7 @@ const Fournumber = () => {
       variants={container}
       initial="hidden"
       whileInView="visible"
-      className="relative md:h-[19rem] h-[500px] flex items-center overflow-x-hidden  md:overflow-hidden"
+      className="relative md:h-[19rem]  flex items-center overflow-x-hidden  md:overflow-hidden py-10"
     >
       <div className="absolute top-0 left-0 w-full hidden md:block lg:block h-full bg-earthBg z-10" />
       <div className="absolute md:blur-[4px] opacity-30 md:opacity-100 w-[500px]  md:w-[100%] md:max-w-shambWidth z-0 -left-12  md:left-1/2 md:transform md:-translate-x-1/2">
