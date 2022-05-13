@@ -4,7 +4,7 @@ export const MainLayout = (props) => {
   const { children, classname } = props
 
   return (
-    <div id="Main Layout">
+    <div>
       <Header />
       <main className={`w-full ${classname}`}>{children}</main>
       <Footer />
