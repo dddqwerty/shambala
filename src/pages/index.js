@@ -1,3 +1,4 @@
+import { Typography } from 'components'
 import { MainLayout } from 'layout'
 import Fournumber from 'components/telmun/hedentoo'
 import FirstPart from 'layout/indexPageComponents/first'
