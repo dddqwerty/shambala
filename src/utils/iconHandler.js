@@ -6,6 +6,9 @@ import { GrSend } from 'react-icons/gr'
 import { IoMdRocket } from 'react-icons/io'
 import { FiGlobe } from 'react-icons/fi'
 import { AiOutlineMenu } from 'react-icons/ai'
+import { BsTwitter, BsFacebook, HiOutlineLightningBolt } from 'react-icons/bs'
+import { RiLeafLine, RiDirectionLine, RiInstagramFill } from 'react-icons/ri'
+import { MdOutlineDirections } from 'react-icons/md'
 
 export const handleIcon = ({ icon, size = 24, className = '' }) => {
   switch (icon) {
@@ -27,6 +30,14 @@ export const handleIcon = ({ icon, size = 24, className = '' }) => {
     return <FiGlobe className={className} style={{ width: size, height: size }} />
   case 'menu':
     return <AiOutlineMenu className={className} style={{ width: size, height: size }} />
+  case 'leaf':
+    return <RiLeafLine className={className} style={{ width: size, height: size }} />
+  case 'lighting':
+    return <HiOutlineLightningBolt className={className} style={{ width: size, height: size }} />
+  case 'riDirection':
+    return <RiDirectionLine className={className} style={{ width: size, height: size }} />
+  case 'mapPin':
+    return <MdOutlineDirections className={className} style={{ width: size, height: size }} />
   default:
     return <></>
   }
