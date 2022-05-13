@@ -1,16 +1,14 @@
 import Typography from 'components/typography'
 import { useTheme } from '@mui/material/styles'
 import useMediaQuery from '@mui/material/useMediaQuery'
-<<<<<<< HEAD
 import { motion } from 'framer-motion'
-=======
->>>>>>> 078a35d (elmuun (#16))
 
 const Fournumber = () => {
   const theme = useTheme()
   const matches = useMediaQuery(theme.breakpoints.down('sm'))
 
   const container = {
+    hidden: { opacity: 0 },
     visible: {
       opacity: 1,
       transition: {
