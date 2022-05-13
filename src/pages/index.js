@@ -1,10 +1,11 @@
+import * as React from 'react'
 import { MainLayout } from 'layout'
 import Fournumber from 'components/telmun/hedentoo'
 
 export default function Home() {
-  useEffect(() => {
-    window.location.href = 'https://www.youtube.com/watch?v=W9QVQvGSsKI'
-  }, [])
+  // React.useEffect(() => {
+  //   window.location.href = 'https://www.youtube.com/watch?v=W9QVQvGSsKI'
+  // }, [])
 
   return (
     <div>

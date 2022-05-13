@@ -14,7 +14,7 @@ body, #__next {
 
 html,
 body {
-  background: #130f40;
+  /* background: #130f40; */
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
