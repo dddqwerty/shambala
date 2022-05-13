@@ -1,5 +1,5 @@
 import { MainLayout } from 'layout'
-import { Plans } from 'components'
+import Fournumber from 'components/telmun/hedentoo'
 
 export default function Home() {
   useEffect(() => {
@@ -7,10 +7,10 @@ export default function Home() {
   }, [])
 
   return (
-    <div className=" bg-[#141515]">
-      <MainLayout>
-        <div className="w-[500px] h-[500px] bg-red-800" />
-        <Plans />
+    <div>
+      <MainLayout classname={'bg-backgroundColor-darkGray'}>
+        <div className="h-[2000px] w-[500px] bg-primary-yellow" />
+        <Fournumber />
       </MainLayout>
     </div>
   )

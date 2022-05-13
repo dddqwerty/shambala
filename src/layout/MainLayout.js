@@ -1,15 +1,12 @@
-import { Header } from './main'
-import { Footer } from './main'
+import { Header, Footer } from './main'
 
 export const MainLayout = (props) => {
-  const { children } = props
+  const { children, classname } = props
 
   return (
     <div id="Main Layout">
       <Header />
-
-      {children}
-
+      <main className={`w-full ${classname}`}>{children}</main>
       <Footer />
     </div>
   )

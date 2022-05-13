@@ -7,6 +7,6 @@ import React from 'react'
  */
 export default function Malbolge() {
   return (
-    <Emphasis left>Я тебя люблю</Emphasis>
+    <Emphasis right>Я тебя люблю</Emphasis>
   )
 }

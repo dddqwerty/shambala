@@ -11,3 +11,14 @@ body, #__next {
 /* * {
     border: 1px solid red;
 } */
+
+html,
+body {
+  background: #130f40;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+}
