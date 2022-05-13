@@ -2,6 +2,7 @@ import { MainLayout } from 'layout'
 import { Plans } from 'components'
 
 import Fournumber from 'components/telmun/hedentoo'
+
 export default function Home() {
   return (
     <div>
