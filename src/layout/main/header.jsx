@@ -48,11 +48,6 @@ export const Header = () => {
               Naadam
             </Typography>
           </div>
-          <div className="flex items-center h-full px-[35px] border-transparent hover: text-white border-b-2 hover:border-primary-yellow   hover:bg-textColor-secondary-darkGray hover:cursor-pointer">
-            <Typography variant="p-small" className="text-textColor-secondary-lightGray">
-              Naadam
-            </Typography>
-          </div>
         </div>
 
         <div id="icons" className="flex gap-[30px]">
