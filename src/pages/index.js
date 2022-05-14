@@ -2,7 +2,7 @@ import { Typography } from 'components'
 import { MainLayout } from 'layout'
 import { handleIcon } from 'utils'
 
-// import Fournumber from 'components/telmun/hedentoo'
+import Fournumber from 'components/telmun/hedentoo'
 
 export default function Home() {
   return (
@@ -53,6 +53,7 @@ export default function Home() {
             className: 'text-white',
           })}
         </div>
+        <Fournumber />
       </MainLayout>
     </div>
   )
