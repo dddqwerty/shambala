@@ -1,7 +1,8 @@
 import classNames from 'classnames'
-import { Typography } from 'components'
+import { Typography, Emphasis } from 'components'
 import * as React from 'react'
-import { handleIcon } from 'utils'
+import useMediaQuery from '@mui/material/useMediaQuery'
+import { useTheme } from '@mui/material/styles'
 
 type Props = React.PropsWithChildren<{
   content?: string
@@ -9,56 +10,51 @@ type Props = React.PropsWithChildren<{
   left?: boolean
   desc?: string
   title?: string
-  width?: number
   headerEl: React.ReactNode
+  className?: string
 }>
 const Yellow = (props: Props) => {
-  const DEFAULT_CLASSES = 'w-full flex justify-center row'
-  const ADDITIONAL_CLASSES = {
-    left: '!justify-start',
-    right: '!justify-end',
-  }
-  const { desc, title, headerEl } = props
+  const theme = useTheme()
+  const matches = useMediaQuery(theme.breakpoints.down('sm'))
+
+  const { desc, title, headerEl, className } = props
   return (
-    <div className="inline-flex flex-row">
-      <Typography variant="title-big">
+    <div className={`flex flex-col ${className} gap-20`}>
+      <div className="flex flex-col gap-6">
+        <div className='flex flex-col gap-2'>
+          <Emphasis className="border-0 h-1 md:hidden lg:hidden" />
+          <Typography
+            variant={matches ? 'title-big' : 'h1'}
+            className="md:uppercase text-primary-white md:text-[#F8D04B] md:leading-[112px] tracking-[-0.5px] md:w-[553px] md:text-[96px] md:font-extrabold"
+          >
+            {title}
+          </Typography>
+        </div>
+
         <Typography
-          variant="h1"
-          className="mb-[20px] font-extrabold uppercase text-[#F8D04B] leading-[112px] tracking-[-0.5px] w-[553px] text-[96px]"
-        >
-          {title}
-        </Typography>
-        <Typography
-          variant="body-web"
-          className="text-primary-white leading-[35px] w-[414px] text-p-small tracking-[0.5px]"
+          variant={matches ? 'body-mobile' : 'body-web'}
+          className=" opacity-40 md:opacity-100 text-primary-white md:leading-[35px] md:w-[414px] md:text-p-small md:tracking-[0.5px]"
         >
           {desc}
         </Typography>
-        <div
-          className={classNames(
-            DEFAULT_CLASSES,
-            props.left && ADDITIONAL_CLASSES.left,
-            props.right && ADDITIONAL_CLASSES.right,
-          )}
-        ></div>
-        <hr className="mt-[20px] flex justify-center w-[79px] h-[5px] border-0 bg-primary-yellow" />
-        <div className='flex flex-row w-[324px] mt-[20px]'>
-          <div className="mr-[20px]">
-            <div className="bg-[#404040] w-[60px] h-[60px] rounded-[8px] flex items-center">
-              <p className="text-primary-white m-[15px]">{headerEl}</p>
-            </div>
+        <hr className="hidden md:flex justify-center w-[79px] h-[5px] border-0 bg-primary-yellow" />
+      </div>
+
+      <div className="flex flex-row md:w-[324px]">
+        <div className="mr-[20px]">
+          <div className="bg-[#404040] w-[60px] h-[60px] rounded-[8px] flex items-center">
+            <p className="text-primary-white m-[15px]">{headerEl}</p>
           </div>
-          <div>
+        </div>
+        <div>
           <Typography variant="p-big" className="text-primary-white mb-[20px]">
             Байршил
           </Typography>
           <Typography variant="p-small" className="text-primary-white opacity-50">
-              Дорноговь аймаг
+            Дорноговь аймаг
           </Typography>
         </div>
-        </div>
-    
-      </Typography>
+      </div>
     </div>
   )
 }
