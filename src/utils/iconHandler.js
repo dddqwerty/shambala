@@ -1,6 +1,4 @@
 import { SiGmail } from 'react-icons/si'
-import { BsTwitter, BsFacebook } from 'react-icons/bs'
-import { RiInstagramFill } from 'react-icons/ri'
 import { MdLocationPin } from 'react-icons/md'
 import { GrSend } from 'react-icons/gr'
 import { IoMdRocket } from 'react-icons/io'
@@ -9,7 +7,7 @@ import { AiOutlineMenu } from 'react-icons/ai'
 import { BsTwitter, BsFacebook, HiOutlineLightningBolt } from 'react-icons/bs'
 import { RiLeafLine, RiDirectionLine, RiInstagramFill } from 'react-icons/ri'
 import { MdOutlineDirections } from 'react-icons/md'
-
+import { BiMap } from 'react-icons/bi'
 export const handleIcon = ({ icon, size = 24, className = '' }) => {
   switch (icon) {
   case 'instagram':
@@ -38,6 +36,8 @@ export const handleIcon = ({ icon, size = 24, className = '' }) => {
     return <RiDirectionLine className={className} style={{ width: size, height: size }} />
   case 'mapPin':
     return <MdOutlineDirections className={className} style={{ width: size, height: size }} />
+  case 'nav':
+    return <BiMap className={className} style={{ width: size, height: size }} />
   default:
     return <></>
   }
