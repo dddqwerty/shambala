@@ -17,7 +17,6 @@ export default function Home() {
                 <div className='w-10'>
                     <img src="assets/footer1.png" alt="" className='max-w' />
                 </div>
-
                 <div className='flex w-[90%] md:w-[70%] flex-col text-center gap-14 mt-20'>
                     <Emphasis content='Our company' />
                     <Typography variant='body-web' className='text-primary-white opacity-60'>Бидний "Art-Tech Empire" Лэнд Арт төсөл маань Дорноговь аймгийн, Төхөмийн хөндий, Ар цацын ус гэх байршлын 5 га газарт нийт 30,000 ширхэг буюу 10,000 бортоготой мод тарих төсөл юм</Typography>

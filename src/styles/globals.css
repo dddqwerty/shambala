@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /** i hate this and you'll probably hate this too */
 /* * {
     border: 1px solid red;
@@ -10,7 +9,7 @@
 
 html,
 body {
-  background: #130f40;
+  background: #2a2c2c;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
