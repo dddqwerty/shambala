@@ -1,6 +1,6 @@
-@tailwind base;
 @tailwind components;
 @tailwind utilities;
+@tailwind base;
 
 /** i hate this and you'll probably hate this too */
 /* * {
@@ -16,4 +16,13 @@ body {
 
 body {
   position: relative;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
