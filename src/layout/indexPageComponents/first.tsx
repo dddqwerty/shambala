@@ -20,6 +20,9 @@ const FirstPart = () => {
             <div className="absolute z-10 -left-[16%] top-[10%] w-[40%] md:right-[-4%] md:bottom-[11%] md:w-[15%]">
                 <img src="assets/shadowEllipse/ellipseSm.svg" className="max-w-full" alt="" />
             </div>
+            <div className="absolute z-10 -right-[14%] top-[65%] hidden md:block">
+                <img src="assets/yellowStar.svg" alt="" />
+            </div>
 
             <div
                 className="absolute top-0 left-0 h-screen w-screen bg-no-repeat bg-cover hidden md:block"
