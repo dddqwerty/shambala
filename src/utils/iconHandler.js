@@ -5,6 +5,7 @@ import { MdLocationPin } from 'react-icons/md'
 import { GrSend } from 'react-icons/gr'
 import { IoMdRocket } from 'react-icons/io'
 import { FiGlobe } from 'react-icons/fi'
+import { AiOutlineMenu } from 'react-icons/ai'
 
 export const handleIcon = ({ icon, size = 24, className = '' }) => {
   switch (icon) {
@@ -24,7 +25,8 @@ export const handleIcon = ({ icon, size = 24, className = '' }) => {
     return <IoMdRocket className={className} style={{ width: size, height: size }} />
   case 'globe':
     return <FiGlobe className={className} style={{ width: size, height: size }} />
-
+  case 'menu':
+    return <AiOutlineMenu className={className} style={{ width: size, height: size }} />
   default:
     return <></>
   }
