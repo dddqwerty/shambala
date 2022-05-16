@@ -1,37 +1,19 @@
-import { GlobeCard } from "components";
-import { handleIcon } from "utils";
+import { Title, BidYuHiijBainaVeCard, Buurunhii } from "components";
 
-
-const Index = () => {
+const WhatAreWeDoing = () => {
     return (
-        <div className="bg-black flex flex-col">
-            <div className="mb-[150px] flex flex-row ">
-
-                <GlobeCard
-                    headerEl={handleIcon({ icon: 'globe', size: 30 })}
-                    title={"Газар дээрх агротехнологийн судалгаа"}
-                    desc={"Байгалийн болон бусад нөлөөнүүдийг манай судлаачид болон инженерүүд төслийн талбай дээрээ бие даасан судалгаа хийн ямар төрлийн цөлжилт үйсэж байгааг илрүүлдэг."} />
-
-                <GlobeCard
-                    headerEl={handleIcon({ icon: 'globe', size: 30 })}
-                    title={"Салбар хоорондын интеграц"}
-                    desc={"Манай инженерийн баг одоо усны хэрэглээг, болон усны нөөцийг хэмнэхийн зэрэгцээ төслийн талбайн усжуулалтыг оновчтой болгох ухаалаг автомат усалгааны системийг боловсруулж байна."} />
-
+        <div className="grid place-items-center h-screen mobile:flex mobile:flex-col items-center gap-[130px]">
+            <Buurunhii />
+            <div className="max-w-shambWidth mobile:max-w-xs">
+                <img src="/assets/davalgaa.svg" className="w-full mobile:hidden" alt="" />
+                <div className="flex flex-col">
+                    <Title></Title>
+                    <div>
+                        <BidYuHiijBainaVeCard></BidYuHiijBainaVeCard>
+                    </div>
+                </div>
             </div>
-            <div className="mb-[150px] flex flex-row">
-
-                <GlobeCard
-                    headerEl={handleIcon({ icon: 'globe', size: 30 })}
-                    title={"Цөлжилттэй нутгийн нөхөн сэргээлт // Лэнд Арт"}
-                    desc={"Манай төслийн талбайд одоогоор 24,000 боловсорч гүйцсэн хайлаас модыг дэд бүтцээс алслагдмал газар тогтвортой хөгжлийн хүрээнд асран хамгаалж амжилттай ургуулж байна. Бид модны ургах чадамжийг алдагдуулахгүйгээр модыг Лэнд Арт урлагийн хэлбэрт оруулан олон нийтийндэмжлэг сонирхлыг татдаг."} />
-
-                <GlobeCard
-                    headerEl={handleIcon({ icon: 'globe', size: 30 })}
-                    title={"Органик Маркетинг"}
-                    desc={"Манай үйлчлүүлэгчид болон дагагчид маань түнш байгууллагуудын бүтээгдэхүүн, үйлчилгээг зах зээлд танигдан нэвтрэхэд үр дүнтэй хэрэгсэл болдог. Бид Лэнд Арт урлагийг уялдуулан Монголын газар нутгийн цөлжилтийн асуудлыг шийдвэрлэхэд хамтран ажиллаж буй түншүүдийнхээ хамтын хүчин чармайлтыг харуулсан маркетингийн кампанит ажлыг амжилттай зохион байгуулж байсан."} />
-
-            </div>
-        </div >
+        </div>
     )
 }
-export default Index
+export default WhatAreWeDoing
