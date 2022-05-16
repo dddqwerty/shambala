@@ -1,5 +1,5 @@
-import { Card, Button } from 'components'
-import { Typography } from 'components'
+import { Card, Button, Typography } from 'components'
+// import { } from 'components'
 
 export default function Gurvaljinurd() {
     return (
