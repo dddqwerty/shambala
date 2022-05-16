@@ -51,9 +51,14 @@ module.exports = {
       borderRadius: {
         buttonRadius: '8px',
       },
-
       maxWidth: {
         shambWidth: '1200px',
+      },
+      boxShadow: {
+        '3xl': '0 35px 60px -15px rgba(0, 0, 0, 0.3)',
+      },
+      animation: {
+        'spin-slow': 'spin 40s linear infinite',
       },
     },
   },

@@ -1,4 +1,4 @@
-import { Emphasis } from 'components/ligature/emphasis'
+import { Emphasis } from 'components/ligature'
 import React from 'react'
 
 /**
@@ -7,6 +7,6 @@ import React from 'react'
  */
 export default function Malbolge() {
   return (
-    <Emphasis left>Я тебя люблю</Emphasis>
+    <Emphasis left>Я тебе люблю</Emphasis>
   )
 }

@@ -1,11 +1,6 @@
-@tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-body, #__next {
-    height: 100vh;
-    /* @apply bg-gray-800 text-white; */
-}
+@tailwind base;
 
 /** i hate this and you'll probably hate this too */
 /* * {
@@ -14,11 +9,20 @@ body, #__next {
 
 html,
 body {
-  background: #130f40;
+  background: #2a2c2c;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
 body {
   position: relative;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
