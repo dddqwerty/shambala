@@ -3,7 +3,6 @@ import { MainLayout } from 'layout'
 import { Yellow } from 'components'
 import { handleIcon } from 'utils'
 import { PADDINGX } from 'constants/layout'
-import { Emphasis } from 'components'
 const WhatWeDoing = () => {
   return (
     <>
