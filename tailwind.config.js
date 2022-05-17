@@ -54,7 +54,6 @@ module.exports = {
       maxWidth: {
         shambWidth: '1200px',
       },
-<<<<<<< HEAD
       width: {
         planWidth: '100%',
         boxShadow: {
@@ -66,18 +65,8 @@ module.exports = {
             planWidth: '100%',
           },
         },
-=======
-      boxShadow: {
-        '3xl': '0 35px 60px -15px rgba(0, 0, 0, 0.3)',
-      },
-      animation: {
-        'spin-slow': 'spin 40s linear infinite',
-      width: {
-        planWidth: '100%',
->>>>>>> 813a75e (move to home comp)
       },
       plugins: [],
     },
-
   },
 }
