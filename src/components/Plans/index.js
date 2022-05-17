@@ -15,16 +15,17 @@ export const Plans = () => {
         <div id="spacer" className=" h-[100px]"></div>
 
         <Phone
-          className="md:shrik-0"
+          className=" md:-z-50 md:absolute"
           index={'middle'}
           icon={'plane'}
           headText={'The second four years'}
           bodyText={'The infrastructure of the Renewable Energy Research Center.'}
           date={'Apr 15, 2020 - Nov 1, 2024'}
+          active
           top
         />
         <Phone
-          className="md:shrik-0"
+          className=" md:-z-50 md:absolute"
           index={'middle'}
           icon={'plane'}
           headText={'The second four years'}
@@ -32,15 +33,17 @@ export const Plans = () => {
           date={'Apr 15, 2020 - Nov 1, 2024'}
         />
         <Phone
-          className="md:shrik-0"
+          className=" md:-z-50 md:absolute"
           index={'middle'}
           icon={'plane'}
           headText={'The second four years'}
           bodyText={'The infrastructure of the Renewable Energy Research Center.'}
           date={'Apr 15, 2020 - Nov 1, 2024'}
+          btm
         />
 
         <Dir
+          className=" md:visible md:z-50 md:relative sm:-z-50 sm: absolute sm: invisible"
           index={'first'}
           icon={'location'}
           headText={'The first four years'}
@@ -50,6 +53,7 @@ export const Plans = () => {
           active
         />
         <Dir
+          className=" md:visible md:z-50 md:relative sm:-z-50 sm: absolute sm: invisible"
           l
           index={'middle'}
           icon={'plane'}
@@ -58,6 +62,7 @@ export const Plans = () => {
           date={'Apr 15, 2020 - Nov 1, 2024'}
         />
         <Dir
+          className=" md:visible md:z-50 md:relative sm:-z-50 sm: absolute sm: invisible"
           index={'end'}
           icon={'rocket'}
           headText={'The third four years'}

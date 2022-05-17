@@ -4,7 +4,7 @@ import Typography from 'components/typography'
 import { AtLine } from './line'
 
 export const Dir = (props) => {
-  const { headText, bodyText, date, l = false, icon, arrow = false, active = false, top = false } = props
+  const { headText, bodyText, date, l = false, icon, arrow = false, active = false, top = false, className } = props
   let styleTop = ' '
   let styleActive1 = ''
   let styleActive2 = ''
@@ -21,7 +21,7 @@ export const Dir = (props) => {
 
   if (!l) {
     return (
-      <div className="min-h-[450px] h-fit w-full flex flex-row justify-center ">
+      <div className={`min-h-[450px]  h-fit w-full flex flex-row justify-center  ${className}`}>
         <div className=" flex flex-col w-planWidth h-full justify-center">
           <Typography variant="title-big" className="text-white ">
             {headText}
@@ -42,7 +42,7 @@ export const Dir = (props) => {
     )
   } else {
     return (
-      <div className="min-h-[450px] h-fit w-full flex flex-row justify-center ">
+      <div className={`min-h-[450px]  h-fit w-full flex flex-row justify-center  ${className}`}>
         <div className=" flex flex-col w-planWidth h-full justify-center">
           <Typography variant="p-small" className="w-planWidth text-textColor-secondary-lightGray/40">
             {date}

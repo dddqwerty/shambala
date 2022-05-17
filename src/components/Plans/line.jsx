@@ -2,7 +2,7 @@ import { backgroundColor } from 'theme/colors'
 import { handleIcon } from 'utils'
 
 export const AtLine = (props) => {
-  const { icon, style = ' ', b = false, act1, act2, sml = false } = props
+  const { icon, style = ' ', b = false, act1, act2, sml = false, btm } = props
   let bStyle = 0
   let smlStyle = ''
   let size = 32
@@ -22,7 +22,7 @@ export const AtLine = (props) => {
 
   return (
     <div id="spliter" className="px-[20px] w-fit flex justify-center items-center flex-col">
-      <div id="line" className={`w-[10px] h-[calc(50%-25px)] ${act1} ${style}`}></div>
+      <div id="line" className={`w-[10px] h-[calc(50%-25px)]  ${act1} ${style}`}></div>
       <div
         id="icon"
         className={`${smlStyle} rounded-[50%] border-4 border-backgroundColor-darkGray ${act2} flex items-center justify-center`}
@@ -33,7 +33,7 @@ export const AtLine = (props) => {
           className: 'text-black',
         })}
       </div>
-      <div id="line" className={`w-[10px] ${mmm} ${act1}`}></div>
+      <div id="line" className={`w-[10px] ${mmm} ${btm} ${act1}`}></div>
     </div>
   )
 }
