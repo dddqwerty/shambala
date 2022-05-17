@@ -61,10 +61,11 @@ module.exports = {
       },
       animation: {
         'spin-slow': 'spin 40s linear infinite',
-      width: {
-        planWidth: '100%',
+        width: {
+          planWidth: '100%',
+        },
       },
     },
+    plugins: [],
   },
-  plugins: [],
 }
