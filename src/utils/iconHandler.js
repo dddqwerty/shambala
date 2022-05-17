@@ -4,7 +4,6 @@ import { RiLeafLine, RiDirectionLine, RiInstagramFill } from 'react-icons/ri'
 import { MdLocationPin, MdOutlineDirections } from 'react-icons/md'
 import { GrSend } from 'react-icons/gr'
 import { IoMdRocket } from 'react-icons/io'
-import { BsArrowDownShort } from 'react-icons/bs'
 import { FiGlobe } from 'react-icons/fi'
 import { AiOutlineMenu } from 'react-icons/ai'
 import { BsMouse } from 'react-icons/bs'
@@ -27,9 +26,6 @@ export const handleIcon = ({ icon, size = 24, className = '' }) => {
     return <GrSend className={className} style={{ width: size, height: size }} />
   case 'rocket':
     return <IoMdRocket className={className} style={{ width: size, height: size }} />
-  case 'arrow':
-    return <BsArrowDownShort className={className} style={{ width: size, height: size }} />
-
   case 'globe':
     return <FiGlobe className={className} style={{ width: size, height: size }} />
   case 'menu':
