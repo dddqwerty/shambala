@@ -1,24 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-body, #__next {
+body,
+#__next {
     height: 100vh;
     /* @apply bg-gray-800 text-white; */
 }
 
+
 /** i hate this and you'll probably hate this too */
+
+
 /* * {
     border: 1px solid red;
 } */
 
 html,
 body {
-  background: #130f40;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
+    background: #151515;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body {
-  position: relative;
+    position: relative;
 }

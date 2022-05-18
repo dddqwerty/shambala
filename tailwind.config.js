@@ -55,6 +55,12 @@ module.exports = {
       maxWidth: {
         shambWidth: '1200px',
       },
+      gap: {
+        30: '123px',
+      },
+      screens: {
+        mobile: { max: ' 450px' },
+      },
     },
   },
   plugins: [],
