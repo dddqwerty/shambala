@@ -12,6 +12,7 @@ export type TypographyTypes =
   | 'body-web'
   | 'body-mobile'
   | 'title-normal'
+  | 'mobile-menu'
 
 type Props = {
   variant: TypographyTypes
@@ -33,17 +34,19 @@ const Typography: FC<Props> = ({ variant = 'h1', className = '', children }) => 
       case 'title-big':
         return 'font-semibold text-title1'
       case 'title-small':
-        return 'text-title2'
+        return 'text-title2 leading-[37.2px]'
       case 'p-big':
         return 'font-medium text-p1'
       case 'p-small':
         return 'font-semibold text-p2'
       case 'body-web':
-        return 'text-body font-normal'
+        return 'text-body font-normal leading-[32px]'
       case 'body-mobile':
-        return 'text-bodyMobile font-normal'
+        return 'text-bodyMobile font-normal  leading-[26px]'
       case 'title-normal':
         return 'text-p1 font-bold'
+      case 'mobile-menu':
+        return 'text-p2 font-normal'
     }
   }
 
