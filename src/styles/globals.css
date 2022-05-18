@@ -1,6 +1,6 @@
-@tailwind base;
 @tailwind components;
 @tailwind utilities;
+@tailwind base;
 body,
 #__next {
     height: 100vh;
@@ -19,9 +19,15 @@ html,
 body {
     background: #151515;
     overflow-x: hidden;
+    position: relative;
     scroll-behavior: smooth;
 }
 
-body {
-    position: relative;
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
