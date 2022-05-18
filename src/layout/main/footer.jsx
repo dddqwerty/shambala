@@ -5,7 +5,7 @@ import { Typography } from 'components'
 
 const Footer = () => {
   return (
-    <div className="w-100vw py-6 items-center bg-textColor-secondary-darkGray flex justify-center ">
+    <div className="w-100vw py-6 items-center bg-textColor-secondary-darkGray flex justify-center z-[10] rounded-full">
       <div className="w-full max-w-shambWidth mx-auto gap-16 flex flex-col md:flex-row lg:flex-row items-center justify-between">
         <div className="flex items-center flex-col">
           <img src="assets/footer1.png" className="w-[30px] h-25" alt="" />

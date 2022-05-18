@@ -1,21 +1,19 @@
 import React from 'react'
 import { Typography } from 'components'
 import { handleIcon } from 'utils'
-import { PADDINGX } from 'constants/layout'
 import Link from 'next/link'
 export const Header = () => {
   return (
     <div
-      id="header background"
       style={{
         backgroundColor: 'rgba(32, 33, 33, 0.5)',
       }}
-      className={`fixed z-50 flex justify-between backdrop-blur-[20px]  items-center w-full h-[70px] ${PADDINGX}`}
+      className={`fixed z-50 md:flex justify-between backdrop-blur-[10px]  items-center w-full h-[70px] px-32`}
     >
-      <div className="h-10">
+      <div className="h-10 w-[181px]">
         <Link href={'/'}>
           <a>
-            <img className="h-full w-full" src="assets/mainlogo1.png" />
+            <img className="max-w-full" src="assets/mainlogo1.png" />
           </a>
         </Link>
       </div>
@@ -26,7 +24,7 @@ export const Header = () => {
         })}
       </div>
       <div className="items-center justify-between h-full hidden md:flex lg:flex gap-14">
-        <div className="h-full flex items-center">
+        <div className="h-full shrink-0 flex items-center">
           <div className="flex items-center border-transparent h-full px-[35px] hover: text-white border-b-2 hover:border-primary-yellow   hover:bg-textColor-secondary-darkGray hover:cursor-pointer">
             <Typography variant="p-small" className="text-textColor-secondary-lightGray">
               Who we are
@@ -48,16 +46,11 @@ export const Header = () => {
               Naadam
             </Typography>
           </div>
-          <div className="flex items-center h-full px-[35px] border-transparent hover: text-white border-b-2 hover:border-primary-yellow   hover:bg-textColor-secondary-darkGray hover:cursor-pointer">
-            <Typography variant="p-small" className="text-textColor-secondary-lightGray">
-              Naadam
-            </Typography>
-          </div>
         </div>
 
         <div id="icons" className="flex gap-[30px]">
           <Link href={'/'}>
-            <a>
+            <a className="hover:scale-125">
               {handleIcon({
                 icon: 'facebook',
                 size: 16,
@@ -67,7 +60,7 @@ export const Header = () => {
           </Link>
 
           <Link href={'/'}>
-            <a>
+            <a className="hover:scale-125">
               {handleIcon({
                 icon: 'twitter',
                 size: 16,
@@ -76,7 +69,7 @@ export const Header = () => {
             </a>
           </Link>
           <Link href={'/'}>
-            <a>
+            <a className="hover:scale-125">
               {handleIcon({
                 icon: 'mail',
                 size: 16,
@@ -85,7 +78,7 @@ export const Header = () => {
             </a>
           </Link>
           <Link href={'/'}>
-            <a>
+            <a className="hover:scale-125">
               {handleIcon({
                 icon: 'instagram',
                 size: 16,
