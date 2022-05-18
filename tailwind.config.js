@@ -27,6 +27,7 @@ module.exports = {
         backgroundColor: {
           darkGray: colors.backgroundColor['dark-gray'],
           hover: colors.backgroundColor.hover,
+          navBar: 'rgba(255, 255, 255, 0.34)',
         },
         button: {
           hover: colors.button.hover,
@@ -35,6 +36,8 @@ module.exports = {
           },
         },
         earthBg: 'rgba(0, 0, 0, 0.71)',
+        mainBg: '#141515',
+        mobileBg: 'rgba(0, 0, 0, 0.6)',
       },
       fontSize: {
         h1: '64px',
