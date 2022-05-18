@@ -1,8 +1,28 @@
 import { Emphasis, GoalCard, MemberCard, Typography } from 'components'
 import { MainLayout } from 'layout'
 import { members } from '../../public/assets/membersInfo'
+import { motion } from 'framer-motion'
 
 export default function Home() {
+
+    const container = {
+        visible: {
+            opacity: 1,
+            transition: {
+                delayChildren: 0.3,
+                staggerChildren: 0.5,
+            },
+        },
+    }
+
+    const item = {
+        hidden: { y: 20, opacity: 0 },
+        visible: {
+            y: 0,
+            opacity: 1,
+        },
+    }
+
     return (
         <MainLayout classname='bg-backgroundColor-darkGray relative pt-36 md:pb-[400px] pb-[220px]'>
             <div style={{
@@ -61,8 +81,8 @@ export default function Home() {
                     <Emphasis content='Company goals' />
                     <Typography variant='body-web' className='text-primary-white opacity-60'>NОНГОЛ УПСЫН ГАЗАР НУТГИЙН 76.8% НЬ Х6РСНV1Й ДОРОЙТОЛД ОРСОН БАV1НА. БV1Д Ц6ЛХV1Х БУЙ ГАЗАР ХУТАГТ НеХеН СЭРГЭЭПТ ХИ Й Н vОД ТАРЬХ Х6РСНИV1 ДОРОЙТОПТОV1 ТЭИЦДЭГ. VАНАЙ ХАХ/Т ОЛОН УРТ ХУГАЦААНЫ ТУРШ БV1ДЭНТЭV1 ХАУТРАН АХИЛЛАН, БАЙ ГАП Ь ОРЧ И НДОО ХУВЬ НЭМ РЭЭ ОРУУПАХ ХУВЬ ХУН, АЛ БАН БАЙ ГУУЛЛАГА ТА БУХНИЙГУРЬХ БАV1НА. </Typography>
                 </div>
-                <div className='md:block mt-48 hidden'>
-                    <div className='grid grid-cols-3 '>
+                <div className='md:block mt-48 hidden w-[80vw]'>
+                    <div className='grid grid-cols-3 justify-center'>
                         <GoalCard index='01' desc='Цөлжилттэй газар нутагт тухайн газрын онцлогт тохирох модыг тарьж ургуулан нөхөн сэргээх' />
                         <GoalCard index='03' desc='Газрын доройтлыг тогтвортой' />
                         <GoalCard index='05' desc='Дотоодын технологийн шинэчлэлийг өсөн дэвжихэд нь туслах, дэмжих' />
@@ -80,7 +100,7 @@ export default function Home() {
                     <GoalCard index='05' desc='Дотоодын технологийн шинэчлэлийг өсөн дэвжихэд нь туслах, дэмжих' />
                 </div>
             </div>
-        </MainLayout>
+        </MainLayout >
 
     )
 }
