@@ -1,6 +1,7 @@
 import React from 'react'
 import { Typography } from 'components'
 import { handleIcon } from 'utils'
+import { PADDINGX } from 'constants/layout'
 import Link from 'next/link'
 export const Header = () => {
   return (
