@@ -19,7 +19,7 @@ const FirstPart = () => {
                 }}
                 className="absolute top-0 left-0 z-10 hidden h-screen w-screen md:block lg:block opacity-40"
             />
-            <div className="md:z-10 absolute -left-[169px] hidden md:block -top-[249px] w-[686px]">
+            <div className="-z-[100] md:z-10 absolute -left-[9%] -top-[20%] w-[40%]">
                 <img src="assets/shadowEllipse/ellipseBig.svg" className="max-w-full" alt="" />
             </div>
             <div className="absolute z-10 -right-[30%] -top-[10%] w-[70%] md:right-[8%] md:top-[-5%] md:w-[19%]">
