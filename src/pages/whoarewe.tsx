@@ -1,6 +1,7 @@
 import { Emphasis, GoalCard, MemberCard, Typography } from 'components'
 import { MainLayout } from 'layout'
 import { members } from '../../public/assets/membersInfo'
+import { PADDINGX } from 'constants/layout'
 import { motion } from 'framer-motion'
 
 export default function Home() {
@@ -33,7 +34,7 @@ export default function Home() {
                     background: `linear-gradient(0deg, rgba(32, 33, 33, 0.7), rgba(32, 33, 33, 0.7)), url('assets/homePageBg.png')`
                 }}>
             </div>
-            <div className='flex flex-col items-center max-w-shambWidth mx-auto z-20 relative'>
+            <div className={`flex flex-col items-center max-w-shambWidth mx-auto z-20 relative ${PADDINGX}`}>
                 <div className='w-10 hidden md:block'>
                     <img src="assets/footer1.png" alt="" className='max-w' />
                 </div>
@@ -81,7 +82,7 @@ export default function Home() {
                     <Emphasis content='Company goals' />
                     <Typography variant='body-web' className='text-primary-white opacity-60'>NОНГОЛ УПСЫН ГАЗАР НУТГИЙН 76.8% НЬ Х6РСНV1Й ДОРОЙТОЛД ОРСОН БАV1НА. БV1Д Ц6ЛХV1Х БУЙ ГАЗАР ХУТАГТ НеХеН СЭРГЭЭПТ ХИ Й Н vОД ТАРЬХ Х6РСНИV1 ДОРОЙТОПТОV1 ТЭИЦДЭГ. VАНАЙ ХАХ/Т ОЛОН УРТ ХУГАЦААНЫ ТУРШ БV1ДЭНТЭV1 ХАУТРАН АХИЛЛАН, БАЙ ГАП Ь ОРЧ И НДОО ХУВЬ НЭМ РЭЭ ОРУУПАХ ХУВЬ ХУН, АЛ БАН БАЙ ГУУЛЛАГА ТА БУХНИЙГУРЬХ БАV1НА. </Typography>
                 </div>
-                <div className='md:block mt-48 hidden w-[80vw]'>
+                <div className='md:block mt-48 hidden w-[120%]'>
                     <div className='grid grid-cols-3 justify-center'>
                         <GoalCard index='01' desc='Цөлжилттэй газар нутагт тухайн газрын онцлогт тохирох модыг тарьж ургуулан нөхөн сэргээх' />
                         <GoalCard index='03' desc='Газрын доройтлыг тогтвортой' />
