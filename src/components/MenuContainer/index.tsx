@@ -49,6 +49,6 @@ const itemIds = [
     }, {
         name: "Naadam",
         isSelected: false,
-        path: "/Naadam"
+        path: "/naadam"
 
     }];
