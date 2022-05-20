@@ -1,4 +1,5 @@
 import { BidYuHiijBainaVeCard, Title, Buurunhii } from 'components'
+import { PADDINGX } from 'constants/layout'
 import { motion } from 'framer-motion'
 const Whatarewedoing = () => {
     const container = {
@@ -19,9 +20,10 @@ const Whatarewedoing = () => {
         }
     }
     return (
-        <div className="grid place-items-center h-full bg-[#151515]">
+        <div className="grid place-items-center">
             <img src="/assets/davalgaa.svg" className='w-full hidden md:block mb-[130px]' alt="" />
-            <div className='relative'>
+            <div className={`h-screen relative flex max-w-shambWidth mx-auto ${PADDINGX}`}>
+
                 <Buurunhii />
 
                 <div>
