@@ -17,11 +17,12 @@ const FirstPart = () => {
         setHeight(imageRef.current.offsetHeight)
     }, [imageRef])
 
+
     return (
         <MainLayout classname={'bg-recomended'}>
             <div className="relative w-screen h-screen">
                 <div
-                    className={`absolute flex justify-center items-center h-[200px] z-50`}>
+                    className={`absolute flex justify-center h-[220px] items-center z-50`}>
                     <img src="assets/homelogo.webp" alt="" className={`max-w-[65%]  md:max-w-full md:hidden md:mt-52`} />
                 </div>
 
