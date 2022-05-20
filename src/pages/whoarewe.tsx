@@ -32,7 +32,7 @@ export default function Home() {
       }} className='absolute top-0 left-0 w-screen h-screen z-10 hidden md:block lg:block' />
       <div className='absolute top-0 left-0 z-0 h-screen w-screen bg-no-repeat bg-cover hidden md:block lg:block'
         style={{
-          background: `linear-gradient(0deg, rgba(32, 33, 33, 0.7), rgba(32, 33, 33, 0.7)), url('assets/homePageBg.png')`
+          background: `linear-gradient(0deg, rgba(32, 33, 33, 0.7), rgba(32, 33, 33, 0.7)), url('assets/homePageBg.webp')`
         }}>
       </div>
       <div className={`flex flex-col items-center max-w-shambWidth mx-auto z-20 relative ${PADDINGX}`}>

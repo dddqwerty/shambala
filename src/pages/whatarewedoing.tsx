@@ -21,7 +21,7 @@ const WhatWeDoing = () => {
 
 
           <div className={`h-screen relative flex flex-col items-center md:items-start max-w-shambWidth mx-auto ${PADDINGX}`}>
-            <img src="assets/homeLogo.svg" alt="" className="max-w-[65%] md:max-w-full md:hidden z-10 my-28 md:mt-52" />
+            <img src="assets/homelogo.webp" alt="" className="max-w-[65%] md:max-w-full md:hidden z-10 my-28 md:mt-52" />
             <Yellow
               className='md:mt-[15%]'
               title={'Art Tech Empire'}

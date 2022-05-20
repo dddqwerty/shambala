@@ -40,10 +40,10 @@ const FirstPart = () => {
                 bottom: `calc(100vh - ${height * 2}px)`,
                 background: "linear-gradient(180deg, rgba(0, 0, 0, 0) 4.13%, #141515 100%)"
             }} className={`absolute md:bottom-0 h-[100px] md:h-[40%] z-10 w-full`} />
-            <img ref={imageRef} src='assets/homePageBg.png' className="absolute translate-y-1/2 md:translate-y-0 top-0 md:top-0 left-0 md:h-screen md:w-screen md:block scale-[2] md:scale-100" />
+            <img ref={imageRef} src='assets/homePageBg.webp' className="absolute translate-y-1/2 md:translate-y-0 top-0 md:top-0 left-0 md:h-screen md:w-screen md:block scale-[2] md:scale-100" />
 
             <div className="flex flex-col h-full gap-40 md:gap-10 items-center">
-                <img src="assets/homeLogo.svg" alt="" className="max-w-[65%] md:max-w-full z-10 mt-28 md:mt-52" />
+                <img src="assets/homelogo.webp" alt="" className="w-[235px] md:w-[589px] z-10 mt-28 md:mt-52" />
                 <Typography
                     variant={matches ? "title-small" : "body-web"}
                     className="z-10 md:z-[9] text-primary-white  md:text-textColor-secondary-lightGray lg:w-[808px] w-[322px] text-center"

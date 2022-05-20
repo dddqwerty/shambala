@@ -25,7 +25,7 @@ const FirstPart = () => {
                         height: `${height}px`
                     }}
                     className={`absolute flex justify-center items-center z-50`}>
-                    <img src="assets/homeLogo.svg" alt="" className={`max-w-[65%]  md:max-w-full md:hidden md:mt-52`} />
+                    <img src="assets/homelogo.webp" alt="" className={`max-w-[65%]  md:max-w-full md:hidden md:mt-52`} />
                 </div>
 
 
@@ -56,7 +56,7 @@ const FirstPart = () => {
                     bottom: `calc(100vh - ${height + 10}px)`,
                     background: "linear-gradient(180deg, rgba(0, 0, 0, 0) 4.13%, #212222 100%)"
                 }} className={`absolute md:bottom-0 h-[375px] md:h-[40%] z-20 w-full`} />
-                <img ref={imageRef} src="/assets/behuman1.png" className="absolute md:translate-y-0 top-0 md:top-0 left-0 md:h-screen md:w-screen md:block md:scale-100" />
+                <img ref={imageRef} src="/assets/be human 1.webp" className="absolute md:translate-y-0 top-0 md:top-0 left-0 md:h-screen md:w-screen md:block md:scale-100" />
                 {/* <div className="hidden md:block z-20 absolute bottom-24 left-1/2 transform -translate-x-1/2">
                     <img src="assets/svgs/mouse.svg" alt="" />
                 </div> */}

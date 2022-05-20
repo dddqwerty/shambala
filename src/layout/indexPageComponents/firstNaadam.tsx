@@ -35,7 +35,7 @@ const NaadamFirst = (props) => {
       }} className={`absolute md:bottom-0 h-[100px] md:h-[40%] z-10 w-full`} />
       <img
         ref={imageRef}
-        src="assets/taizshono.png"
+        src="assets/taiz shono 1.webp"
         className="absolute translate-y-1/2 md:translate-y-0 top-0 md:top-0 left-0 md:h-screen md:w-screen md:block scale-[2] md:scale-100"
       />
 

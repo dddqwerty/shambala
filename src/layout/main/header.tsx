@@ -186,7 +186,7 @@ export const Header = () => {
       <div className="h-10 w-[181px]">
         <Link href={'/'}>
           <a>
-            <img className="max-w-full" src="assets/mainlogo1.png" />
+            <img className="max-w-full" src="assets/homelogo.webp" />
           </a>
         </Link>
       </div>
