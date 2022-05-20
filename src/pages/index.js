@@ -4,6 +4,7 @@ import FirstPart from 'layout/indexPageComponents/first'
 import OurGoalsPart from 'layout/indexPageComponents/ourGoalsPart'
 import Titi from 'layout/bobo'
 import { Plans } from 'components/Plans'
+import Whatarewedoing from './style/globeCard'
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Fournumber />
       <Plans />
       <OurGoalsPart />
+      <Whatarewedoing />
     </MainLayout>
   )
 }
