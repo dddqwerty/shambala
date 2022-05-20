@@ -17,7 +17,7 @@ const MemberCard = (props: Props) => {
       {/* <div className='relative bg-primary-white w-full h-44 md:h-64 rounded-[8px] md:rounded-none'> */}
       <Member pictureURL={picture} />
       {/* </div> */}
-      <div className="hidden md:flex flex-row mt-3 flex-wrap">
+      {/* <div className="hidden md:flex flex-row mt-3 flex-wrap">
         <Typography
           variant="p-big"
           className="text-primary-white capitalize -tracking-[0.5px] opacity-50 mr-[5px] md:uppercase md:opacity-100 md:font-[500]"
@@ -44,7 +44,7 @@ const MemberCard = (props: Props) => {
         className="text-primary-white font-bold opacity-70 text-[8px] mt-1 md:font-[600] md:opacity-100 md:text-[12px]"
       >
         {job}
-      </Typography>
+      </Typography> */}
     </div>
   )
 }

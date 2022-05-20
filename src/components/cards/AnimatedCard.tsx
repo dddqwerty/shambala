@@ -94,25 +94,25 @@ export const Member = (props: Props) => {
             <motion.div
               animate={animControls[0]}
               initial={{ x: 900, rotate: -30 }}
-              className="absolute -right-[40%] -bottom-[20%] bg-blue-600 h-[80%] w-[100%] -rotate-30"
+              className="absolute -right-[40%] -bottom-[20%] bg-blue-600 h-[80%] z-10 w-[100%] -rotate-30"
               onAnimationComplete={() => setAnim(false)}
             />
             <motion.div
               animate={animControls[1]}
               initial={{ x: -900, rotate: -45 }}
-              className="absolute -left-[50%] bottom-[50%] bg-blue-600 h-[100%] w-[100%] -rotate-45"
+              className="absolute -left-[50%] bottom-[50%] bg-blue-600 h-[100%] z-10 w-[100%] -rotate-45"
               onAnimationComplete={() => setAnim(false)}
             />
             <motion.div
               animate={animControls[2]}
               initial={{ x: -999, rotate: -45, skew: '45deg' }}
-              className="absolute -left-[5%] bottom-[5%] bg-white h-[20%] w-[80%] -rotate-45 rounded-md"
+              className="absolute -left-[5%] bottom-[5%] bg-white h-[20%] z-10 w-[80%] -rotate-45 rounded-md"
               onAnimationComplete={() => setAnim(false)}
             />
             <motion.div
               animate={animControls[3]}
               initial={{ x: -999, rotate: -45, skew: '45deg' }}
-              className="absolute -right-[40%] top-0 bg-yellow-300 h-[20%] w-[45%] rotate-45 rounded-md"
+              className="absolute -right-[40%] top-0 bg-yellow-300 h-[20%] z-10 w-[45%] rotate-45 rounded-md"
               onAnimationComplete={() => setAnim(false)}
             />
             <Image
@@ -121,25 +121,11 @@ export const Member = (props: Props) => {
               width="256px"
               height="218px"
               layout="fixed"
-              className="z-10 absolute"
+              className="absolute"
               objectFit="fill"
               quality={100}
             />
           </div>
-        </div>
-
-        <div className="flex flex-col gap-2 mt-4">
-          <div className="">
-            <Typography variant="p-small" className="text-white opacity-40 text-lg font-normal">
-              Шижирбат
-            </Typography>
-            <Typography variant="h2" className="text-white !text-p2 uppercase font-bold text-xl">
-              Бямбасүрэн
-            </Typography>
-          </div>
-          <Typography variant="h2" className="text-white opacity-80 !text-xs">
-            CEO
-          </Typography>
         </div>
       </div>
     </div>
