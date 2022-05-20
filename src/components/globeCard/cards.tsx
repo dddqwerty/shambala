@@ -6,7 +6,7 @@ import { PADDINGX } from 'constants/layout'
 const BidYuHiijBainaVeCard = () => {
     return (
 
-        <div className={`grid ${PADDINGX} `}>
+        <div className={`grid`}>
             <div className="md:mb-[150px] mb-0 grid md:grid-cols-2  md:gap-30">
 
                 <GlobeCard

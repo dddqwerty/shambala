@@ -33,13 +33,15 @@ export const Plans = () => {
           className="my-[130px] md:my-[260px] flex justify-center items-center flex-col"
         >
           <div id="backthing" className="absolute blur-3xl bg-white/20 w-[15%] h-[100px]"></div>
-          <Emphasis left={true}>Our future plan</Emphasis>
-          <Typography
-            variant={'title-big'}
-            className={'text-[#bababa] font-light md:font-semibold md:text-h3 md:text-white'}
-          >
-            2020 - 2032
-          </Typography>
+          <div className="flex flex-col items-center gap-5">
+            <Emphasis left={true}>Our future plan</Emphasis>
+            <Typography
+              variant={'title-big'}
+              className={'text-[#bababa] font-light md:font-semibold md:text-h3 md:text-white'}
+            >
+              2020 - 2032
+            </Typography>
+          </div>
         </motion.div>
 
         <Phone

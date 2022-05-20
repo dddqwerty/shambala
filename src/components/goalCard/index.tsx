@@ -4,8 +4,8 @@ import { } from 'react'
 type Props = {
     index: string,
     desc: string,
-    className : string,
-    bclass: string
+    className?: string,
+    bclass?: string
 }
 
 const GoalCard = (props: Props) => {

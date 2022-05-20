@@ -28,12 +28,11 @@ const NaadamFirst = (props) => {
         }}
         className="absolute top-0 left-0 z-10 hidden h-screen w-screen md:block lg:block opacity-40"
       />
-      <div
-        style={{
-          background: 'linear-gradient(180deg, rgba(0, 0, 0, 0) 4.13%, #141515 100%)',
-        }}
-        className={`md:mt-[100vh - ${height * 2}px] invisible absolute md:bottom-0 h-[100px] md:h-[40%] z-10 w-full`}
-      />
+
+      <div style={{
+        bottom: `calc(100vh - ${height * 2}px)`,
+        background: 'linear-gradient(180deg, rgba(0, 0, 0, 0) 4.13%, #141515 100%)',
+      }} className={`absolute md:bottom-0 h-[100px] md:h-[40%] z-10 w-full`} />
       <img
         ref={imageRef}
         src="assets/taizshono.png"
@@ -71,9 +70,9 @@ const NaadamFirst = (props) => {
         </div>
       </div>
 
-      <div className="hidden md:block z-10 absolute bottom-24 left-1/2 transform -translate-x-1/2">
+      {/* <div className="hidden md:block z-10 absolute bottom-24 left-1/2 transform -translate-x-1/2">
         <img src="assets/svgs/mouse.svg" alt="" />
-      </div>
+      </div> */}
     </div>
   )
 }

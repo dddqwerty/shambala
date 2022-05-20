@@ -8,9 +8,9 @@ const Text = () => {
     visible: {
       x: 0,
       opacity: 1,
-      // transition: {
-      //   delay: 0.2
-      // }
+      transition: {
+        delay: 0.4
+      }
     },
   }
   const item2 = {
@@ -18,19 +18,19 @@ const Text = () => {
     visible: {
       x: 0,
       opacity: 1,
-      // transition: {
-      //   delay: 0.2
-      // }
+      transition: {
+        delay: 0.5
+      }
     },
   }
   return (
-    <div className={`h-screen relative flex max-w-shambWidth mx-auto flex-col ${PADDINGX}`}>
-      <motion.div initial="hidden" className='hidden md:block' whileInView="visible" variants={item2}>
-        <div className="absolute right-0 top-20">
+    <div className={`relative flex max-w-shambWidth py-36 mx-auto flex-col ${PADDINGX}`}>
+      <motion.div initial="hidden" className='hidden md:block' viewport={{ once: true }} whileInView="visible" variants={item2}>
+        <div className="absolute right-0 top-60">
           <img src="/assets/blue-dots.svg" alt="" />
         </div>
       </motion.div>
-      <motion.div initial="hidden" whileInView="visible" variants={item}>
+      <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={item}>
         <div className="bg-primary-yellow w-[61px] h-[5px] rounded-lg md:hidden mb-6" />
         <div className="flex flex-col">
           <div>
@@ -86,9 +86,9 @@ const Text = () => {
         </div>
         <div className="flex md:justify-end">
           <div className="flex flex-col gap-6">
-            <Typography variant="body-web" className="text-primary-white md:w-[608px] align-items ">
+            <Typography variant="body-web" className="text-primary-white opacity-70 md:opacity-100 md:w-[608px] align-items ">
               Энэ лэнд артын онцлог нь таримал модоор хийгдсэн дэлхийн 2 дахь лэнд арт бөгөөд хэмжээгээрээ хамгийн том
-              анхны лэнд арт болох юм. Мөн Худалдаа Хөгжлийн банктай хамтран <span className='font-semibold text-title1'>HAPPY TREE</span> багц болон худалдаалагдаж байна.
+              анхны лэнд арт болох юм. Мөн Худалдаа Хөгжлийн банктай хамтран <span className='font-semibold text-title1 '>HAPPY TREE</span> багц болон худалдаалагдаж байна.
             </Typography>
             <div className="bg-primary-yellow w-[61px] h-[5px] rounded-lg hidden md:block" />
           </div>

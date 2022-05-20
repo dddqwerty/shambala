@@ -170,9 +170,11 @@ import { Typography } from 'components'
 import { handleIcon } from 'utils'
 import { PADDINGX } from 'constants/layout'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 export const Header = () => {
-  const { selected, setSelected } = useState('')
+  // const { selected, setSelected } = useState('')
+  const router = useRouter();
 
   return (
     <div
@@ -197,7 +199,7 @@ export const Header = () => {
       <div className="items-center justify-between h-full hidden md:flex lg:flex gap-14">
         <div className="h-full shrink-0 flex items-center">
           <Link href={'/whoarewe'}>
-            <div className="flex items-center border-transparent h-full px-[35px] hover: text-white border-b-2 hover:border-primary-yellow   hover:bg-textColor-secondary-darkGray hover:cursor-pointer">
+            <div className={`${router.pathname == '/whoarewe' && "border-primary-yellow bg-textColor-secondary-darkGray"} flex items-center border-transparent h-full px-[35px] hover: text-white border-b-2  hover:cursor-pointer`}>
               <a>
                 <Typography variant="p-small" className="text-textColor-secondary-lightGray">
                   Who we are
@@ -205,8 +207,8 @@ export const Header = () => {
               </a>
             </div>
           </Link>
-          <Link href={'/whatwedoing'}>
-            <div className="flex items-center h-full px-[35px] border-transparent hover: text-white border-b-2 hover:border-primary-yellow   hover:bg-textColor-secondary-darkGray hover:cursor-pointer">
+          <Link href={'/whatarewedoing'}>
+          <div className={`${router.pathname == '/whatarewedoing' && "border-primary-yellow bg-textColor-secondary-darkGray"} flex items-center border-transparent h-full px-[35px] hover: text-white border-b-2  hover:cursor-pointer`}>
               <a>
                 <Typography variant="p-small" className="text-textColor-secondary-lightGray">
                   What are we doing
@@ -214,17 +216,17 @@ export const Header = () => {
               </a>
             </div>
           </Link>
-          <Link href={'/whoweworkwith'}>
-            <div className="flex items-center h-full px-[35px] border-transparent hover: text-white border-b-2 hover:border-primary-yellow   hover:bg-textColor-secondary-darkGray hover:cursor-pointer">
+          <Link href={'/recomended'}>
+          <div className={`${router.pathname == '/recomended' && "border-primary-yellow bg-textColor-secondary-darkGray"} flex items-center border-transparent h-full px-[35px] hover: text-white border-b-2  hover:cursor-pointer`}>
               <a>
                 <Typography variant="p-small" className="text-textColor-secondary-lightGray">
-                  Who we work with
+                  Recomended Projects
                 </Typography>
               </a>
             </div>
           </Link>
           <Link href={'/naadam'}>
-            <div className="flex items-center h-full px-[35px] border-transparent hover: text-white border-b-2 hover:border-primary-yellow   hover:bg-textColor-secondary-darkGray hover:cursor-pointer">
+          <div className={`${router.pathname == '/naadam' && "border-primary-yellow bg-textColor-secondary-darkGray"} flex items-center border-transparent h-full px-[35px] hover: text-white border-b-2  hover:cursor-pointer`}>
               <a>
                 <Typography variant="p-small" className="text-textColor-secondary-lightGray">
                   Naadam

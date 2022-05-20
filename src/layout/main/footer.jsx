@@ -1,6 +1,7 @@
 import { handleIcon } from 'utils'
 import Link from 'next/link'
 import { Typography } from 'components'
+import { PADDINGX } from 'constants/layout'
 // import Image from 'next/image'
 
 const Footer = () => {
@@ -20,7 +21,9 @@ const Footer = () => {
       <div className=" md:hidden lg:hidden top-0 right-0 absolute transform  w-10 h-10 bg-mainBg">
         <div className="w-[100%] h-[100%] bg-textColor-secondary-darkGray rounded-tr-[15px] border-t-4 border-t-textColor-secondary-darkGray "></div>
       </div>
-      <div className="w-full max-w-shambWidth mx-auto gap-16 flex flex-col md:flex-row lg:flex-row items-center justify-between">
+      <div
+        className={`w-full max-w-shambWidth mx-auto gap-16 flex flex-col md:flex-row lg:flex-row items-center justify-between ${PADDINGX}`}
+      >
         <div className="mt-[1.5rem] flex items-center flex-col">
           <img src="assets/footer1.png" className="w-[30px] h-25" alt="" />
           <img src="assets/footer2.png" className="w-[148px] h-25" alt="" />

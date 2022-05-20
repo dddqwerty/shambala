@@ -5,16 +5,16 @@ function Urs() {
   const [activeSlide, setActiveSlide] = useState(0)
 
   return (
-    <div className="relative pb-[180px]">
-      <div className="h-[340px] w-full absolute z-50 "></div>
+    <div className="relative pb-[90px] md:pb-[180px]">
+      <div className="h-[30px] w-full absolute z-50 "></div>
 
       <div className="z-10 mb-[30px] ">
         <Carousel
-          autoplay={1}
+          autoplay={true}
           infinite={true}
           easing="linear"
           speed={200000}
-          updateOnItemClick
+          // updateOnItemClick
           containerProps={{
             style: {
               width: '100%',
@@ -33,11 +33,11 @@ function Urs() {
       <div className="mb-[30px]">
         <Carousel
           autoplayDirection="backward"
-          autoplay={1}
+          autoplay={true}
           infinite={true}
           easing="linear"
           speed={500000}
-          updateOnItemClick
+          // updateOnItemClick
           containerProps={{
             style: {
               width: '100%',
@@ -55,11 +55,11 @@ function Urs() {
       </div>
       <div>
         <Carousel
-          autoplay={1}
+          autoplay={true}
           infinite={true}
           easing="linear"
           speed={100000}
-          updateOnItemClick
+          // updateOnItemClick
           containerProps={{
             style: {
               width: '100%',
