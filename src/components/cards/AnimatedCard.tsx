@@ -3,7 +3,11 @@ import { motion, useAnimation } from 'framer-motion'
 import Image from 'next/image'
 import Typography from 'components/typography'
 
-export const Member = () => {
+type Props = {
+  pictureURL: string
+}
+
+export const Member = (props: Props) => {
   const [anim, setAnim] = React.useState(false)
   const [animControls] = React.useState([useAnimation(), useAnimation(), useAnimation(), useAnimation()]) // very sloppy... too bad
 
@@ -112,7 +116,7 @@ export const Member = () => {
               onAnimationComplete={() => setAnim(false)}
             />
             <Image
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Gamma_plot.svg/650px-Gamma_plot.svg.png"
+              src={props.pictureURL}
               alt="CEO"
               width="256px"
               height="218px"

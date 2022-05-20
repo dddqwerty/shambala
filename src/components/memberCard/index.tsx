@@ -1,5 +1,6 @@
+import * as React from "react";
 import Typography from 'components/typography'
-import {} from 'react'
+import { Member } from "components/cards/AnimatedCard";
 
 type Props = {
   picture?: string
@@ -14,7 +15,7 @@ const MemberCard = (props: Props) => {
   return (
     <div className="flex w-36 flex-col  md:w-52 md:rounded-none">
       {/* <div className='relative bg-primary-white w-full h-44 md:h-64 rounded-[8px] md:rounded-none'> */}
-      <img src={picture} className="max-w-full rounded-[8px] md:rounded-none" />
+      <Member pictureURL={picture} />
       {/* </div> */}
       <div className="hidden md:flex flex-row mt-3 flex-wrap">
         <Typography
