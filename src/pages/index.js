@@ -6,7 +6,6 @@ import Titi from 'layout/bobo'
 import { Plans } from 'components/Plans'
 import Whatarewedoing from './style/globeCard'
 
-import Urs from 'components/telmun/urs'
 export default function Home() {
   return (
     <MainLayout classname={'bg-mainBg'}>
@@ -15,11 +14,7 @@ export default function Home() {
       <Fournumber />
       <Plans />
       <OurGoalsPart />
-<<<<<<< HEAD
       <Whatarewedoing />
-=======
-      <Urs />
->>>>>>> ayaaaaa huni amidral
     </MainLayout>
   )
 }
