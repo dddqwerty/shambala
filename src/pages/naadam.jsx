@@ -1,7 +1,6 @@
 import React from 'react'
 import { MainLayout } from 'layout'
 import FirstPart from 'layout/indexPageComponents/firstNaadam'
-import { Goals } from 'components/goals'
 import { GoalCard, Emphasis } from 'components'
 import { PADDINGX } from 'constants/layout'
 
