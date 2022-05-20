@@ -1,4 +1,4 @@
-import { Member } from 'components/cards/AnimatedCard'
+import { Header } from 'layout/main'
 import { MainLayout } from 'layout'
 import React from 'react'
 
@@ -9,8 +9,7 @@ import React from 'react'
 export default function Malbolge() {
   return (
     <MainLayout classname={'bg-backgroundColor-darkGray'}>
-      <div className="h-[200px] w-[500px] bg-primary-yellow" />
-      <Member />
+      <Header goal />
     </MainLayout>
   )
 }

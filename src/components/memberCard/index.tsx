@@ -13,7 +13,7 @@ const MemberCard = (props: Props) => {
 
     return <div className='flex w-36 flex-col  md:w-52 rounded-t-[8px] md:rounded-none'>
         <div className='relative bg-primary-white w-full h-44 md:h-64 rounded-[8px] md:rounded-none'>
-            <img src={`${picture}`} className='max-w-full absolute bottom-0 rounded-b-[8px]  md:rounded-none' />
+            <img src={`${picture}`} className='max-w-full absolute bottom-0 rounded-b-[8px  md:rounded-none' />
         </div>
         <div className='md:flex flex-row mt-3' >
             <Typography variant='p-big' className='text-primary-white capitalize -tracking-[0.5px] opacity-50 mr-[5px] md:uppercase md:opacity-100 md:font-[500]'>{firstName}</Typography>
