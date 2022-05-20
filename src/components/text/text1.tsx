@@ -37,7 +37,7 @@ const Text = () => {
             <Typography variant="h2" className="text-primary-white pb-1">
               816 year
             </Typography>
-            <Typography variant="title-small" className="text-stone-500">
+            <Typography variant="title-small" className="text-primary-white opacity-70">
               Их Монгол улс байгуулагдсаны
             </Typography>
           </div>
@@ -45,7 +45,7 @@ const Text = () => {
             <Typography variant="h2" className="text-primary-white pb-1">
               2231 year
             </Typography>
-            <Typography variant="title-small" className="text-stone-500">
+            <Typography variant="title-small" className="text-primary-white opacity-70">
               Тулгар Төрийн
             </Typography>
           </div>
@@ -53,7 +53,7 @@ const Text = () => {
             <Typography variant="h2" className="text-primary-white pb-1">
               101 year
             </Typography>
-            <Typography variant="title-small" className="text-stone-500 ">
+            <Typography variant="title-small" className="text-primary-white opacity-70">
               Тусгаар Тогтнолоо сэргээн мандуулсны
             </Typography>
           </div>
@@ -61,7 +61,7 @@ const Text = () => {
       </motion.div>
       <div className="flex flex-col  gap-y-9 gap-x-12">
         <div className="flex flex-col gap-6">
-          <Typography variant="body-web" className="text-stone-500 md:w-[488px]  pt-16">
+          <Typography variant="body-web" className="text-primary-white opacity-70 md:w-[488px]  pt-16">
             Хүрээнд түүхчид, эрдэмтэд, судлаачид, инженерүүд хамтран цөлжилттэй бүс нутагт 30,000 модоор Урлаг
             Технологийн Эзэнт Гүрэн бэлэгдлийн лэнд артыг бүтээн байгуулж байна.
           </Typography>
@@ -88,7 +88,7 @@ const Text = () => {
           <div className="flex flex-col gap-6">
             <Typography variant="body-web" className="text-primary-white md:w-[608px] align-items ">
               Энэ лэнд артын онцлог нь таримал модоор хийгдсэн дэлхийн 2 дахь лэнд арт бөгөөд хэмжээгээрээ хамгийн том
-              анхны лэнд арт болох юм. Мөн Худалдаа Хөгжлийн банктай хамтран HAPPY TREE багц болон худалдаалагдаж байна.
+              анхны лэнд арт болох юм. Мөн Худалдаа Хөгжлийн банктай хамтран <span className='font-semibold text-title1'>HAPPY TREE</span> багц болон худалдаалагдаж байна.
             </Typography>
             <div className="bg-primary-yellow w-[61px] h-[5px] rounded-lg hidden md:block" />
           </div>
