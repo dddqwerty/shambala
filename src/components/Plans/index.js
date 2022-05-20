@@ -9,12 +9,14 @@ const container = {
   visible: {
     opacity: 1,
     transition: {
-      delayChildren: 0.3,
+      delayChildren: 0.8,
+      staggerChildren: 0.05,
+      duration: 0.8,
     },
   },
 }
-const initHeader = {
-  hidden: { y: -20, opacity: 0 },
+const item = {
+  hidden: { y: 60, opacity: 0 },
   visible: {
     y: 0,
     opacity: 1,
@@ -23,10 +25,10 @@ const initHeader = {
 
 export const Plans = () => {
   return (
-    <motion.div variants={container} className="w-full flex justify-center">
+    <motion.div variants={container} initial="hidden" whileInView="visible" className="w-full flex justify-center">
       <div className=" max-w-shambWidth flex flex-col items-center">
         <motion.div
-          variants={initHeader}
+          variants={item}
           id="headers"
           className="my-[130px] md:my-[260px] flex justify-center items-center flex-col"
         >
@@ -57,7 +59,6 @@ export const Plans = () => {
           headText={'The second four years'}
           bodyText={'The infrastructure of the Renewable Energy Research Center.'}
           date={'Apr 15, 2020 - Nov 1, 2024'}
-          active
         />
         <Phone
           className=" md:-z-50 md:absolute"
