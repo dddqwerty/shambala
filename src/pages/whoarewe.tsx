@@ -46,8 +46,8 @@ export default function Home() {
                     <Typography variant='body-web' className='text-primary-white opacity-60'>Бидний "Art-Tech Empire" Лэнд Арт төсөл маань Дорноговь аймгийн, Төхөмийн хөндий, Ар цацын ус гэх байршлын 5 га газарт нийт 30,000 ширхэг буюу 10,000 бортоготой мод тарих төсөл юм</Typography>
                 </div>
                 <div className='grid grid-cols-2 md:grid-cols-4 mt-40 mb-72 gap-y-12 mx-auto gap-x-6'>
-                    {members.map((member, index) => {
-                        return < MemberCard firstName={member.firstName} lastName={member.lastName} job={member.job} key={index} />
+                    {members[0].map((member, index) => {
+                        return < MemberCard firstName={member.firstName} lastName={member.lastName} job={member.job} picture={member.picture} key={index} />
                     })}
                 </div>
 
@@ -61,7 +61,7 @@ export default function Home() {
                 <div className='hidden md:block absolute -right-[50%] top-[85%]'>
                     <img src="assets/ellipse/ellipse513.svg" alt="" className='w-[512px]' />
                 </div>
-                <div className='absolute md:top-[62%] md:left-[20%] -bottom-[8%] -right-[22%]' >
+                <div className='absolute md:top-[62%] md:left-[20%] -bottom-[4%] -right-[22%]' >
                     <img src="assets/ellipse/twoEllipse.svg" alt="" className='w-[265px] rotate-[120deg]' />
                 </div>
                 <div className='absolute md:hidden -right-[20%] top-[20%] z-[-1]' >
@@ -100,7 +100,13 @@ export default function Home() {
                     <GoalCard index='04' desc='Дорноговь аймагт сэргээгдэх эрчим хүчний дэд бүтцийг хөгжүүлэх' />
                     <GoalCard index='05' desc='Дотоодын технологийн шинэчлэлийг өсөн дэвжихэд нь туслах, дэмжих' />
                 </div>
+                <div className='grid grid-cols-2 md:grid-cols-4 mt-40 gap-y-12 mx-auto gap-x-6'>
+                    {members[1].map((member, index) => {
+                        return < MemberCard firstName={member.firstName} lastName={member.lastName} job={member.job} picture={member.picture} key={index} />
+                    })}
+                </div>
             </div>
+
         </MainLayout >
 
     )
