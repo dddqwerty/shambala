@@ -72,7 +72,7 @@ const Footer = () => {
       </div> */}
         </div>
         <div className="flex flex-row  justify-between gap-3">
-          <Link href={'https://www.instagram.com/'}>
+          <Link href={'https://www.faceboook.com/'}>
             <a className="pr-4" target="_blank">
               {handleIcon({
                 className: 'text-primary-yellow w-4 md:w-5',
@@ -81,11 +81,19 @@ const Footer = () => {
             </a>
           </Link>
 
-          <Link href={'https://www.instagram.com/'}>
+          <Link href={'https://www.twitter.com/'}>
             <a className="pr-4" target="_blank">
               {handleIcon({
                 className: 'text-primary-yellow w-4 md:w-5',
                 icon: 'twitter',
+              })}
+            </a>
+          </Link>
+          <Link href={'https://www.gmail.com/'}>
+            <a className="pr-4" target="_blank">
+              {handleIcon({
+                className: 'text-primary-yellow w-4 md:w-5',
+                icon: 'mail',
               })}
             </a>
           </Link>
@@ -94,14 +102,6 @@ const Footer = () => {
               {handleIcon({
                 className: 'text-primary-yellow w-4 md:w-5',
                 icon: 'instagram',
-              })}
-            </a>
-          </Link>
-          <Link href={'https://www.instagram.com/'}>
-            <a className="pr-4" target="_blank">
-              {handleIcon({
-                className: 'text-primary-yellow w-4 md:w-5',
-                icon: 'twitter',
               })}
             </a>
           </Link>
