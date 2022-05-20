@@ -1,19 +1,11 @@
 import { Typography, Card, GoalCard, Button } from 'components'
 import Link from 'next/link'
+import Text from 'components/text/text1'
 
 export default function Home() {
   return (
     <div>
-      <Typography variant="h1" className="text-primary-yellow">
-        Style Guides
-      </Typography>
-      <Link href="/style/cardWithIcon">
-        <a>
-          <Typography variant="h5" className="text-primary-black hover:underline">
-            Go to Typo page
-          </Typography>
-        </a>
-      </Link>
+      <Text />
     </div>
   )
 }
