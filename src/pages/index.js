@@ -8,6 +8,8 @@ import { Info } from 'components'
 import Whatarewedoing from './style/globeCard'
 import Urs from 'components/telmun/urs'
 
+import { Easy } from 'components/telmun/arttecheasy'
+import Apart from 'components/telmun/tusdaa'
 export default function Home() {
   return (
     <MainLayout classname={'bg-mainBg'}>
@@ -17,6 +19,9 @@ export default function Home() {
       <Plans />
       <OurGoalsPart />
       <Whatarewedoing />
+
+      <Easy />
+      <Apart />
     </MainLayout>
   )
 }
