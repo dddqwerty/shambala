@@ -11,13 +11,14 @@ const WhatWeDoing = () => {
   return (
     <>
       <MainLayout classname={'bg-backgroundColor-darkGray'}>
-        <div className="w-full">
-          <div className="relative hidden md:block lg:block">
+        <div className="h-screen w-screen relative">
+          <div className="relative hidden md:block lg:block ">
             <img src="assets/shono.webp" className="absolute left-0 top-0 w-screen h-screen" />
             <div style={{ background: '#060B27' }} className="absolute top-0 left-0 w-screen h-screen opacity-40 " />
             <div style={{ background: '#060B27' }} className="absolute top-0 left-0 w-screen h-screen opacity-40" />
 
           </div>
+
 
           <div className={`h-screen relative flex flex-col items-center md:items-start max-w-shambWidth mx-auto ${PADDINGX}`}>
             <img src="assets/homeLogo.svg" alt="" className="max-w-[65%] md:max-w-full md:hidden z-10 my-28 md:mt-52" />
@@ -33,8 +34,11 @@ const WhatWeDoing = () => {
               <img src="assets/svgs/mouse.svg" alt="" />
             </div>
           </div>
-
+          <div style={{
+            background: "linear-gradient(180deg, rgba(0, 0, 0, 0) 4.13%, #212222 100%)"
+          }} className={`absolute md:bottom-0 h-[100px] md:h-[40%] z-10 w-full`} />
         </div>
+
         <Text />
 
         <div className={`flex flex-col md:flex-row relative py-10 gap-20`}>

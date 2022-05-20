@@ -4,6 +4,12 @@ const nextConfig = {
   images: {
     domains: ['external-content.duckduckgo.com', 'upload.wikimedia.org'],
   },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
 }
 
 module.exports = nextConfig
