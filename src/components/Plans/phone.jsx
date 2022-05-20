@@ -2,6 +2,15 @@ import React from 'react'
 import { handleIcon } from 'utils'
 import Typography from 'components/typography'
 import { AtLine } from './line'
+import { motion } from 'framer-motion'
+
+const item3 = {
+  hidden: { x: -100, opacity: 0 },
+  visible: {
+    x: 0,
+    opacity: 1,
+  },
+}
 
 export const Phone = (props) => {
   const {
@@ -44,7 +53,7 @@ export const Phone = (props) => {
     <div className={`min-h-[250px] h-fit w-full flex flex-row justify-center ${className}`}>
       <AtLine icon={icon} sml style={styleTop} btm={styleBtm} b={arrow} act1={styleActive1} act2={styleActive2} />
 
-      <div className=" flex flex-col justify-center">
+      <motion.div variants={item3} className=" flex flex-col justify-center">
         <div className=" flex flex-col w-planWidth justify-center">
           <Typography variant="p-small" className="w-planWidth text-textColor-secondary-lightGray/40">
             {date}
@@ -59,7 +68,7 @@ export const Phone = (props) => {
             {bodyText}
           </Typography>
         </div>
-      </div>
+      </motion.div>
     </div>
   )
 }

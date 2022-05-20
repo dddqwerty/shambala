@@ -2,6 +2,22 @@ import React from 'react'
 import { handleIcon } from 'utils'
 import Typography from 'components/typography'
 import { AtLine } from './line'
+import { motion } from 'framer-motion'
+
+const item1 = {
+  hidden: { x: 80, opacity: 0 },
+  visible: {
+    x: 0,
+    opacity: 1,
+  },
+}
+const item2 = {
+  hidden: { x: -80, opacity: 0 },
+  visible: {
+    x: 0,
+    opacity: 1,
+  },
+}
 
 export const Dir = (props) => {
   const {
@@ -37,14 +53,14 @@ export const Dir = (props) => {
   if (!l) {
     return (
       <div className={`${styleB}  h-fit w-full flex flex-row justify-center  ${className}`}>
-        <div className=" flex flex-col w-planWidth h-full mx-6 justify-center">
+        <motion.div variants={item1} className=" flex flex-col w-planWidth h-full mx-6 justify-center">
           <Typography variant="title-big" className="text-white ">
             {headText}
           </Typography>
           <Typography variant="body-web" className="text-textColor-secondary-lightGray/50 ">
             {bodyText}
           </Typography>
-        </div>
+        </motion.div>
 
         <AtLine icon={icon} style={styleTop} b={b} act1={styleActive1} act2={styleActive2} />
 
@@ -64,14 +80,14 @@ export const Dir = (props) => {
           </Typography>
         </div>
         <AtLine icon={icon} style={styleTop} b={b} act1={styleActive1} act2={styleActive2} />
-        <div className=" flex flex-col w-planWidth h-full justify-center mx-6">
+        <motion.div variants={item2} className=" flex flex-col w-planWidth h-full justify-center mx-6">
           <Typography variant="title-big" className="text-white ">
             {headText}
           </Typography>
           <Typography variant="body-web" className="text-textColor-secondary-lightGray/50 ">
             {bodyText}
           </Typography>
-        </div>
+        </motion.div>
       </div>
     )
   }

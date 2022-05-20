@@ -1,36 +1,81 @@
-import { motion } from 'framer-motion'
+import React, { useState } from 'react'
+import Carousel from 'react-simply-carousel'
 
-const Urs = () => {
-  let width = 1268
+function Urs() {
+  const [activeSlide, setActiveSlide] = useState(0)
 
   return (
-    <div className="h-[300px] bg-black">
-      <div className="h-[100px]" />
-      <motion.div
-        animate={{
-          x: [`${width - 12682}px`, `${12682}px`],
-        }}
-        transition={{
-          repeat: Infinity,
-          duration: 20,
-        }}
-      >
-        <img className="max-w-none h-[112px]" src="assets/1ad.svg" />
-      </motion.div>
-      <motion.div
-        animate={{
-          x: [`${-12682}px`, `${12682}px`],
-        }}
-        transition={{
-          repeat: Infinity,
-          duration: 20,
-          delay: 9,
-        }}
-      >
-        <img className="max-w-none h-[112px]" src="assets/1ad.svg" />
-      </motion.div>
+    <div className="relative pb-[180px]">
+      <div className="h-[340px] w-full absolute z-50 "></div>
+
+      <div className="z-10 mb-[30px] ">
+        <Carousel
+          autoplay={1}
+          infinite={true}
+          easing="linear"
+          speed={200000}
+          updateOnItemClick
+          containerProps={{
+            style: {
+              width: '100%',
+              justifyContent: 'space-between',
+            },
+          }}
+          activeSlideIndex={activeSlide}
+          onRequestChange={setActiveSlide}
+          itemsToShow={1}
+        >
+          {Array.from({ length: 10 }).map((item, index) => (
+            <img className="max-w-none" src="assets/1ad.svg" key={index} />
+          ))}
+        </Carousel>
+      </div>
+      <div className="mb-[30px]">
+        <Carousel
+          autoplayDirection="backward"
+          autoplay={1}
+          infinite={true}
+          easing="linear"
+          speed={500000}
+          updateOnItemClick
+          containerProps={{
+            style: {
+              width: '100%',
+              justifyContent: 'space-between',
+            },
+          }}
+          activeSlideIndex={activeSlide}
+          onRequestChange={setActiveSlide}
+          itemsToShow={1}
+        >
+          {Array.from({ length: 10 }).map((item, index) => (
+            <img className="max-w-none" src="assets/1ad.svg" key={index} />
+          ))}
+        </Carousel>
+      </div>
+      <div>
+        <Carousel
+          autoplay={1}
+          infinite={true}
+          easing="linear"
+          speed={100000}
+          updateOnItemClick
+          containerProps={{
+            style: {
+              width: '100%',
+              justifyContent: 'space-between',
+            },
+          }}
+          activeSlideIndex={activeSlide}
+          onRequestChange={setActiveSlide}
+          itemsToShow={1}
+        >
+          {Array.from({ length: 10 }).map((item, index) => (
+            <img className="max-w-none" src="assets/1ad.svg" key={index} />
+          ))}
+        </Carousel>
+      </div>
     </div>
   )
 }
-// `
 export default Urs

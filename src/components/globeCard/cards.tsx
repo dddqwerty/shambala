@@ -1,35 +1,36 @@
-import {GlobeCard} from 'components'
+import { GlobeCard } from 'components'
 import { handleIcon } from 'utils'
+import { PADDINGX } from 'constants/layout'
 
 
 const BidYuHiijBainaVeCard = () => {
-    return(
+    return (
 
-        <div className="flex flex-col ">
-            <div className="mb-[150px] flex gap-30 mobile:flex-col mobile:gap-0 mobile:mb-0 ">
-
-                <GlobeCard
-                    headerEl={handleIcon({ className: 'mobile:h-[25px] ', icon: 'globe', size: 30 })}
-                    title={"Газар дээрх агротехнологийн судалгаа"}
-                    desc={"Байгалийн болон бусад нөлөөнүүдийг манай судлаачид болон инженерүүд төслийн талбай дээрээ бие даасан судалгаа хийн ямар төрлийн цөлжилт үйсэж байгааг илрүүлдэг."} />
+        <div className={`grid ${PADDINGX} `}>
+            <div className="md:mb-[150px] mb-0 grid md:grid-cols-2  md:gap-30">
 
                 <GlobeCard
-                    headerEl={handleIcon({ className: 'mobile:h-[25px] ', icon: 'globe', size: 30 })}
-                    title={"Салбар хоорондын интеграц"}
-                    desc={"Манай инженерийн баг одоо усны хэрэглээг, болон усны нөөцийг хэмнэхийн зэрэгцээ төслийн талбайн усжуулалтыг оновчтой болгох ухаалаг автомат усалгааны системийг боловсруулж байна."} />
+                    headerEl={handleIcon({ className: 'h-[25px] md:h-[30px] ', icon: 'globe', size: 30 })}
+                    title={"Agro-Tech research"}
+                    desc={"The source of desertification caused by natural and other factors is studied by team researchers and engineers on site."} />
+
+                <GlobeCard
+                    headerEl={handleIcon({ className: 'h-[25px] md:h-[30px]', icon: 'globe', size: 30 })}
+                    title={"Intersectoral integration"}
+                    desc={"The tree irrigation system has been cleverly designed to provide automatic irrigation with minimal water consumption."} />
 
             </div>
-            <div className="mb-[150px]  flex flex-row gap-30 mobile:flex-col mobile:gap-0 mobile:mb-0">
+            <div className="md:mb-[150px] mb-0 grid md:grid-cols-2 md:gap-30">
 
                 <GlobeCard
-                    headerEl={handleIcon({ className: 'mobile:h-[25px] ', icon: 'globe', size: 30 })}
-                    title={"Цөлжилттэй нутгийн нөхөн сэргээлт // Лэнд Арт"}
-                    desc={"Манай төслийн талбайд одоогоор 24,000 боловсорч гүйцсэн хайлаас модыг дэд бүтцээс алслагдмал газар тогтвортой хөгжлийн хүрээнд асран хамгаалж амжилттай ургуулж байна. Бид модны ургах чадамжийг алдагдуулахгүйгээр модыг Лэнд Арт урлагийн хэлбэрт оруулан олон нийтийндэмжлэг сонирхлыг татдаг."} />
+                    headerEl={handleIcon({ className: 'h-[25px] md:h-[30px]', icon: 'globe', size: 30 })}
+                    title={"Desertification rehabilitation // Land Art"}
+                    desc={"At our project site, 24,000 elm trees are grown and irrigated away from the infrastructure. We are planting trees in the form of Land Art without compromising their ability to grow."} />
 
                 <GlobeCard
-                    headerEl={handleIcon({ className: 'mobile:h-[25px] ', icon: 'globe', size: 30 })}
-                    title={"Органик Маркетинг"}
-                    desc={"Манай үйлчлүүлэгчид болон дагагчид маань түнш байгууллагуудын бүтээгдэхүүн, үйлчилгээг зах зээлд танигдан нэвтрэхэд үр дүнтэй хэрэгсэл болдог. Бид Лэнд Арт урлагийг уялдуулан Монголын газар нутгийн цөлжилтийн асуудлыг шийдвэрлэхэд хамтран ажиллаж буй түншүүдийнхээ хамтын хүчин чармайлтыг харуулсан маркетингийн кампанит ажлыг амжилттай зохион байгуулж байсан."} />
+                    headerEl={handleIcon({ className: 'h-[25px] md:h-[30px]', icon: 'globe', size: 30 })}
+                    title={"Organic Marketing"}
+                    desc={"Our customers and social media followers are an effective tool for promoting the products and services of our partners in the market. We have successfully organized a marketing campaign that highlights the joint efforts of our partners to address desertification in the arts."} />
 
             </div>
         </div >
