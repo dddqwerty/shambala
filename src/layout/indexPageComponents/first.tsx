@@ -1,15 +1,19 @@
 import { Typography } from "components"
 import { useTheme } from '@mui/material/styles'
 import useMediaQuery from '@mui/material/useMediaQuery'
-import { useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { useDimensions } from 'hooks'
 
 const FirstPart = () => {
     const theme = useTheme()
     const matches = useMediaQuery(theme.breakpoints.down('sm'))
-    const imageRef = useRef<HTMLImageElement>()
-    const { height } = useDimensions(imageRef);
+    const [height, setHeight] = useState(0)
+    const imageRef = useRef<HTMLImageElement>(null)
 
+    useEffect(() => {
+        if (!imageRef) return
+        setHeight(imageRef.current.offsetHeight)
+    }, [imageRef])
 
     return (
         <div className="relative w-screen h-screen">
