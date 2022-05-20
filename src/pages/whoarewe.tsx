@@ -35,20 +35,22 @@ export default function Home() {
                 }}>
             </div>
             <div className={`flex flex-col items-center max-w-shambWidth mx-auto z-20 relative ${PADDINGX}`}>
-                <div className='w-10 hidden md:block'>
-                    <img src="assets/footer1.png" alt="" className='max-w' />
-                </div>
-                <div className='md:hidden'>
-                    <img src="assets/mainlogo.svg" alt="" />
-                </div>
-                <div className='flex w-[90%] md:w-[70%] flex-col text-center gap-14 mt-20'>
-                    <Emphasis content='Our company' />
-                    <Typography variant='body-web' className='text-primary-white opacity-60'>Бидний "Art-Tech Empire" Лэнд Арт төсөл маань Дорноговь аймгийн, Төхөмийн хөндий, Ар цацын ус гэх байршлын 5 га газарт нийт 30,000 ширхэг буюу 10,000 бортоготой мод тарих төсөл юм</Typography>
-                </div>
-                <div className='grid grid-cols-2 md:grid-cols-4 mt-40 mb-72 gap-y-12 mx-auto gap-x-6'>
-                    {members[0].map((member, index) => {
-                        return < MemberCard firstName={member.firstName} lastName={member.lastName} job={member.job} picture={member.picture} key={index} />
-                    })}
+                <div className='flex flex-col items-center'>
+                    <div className='w-10 hidden md:block'>
+                        <img src="assets/footer1.png" alt="" className='max-w' />
+                    </div>
+                    <div className='md:hidden'>
+                        <img src="assets/mainlogo.svg" alt="" />
+                    </div>
+                    <div className='flex w-[90%] md:w-[70%] flex-col text-center gap-14 mt-20'>
+                        <Emphasis content='Our company' />
+                        <Typography variant='body-web' className='text-primary-white opacity-60'>Бидний "Art-Tech Empire" Лэнд Арт төсөл маань Дорноговь аймгийн, Төхөмийн хөндий, Ар цацын ус гэх байршлын 5 га газарт нийт 30,000 ширхэг буюу 10,000 бортоготой мод тарих төсөл юм</Typography>
+                    </div>
+                    <div className='grid grid-cols-2 md:grid-cols-4 mt-40 mb-72 gap-y-12 mx-auto gap-x-6'>
+                        {members[0].map((member, index) => {
+                            return < MemberCard firstName={member.firstName} lastName={member.lastName} job={member.job} picture={member.picture} key={index} />
+                        })}
+                    </div>
                 </div>
 
 
@@ -73,7 +75,6 @@ export default function Home() {
                 <div className='absolute md:hidden -right-[12%] top-[53%] z-[-1]' >
                     <img src="assets/ellipse/ellipse513.svg" alt="" className='w-[138px]' />
                 </div>
-
 
                 <div className='flex items-center flex-col text-center gap-14 w-4/5 relative'>
                     <div className='md:hidden absolute -top-[34%]'>
@@ -106,7 +107,6 @@ export default function Home() {
                     })}
                 </div>
             </div>
-
         </MainLayout >
 
     )
