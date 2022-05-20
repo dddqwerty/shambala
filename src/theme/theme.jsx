@@ -3,11 +3,6 @@ import { createTheme } from '@mui/material/styles'
 import colors from './colors'
 
 export const MuiTheme = createTheme({
-  breakpoints: {
-    values: {
-      hbr: 1275,
-    },
-  },
   typography: {
     fontFamily: `"Poppins", sans-serif`,
     h1: {
