@@ -27,6 +27,7 @@ module.exports = {
         backgroundColor: {
           darkGray: colors.backgroundColor['dark-gray'],
           hover: colors.backgroundColor.hover,
+          navBar: 'rgba(255, 255, 255, 0.34)',
         },
         button: {
           hover: colors.button.hover,
@@ -35,6 +36,8 @@ module.exports = {
           },
         },
         earthBg: 'rgba(0, 0, 0, 0.71)',
+        mainBg: '#141515',
+        mobileBg: 'rgba(0, 0, 0, 0.6)',
       },
       fontSize: {
         h1: '64px',
@@ -54,10 +57,18 @@ module.exports = {
       maxWidth: {
         shambWidth: '1200px',
       },
+      width: {
+        planWidth: '100%',
+      },
+      height: {
+        lineHeight: '450px',
+      },
       boxShadow: {
         '3xl': '0 35px 60px -15px rgba(0, 0, 0, 0.3)',
       },
+      animation: {
+        'spin-slow': 'spin 40s linear infinite',
+      },
     },
   },
-  plugins: [],
 }

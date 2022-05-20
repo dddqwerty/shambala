@@ -2,7 +2,7 @@ import { GlobeCard } from "components";
 import { handleIcon } from "utils";
 
 
-const Index = () => {
+const Wrwedoing = () => {
     return (
         <div className="bg-black flex flex-col">
             <div className="mb-[150px] flex flex-row ">
@@ -34,4 +34,4 @@ const Index = () => {
         </div >
     )
 }
-export default Index
+export default Wrwedoing
