@@ -12,43 +12,31 @@ const variants = {
     }
 };
 
-export const Navigation = () => {
-    const router = useRouter()
+export const Navigation = () => (
+    <motion.ul className="m-0 flex flex-col py-5 absolute w-full" variants={variants}>
+        {itemIds.map(({ name, isSelected ,path}, index) => (
+            <MenuItem name={name} isSelected={isSelected} key={index} onclick={path} />
+        ))}
+    </motion.ul>
+);
 
-    console.log(router.pathname)
-    return (
+const itemIds = [{
+    name: "Who we are",
+    isSelected: true,
+    path:"/whoarewe"
+}, {
+    name: "What we do",
+    isSelected: false,
+    path:"/whatarewedoing"
 
-        <motion.ul className="m-0 flex flex-col py-5 absolute w-full" variants={variants}>
-            {itemIds.map(({ name, isSelected, path }, index) => (
-                <MenuItem name={name} isSelected={router?.pathname === path} key={index} onclick={path} />
-            ))}
-        </motion.ul>
-    )
-};
+}, {
+    name: "Recommended projects",
+    isSelected: false,
+    path:"/recomended"
 
-const itemIds = [
-    {
-        name: "Home",
-        isSelected: false,
-        path: "/"
-    },
-    {
-        name: "Who we are",
-        isSelected: false,
-        path: "/whoarewe"
-    }, {
-        name: "What we do",
-        isSelected: false,
-        path: "/whatarewedoing"
+}, {
+    name: "Naadam",
+    isSelected: false,
+    path:"/Naadam"
 
-    }, {
-        name: "Recommended projects",
-        isSelected: false,
-        path: "/recomended"
-
-    }, {
-        name: "Naadam",
-        isSelected: false,
-        path: "/naadam"
-
-    }];
+}];
