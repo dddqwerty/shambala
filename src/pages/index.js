@@ -6,9 +6,9 @@ import Titi from 'layout/bobo'
 import { Plans } from 'components/Plans'
 import { Info } from 'components'
 import Whatarewedoing from './style/globeCard'
-import Urs from 'components/telmun/urs'
 
 import { Easy } from 'components/telmun/arttecheasy'
+import Urs from 'components/telmun/urs'
 import Apart from 'components/telmun/tusdaa'
 export default function Home() {
   return (
@@ -17,11 +17,13 @@ export default function Home() {
       <Titi />
       <Fournumber />
       <Plans />
+      <Info />
       <OurGoalsPart />
       <Whatarewedoing />
 
       <Easy />
       <Apart />
+      <Urs />
     </MainLayout>
   )
 }
