@@ -30,7 +30,7 @@ const CardWithIconn = ({classname}) => {
       <div>
       <motion.div variants={container} initial="hidden" whileInView="visible" className="">
         <motion.div variants={item} className="flex flex-col items-center">
-          <Emphasis>What we have done </Emphasis>
+          <Emphasis>Terrain Features </Emphasis>
         </motion.div>
       </motion.div>
 
@@ -39,32 +39,32 @@ const CardWithIconn = ({classname}) => {
           <motion.div variants={item} className="flex flex-col items-center">
             <CardWithIcon
               headerEl={handleIcon({ icon: 'riDirection', size: 33, className: 'text-[#A3935B]' })}
-              title={`Зам, Дэд Бүтэц`}
-              desc={`Зам, Дэд Бүтэц АН-3 авто зам, Улаанбаатар - Замын - Үүдийн болон Таван толгой - Зүүн - Баян чиглэлийн төмөр зам, Газрын  тос боловсруулах үйлдвэр, Салхин цахилгаан станц.`}
+              title={`Roads & Infrastructure`}
+              desc={`Asian Highway 3 - Zamyn-Uud and Tavan Tolgoi Zuunbayan railways, oil refinery, wind farm.`}
             ></CardWithIcon>
           </motion.div>
 
           <motion.div variants={item} className="flex flex-col items-center">
             <CardWithIcon
               headerEl={handleIcon({ icon: 'leaf', size: 33, className: 'text-[#A3935B]' })}
-              title={`Хүлэмжийн аж ахуй эрхлэх боломж`}
-              desc={`Жилийн турш ажиллах боломтой Монгол орны нөхцөлд илүү тохромжтой харьцангуй өртөг багатай, амархан халдаг дулаанаа удаан хадгалдаг эрчим хүч хэмнэх сайн талтай нарны гэрэл сайн ашгилдаг.`}
+              title={`Opportunity to run a greenhouse`}
+              desc={`Able to work all year round. It is more suitable for Mongolian conditions, has relatively low cost, easily retains heat for a long time, and has a lot of potential to use solar energy.`}
             ></CardWithIcon>
           </motion.div>
 
           <motion.div variants={item} className="flex flex-col items-center">
             <CardWithIcon
               headerEl={handleIcon({ icon: 'lightning', size: 33, className: 'text-[#A3935B]' })}
-              title={`Сэргээгдэх эрчим хүчний нөөц`}
-              desc={`Говийн бүсэд нарны гийгүүлэх хугацаа 2900 - 3000 цаг бөгөөд нэг ам метр нэгж талбайд харгалзах нарны эрчимийн хэмжээ өдөрт 5.5 - 6.0 кВт *ц/м2 байна.`}
+              title={`Renewable energy resources`}
+              desc={`In the Gobi region, the time of sunshine is 2900-3000 hours and the amount of solar energy per square meter is 5.5-6.0 kW * h / m2 per day.`}
             ></CardWithIcon>
           </motion.div>
 
           <motion.div variants={item} className="flex flex-col items-center">
             <CardWithIcon
               headerEl={handleIcon({ icon: 'mapPin', size: 33, className: 'text-[#A3935B]' })}
-              title={`Газар зүйн байрлал`}
-              desc={`Дорноговь аймгийн Замын - Үүд, Хангийн хилийн боомт нь Монголоос Хятад руу нэвтрэх хамгийн том боомт хотууд юм. Цаг уурын хувьд зуны улиралд +41 хэм хүртэл халж салхины дундаж хурд 4,2 - 4,6 м/сек байна.`}
+              title={`Geographical Location`}
+              desc={`Zamiin-Uud and Khangii border crossings in Dornogovi aimag are the largest border crossings from Mongolia to China. In summer, the average wind speed is 4.2-4.6 m/sec, with temperatures reaching +41 degrees celsius.`}
             ></CardWithIcon>
           </motion.div>
           
