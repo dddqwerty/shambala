@@ -1,5 +1,6 @@
 import { SiGmail } from 'react-icons/si'
-import { BsTwitter, BsFacebook, HiOutlineLightningBolt } from 'react-icons/bs'
+import { BsTwitter, BsFacebook } from 'react-icons/bs'
+import { HiOutlineLightningBolt } from 'react-icons/hi'
 import { RiLeafLine, RiDirectionLine, RiInstagramFill } from 'react-icons/ri'
 import { MdLocationPin, MdOutlineDirections } from 'react-icons/md'
 import { GrSend } from 'react-icons/gr'
