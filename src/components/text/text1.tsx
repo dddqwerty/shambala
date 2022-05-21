@@ -9,8 +9,8 @@ const Text = () => {
       x: 0,
       opacity: 1,
       transition: {
-        delay: 0.4
-      }
+        delay: 0.4,
+      },
     },
   }
   const item2 = {
@@ -19,13 +19,19 @@ const Text = () => {
       x: 0,
       opacity: 1,
       transition: {
-        delay: 0.5
-      }
+        delay: 0.5,
+      },
     },
   }
   return (
     <div className={`relative flex max-w-shambWidth py-36 mx-auto flex-col ${PADDINGX}`}>
-      <motion.div initial="hidden" className='hidden md:block' viewport={{ once: true }} whileInView="visible" variants={item2}>
+      <motion.div
+        initial="hidden"
+        className="hidden md:block"
+        viewport={{ once: true }}
+        whileInView="visible"
+        variants={item2}
+      >
         <div className="absolute right-0 top-60">
           <img src="/assets/blue-dots.svg" alt="" />
         </div>
@@ -38,7 +44,7 @@ const Text = () => {
               816 year
             </Typography>
             <Typography variant="title-small" className="text-primary-white opacity-70">
-              Их Монгол улс байгуулагдсаны
+              816th anniversary of the Great Mongol Empire
             </Typography>
           </div>
           <div className="py-8">
@@ -46,7 +52,7 @@ const Text = () => {
               2231 year
             </Typography>
             <Typography variant="title-small" className="text-primary-white opacity-70">
-              Тулгар Төрийн
+              2231th anniversary of Foundation of the first Mongolian Statehood
             </Typography>
           </div>
           <div>
@@ -54,7 +60,7 @@ const Text = () => {
               101 year
             </Typography>
             <Typography variant="title-small" className="text-primary-white opacity-70">
-              Тусгаар Тогтнолоо сэргээн мандуулсны
+              101th anniversary of the People’s Revolution of Mongolia
             </Typography>
           </div>
         </div>
@@ -62,8 +68,7 @@ const Text = () => {
       <div className="flex flex-col  gap-y-9 gap-x-12">
         <div className="flex flex-col gap-6">
           <Typography variant="body-web" className="text-primary-white opacity-70 md:w-[488px]  pt-16">
-            Хүрээнд түүхчид, эрдэмтэд, судлаачид, инженерүүд хамтран цөлжилттэй бүс нутагт 30,000 модоор Урлаг
-            Технологийн Эзэнт Гүрэн бэлэгдлийн лэнд артыг бүтээн байгуулж байна.
+          As part of these celebrations, historians, scientists and engineers are working together to create a 36,000-tree "Art-Tech Empire" Land in the desert region.
           </Typography>
           <div className="bg-primary-yellow w-[61px] h-[5px] rounded-lg hidden md:block" />
         </div>
@@ -86,9 +91,12 @@ const Text = () => {
         </div>
         <div className="flex md:justify-end">
           <div className="flex flex-col gap-6">
-            <Typography variant="body-web" className="text-primary-white opacity-70 md:opacity-100 md:w-[608px] align-items ">
-              Энэ лэнд артын онцлог нь таримал модоор хийгдсэн дэлхийн 2 дахь лэнд арт бөгөөд хэмжээгээрээ хамгийн том
-              анхны лэнд арт болох юм. Мөн Худалдаа Хөгжлийн банктай хамтран <span className='font-semibold text-title1 '>HAPPY TREE</span> багц болон худалдаалагдаж байна.
+            <Typography
+              variant="body-web"
+              className="text-primary-white opacity-70 md:opacity-100 md:w-[608px] align-items "
+            >
+             This Land Art is the second largest Land Art in the world made of planted trees and will be the largest Land Art by size. It is also being sold as  {' '}
+              <span className="font-semibold text-title1 ">"Happy Tree"</span> set in cooperation with the Trade and Development Bank.
             </Typography>
             <div className="bg-primary-yellow w-[61px] h-[5px] rounded-lg hidden md:block" />
           </div>

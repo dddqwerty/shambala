@@ -45,7 +45,7 @@ const Titi = ({ classname }) => {
               <Card
                 headerEl={`our new project`}
                 title={`Art Tech Empire`}
-                desc={`Бидний "Art-Tech Empire" Лэнд Арт төсөл маань Дорноговь аймгийн, Төхөмийн хөндий, Ар цацын ус гэх байршлын 5 га газарт нийт 30,000 ширхэг буюу 10,000 бортоготой мод тарих төсөл юм.`}
+                desc={`"Art-Tech Empire" land art with 36,000 trees will be created on 5 hectares of the Shambala 2056 project area.`}
                 buttonEl={
                   <Button variant="primary">
                     <Typography variant="p-big">See more</Typography>
@@ -61,7 +61,7 @@ const Titi = ({ classname }) => {
               <Card
                 headerEl={`our new project`}
                 title={`Why Gobi ?`}
-                desc={`Монгол орны нийт нутаг дэвсгэрийн 77% нь цөлжилтөд нэрвэгдсэн тул, цаг тухайд нь зохих арга хэмжээ авахгүй бол 2080 он гэхэд нийт газар нутгийн 92 хувь нь цөлжих төлөвтэй байна. `}
+                desc={`77% of Mongolia's territory is affected by desertification, and if no specific measures are taken, 92% of Mongolia's territory is expected to be desertified by 2080.`}
                 buttonEl={
                   <Button variant="primary">
                     <Typography variant="p-big">See more</Typography>

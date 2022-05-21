@@ -26,7 +26,7 @@ const WhatWeDoing = () => {
               className='md:mt-[15%]'
               title={'Art Tech Empire'}
               desc={
-                'Бидний "Art-Tech Empire" Лэнд Арт төсөл маань Дорноговь аймгийн, Төхөмийн хөндий, Ар цацын ус гэх байршлын 5 га газарт нийт 30,000 ширхэг буюу 10,000 бортоготой мод тарих төсөл юм.'
+                'In 2056, an international engineering and research institute will be established in Mongolia that meets the Sustainable Development Goals.'
               }
               headerEl={handleIcon({ icon: 'nav', size: 30 })}
             />

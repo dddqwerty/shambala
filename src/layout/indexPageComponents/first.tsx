@@ -48,8 +48,7 @@ const FirstPart = () => {
                     variant={matches ? "title-small" : "body-web"}
                     className="z-10 md:z-[9] text-primary-white  md:text-textColor-secondary-lightGray lg:w-[808px] w-[322px] text-center"
                 >
-                    2056 он гэхэд Монгол Улсын тогтвортой хөгжлийн зорилтонд нийцсэн олон улсын инженер, судалгааны хүрээлэнг
-                    байгуулна.
+                    In 2056, an international engineering and research institute will be established in Mongolia that meets the Sustainable Development Goals.
                 </Typography>
             </div>
             <div className="hidden md:block z-10 absolute bottom-24 left-1/2 transform -translate-x-1/2">

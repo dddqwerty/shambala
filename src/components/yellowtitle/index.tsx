@@ -50,10 +50,10 @@ const Yellow = (props: Props) => {
         </div>
         <div className='flex flex-col justify-center gap-2.5'>
           <Typography variant="p-big" className="text-primary-white">
-            Байршил
+            Location
           </Typography>
           <Typography variant="p-small" className="text-primary-white opacity-50">
-            Дорноговь аймаг
+          Dornogobi aimag
           </Typography>
         </div>
       </div>

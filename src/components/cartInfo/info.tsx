@@ -18,13 +18,13 @@ const Info = () => {
             )}
           </CountUp>
         </Typography>
-        <Typography variant={matches ? "p-small" : "title-small"} className="text-white opacity-50">
-          ГАРГАСАН ХҮЧИЛТӨРӨГЧ
+        <Typography variant={matches ? 'p-small' : 'title-small'} className="text-white opacity-50">
+          Produced Oxygen
         </Typography>
       </div>
       <div className=" bg-components-30 h-[200px] md:h-[283px] gap-y-3.5 w-[365px] flex flex-col justify-center items-center rounded-[8px] md:bg-too ">
         <Typography variant={matches ? 'h4' : 'h2'} className=" text-primary-white ">
-          <CountUp start={0} end={494} duration={1} separator="," decimals={0} decimal="," suffix='тн'>
+          <CountUp start={0} end={494} duration={1} separator="," decimals={0} decimal="," suffix="тн">
             {({ countUpRef, start }) => (
               <div>
                 <span ref={countUpRef} />
@@ -32,13 +32,13 @@ const Info = () => {
             )}
           </CountUp>
         </Typography>
-        <Typography variant={matches ? "p-small" : "title-small"} className="text-white opacity-50">
-          БИОМАСС ҮҮСГЭСЭН
+        <Typography variant={matches ? 'p-small' : 'title-small'} className="text-white opacity-50">
+          GENERATED BIOMASS
         </Typography>
       </div>
       <div className=" bg-components-30 h-[200px] md:h-[283px] gap-y-3.5 w-[365px] flex flex-col justify-center items-center rounded-[8px] md:bg-too ">
         <Typography variant={matches ? 'h4' : 'h2'} className=" text-primary-white ">
-          <CountUp start={0} end={539726} duration={1} separator="," decimals={0} decimal="," suffix='кг'>
+          <CountUp start={0} end={539726} duration={1} separator="," decimals={0} decimal="," suffix="кг">
             {({ countUpRef, start }) => (
               <div>
                 <span ref={countUpRef} />
@@ -46,8 +46,8 @@ const Info = () => {
             )}
           </CountUp>
         </Typography>
-        <Typography variant={matches ? "p-small" : "title-small"} className="text-white opacity-50">
-          CO2 ШИНГЭЭСЭН
+        <Typography variant={matches ? 'p-small' : 'title-small'} className="text-white opacity-50">
+              ABSORBED CARBON
         </Typography>
       </div>
     </div>
