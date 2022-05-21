@@ -18,10 +18,13 @@ const Yellow = (props: Props) => {
 
   const { desc, title, headerEl, className } = props
   return (
-    <div className={`flex flex-col ${className} gap-20`}>
-      <div className="flex flex-col gap-6">
-        <div className='flex flex-col gap-2'> 
-          <Emphasis className={"border-0 h-1 md:hidden lg:hidden"} />
+    <div className={`flex flex-col ${className} gap-10`}>
+      
+      <div className="flex flex-col gap-6 mt-10">
+        <div className='flex flex-col gap-2'>
+          <div className='md:hidden'>
+            <Emphasis />
+          </div>
           <Typography
             variant={matches ? 'title-big' : 'h1'}
             className="md:uppercase text-primary-white md:text-[#F8D04B] md:leading-[112px] tracking-[-0.5px] md:w-[553px] md:text-[96px] md:font-extrabold"
@@ -32,7 +35,7 @@ const Yellow = (props: Props) => {
 
         <Typography
           variant={matches ? 'body-mobile' : 'body-web'}
-          className=" opacity-40 md:opacity-100 text-primary-white md:leading-[35px] md:w-[414px] md:text-p-small md:tracking-[0.5px]"
+          className=" opacity-40 md:opacity-100 text-primary-white md:leading-[35px] md:w-[616px] md:text-p-small md:tracking-[0.5px]"
         >
           {desc}
         </Typography>
@@ -45,8 +48,8 @@ const Yellow = (props: Props) => {
             <p className="text-primary-white m-[15px]">{headerEl}</p>
           </div>
         </div>
-        <div>
-          <Typography variant="p-big" className="text-primary-white mb-[20px]">
+        <div className='flex flex-col justify-center gap-2.5'>
+          <Typography variant="p-big" className="text-primary-white">
             Байршил
           </Typography>
           <Typography variant="p-small" className="text-primary-white opacity-50">

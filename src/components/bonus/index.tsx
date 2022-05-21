@@ -8,7 +8,7 @@ type Props = {
 const GantsBonus = (props: Props) => {
     const { headerEl, title } = props;
     return <div className="leading-8 gap-12">
-        <div className="w-[316px] mb-[97px] flex items-center gap-6">
+        <div className="w-[316px] flex items-center gap-6">
             <div className="bg-[#404040] w-[60px] h-[60px] rounded-[8px]">
                 <p className="text-primary-white m-[15px]">{headerEl}</p>
             </div>

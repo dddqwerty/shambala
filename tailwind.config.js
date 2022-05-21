@@ -37,7 +37,9 @@ module.exports = {
         },
         earthBg: 'rgba(0, 0, 0, 0.71)',
         mainBg: '#141515',
+        recomended: '#202121',
         mobileBg: 'rgba(0, 0, 0, 0.6)',
+        too: 'rgba(55, 58, 58, 0.3)',
       },
       fontSize: {
         h1: '64px',
@@ -55,15 +57,23 @@ module.exports = {
         buttonRadius: '8px',
       },
       maxWidth: {
-        shambWidth: '1200px',
+        shambWidth: '1180px',
+      },
+      width: {
+        planWidth: '100%',
+      },
+      height: {
+        lineHeight: '450px',
       },
       boxShadow: {
         '3xl': '0 35px 60px -15px rgba(0, 0, 0, 0.3)',
+      },
+      gap: {
+        30: '123px',
       },
       animation: {
         'spin-slow': 'spin 40s linear infinite',
       },
     },
   },
-  plugins: [],
 }

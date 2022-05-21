@@ -5,9 +5,10 @@ import { RiLeafLine, RiDirectionLine, RiInstagramFill } from 'react-icons/ri'
 import { MdLocationPin, MdOutlineDirections } from 'react-icons/md'
 import { GrSend } from 'react-icons/gr'
 import { IoMdRocket } from 'react-icons/io'
-import { FiGlobe } from 'react-icons/fi'
+import { FiGlobe, FiUsers, FiCreditCard, FiHeart, FiStar } from 'react-icons/fi'
 import { AiOutlineMenu } from 'react-icons/ai'
 import { BsMouse } from 'react-icons/bs'
+import { IoMdPulse } from 'react-icons/io'
 import { BiMap } from 'react-icons/bi'
 
 export const handleIcon = ({ icon, size = 24, className = '' }) => {
@@ -44,6 +45,16 @@ export const handleIcon = ({ icon, size = 24, className = '' }) => {
     return <AiOutlineMenu className={className} style={{ width: size, height: size }} />
   case 'nav':
     return <BiMap className={className} style={{ width: size, height: size }} />
+  case 'users':
+    return <FiUsers className={className} style={{ width: size, height: size }} />
+  case 'creditcard':
+    return <FiCreditCard className={className} style={{ width: size, height: size }} />
+  case 'heart':
+    return <FiHeart className={className} style={{ width: size, height: size }} />
+  case 'star':
+    return <FiStar className={className} style={{ width: size, height: size }} />
+  case 'pulse':
+    return <IoMdPulse className={className} style={{ width: size, height: size }} />
   default:
     return <></>
   }

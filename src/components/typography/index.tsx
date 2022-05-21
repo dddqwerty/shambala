@@ -32,7 +32,7 @@ const Typography: FC<Props> = ({ variant = 'h1', className = '', children }) => 
       case 'h4':
         return 'font-medium text-h4'
       case 'title-big':
-        return 'font-semibold text-title1'
+        return 'font-semibold text-title1 leading-[26px]'
       case 'title-small':
         return 'text-title2 leading-[37.2px]'
       case 'p-big':
