@@ -43,7 +43,7 @@ const FirstPart = () => {
                         className="mt-52"
                         title={'Be human'}
                         desc={
-                            '2021 онд “Лантуун Дохио ТББ”, “Ид Шидийн Орон” хүүхэд хамгааллын төвтэй хамтран “Байгальд Хайртай Хүн Бай” уриан дор нэгдэн 18000 мод бүхий “BE HUMAN” лэнд артыг хийсэн. Мөн “Нэг сонголт, хоёр шийдэл” буюу говьд таригдсан нэг мод нь Улиастайн гэр хорооллын бүсэд дахин нэг мод болж таригдсан юм.'
+                            'In 2021, “Lantuun Dohio” NGO and “Id Shidiin Oron” child protection center joined forces to create a “BE HUMAN” land art with 18,000 trees under the motto “Be a person who loves nature”. In addition, “One Choice, Two Solutions” or one tree planted in the Gobi was replanted in the Uliastai ger area.'
                         }
                         headerEl={handleIcon({ icon: 'nav', size: 30 })}
                     />

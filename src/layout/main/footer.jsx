@@ -34,7 +34,7 @@ const Footer = () => {
             <Link href="/">
               <a>
                 <Typography className="opacity-60 hover:opacity-100 hover:text-primary-yellow" variant="p-small">
-                  Одоо хийж буй төсөл
+                  Current project
                 </Typography>
               </a>
             </Link>
@@ -50,14 +50,14 @@ const Footer = () => {
             <Link href="/">
               <a>
                 <Typography className="opacity-60 hover:opacity-100 hover:text-primary-yellow" variant="p-small">
-                  Төслүүд
+                  Projects
                 </Typography>
               </a>
             </Link>
             <Link href="/">
               <a>
                 <Typography className="opacity-60 hover:opacity-100 hover:text-primary-yellow" variant="p-small">
-                  Бүтээл
+                  Creation
                 </Typography>
               </a>
             </Link>
