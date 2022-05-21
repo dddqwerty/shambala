@@ -3,8 +3,8 @@ import { MainLayout } from 'layout'
 import { Yellow, Bonusnuud, GarchigBonus, Mod } from 'components'
 import { handleIcon } from 'utils'
 import { PADDINGX } from 'constants/layout'
-import { Easy } from 'components/telmun/arttecheasy'
-import Apart from 'components/telmun/tusdaa'
+// import { Easy } from 'components/telmun/arttecheasy'
+// import Apart from 'components/telmun/tusdaa'
 import Text from 'components/text/text1'
 
 const WhatWeDoing = () => {
