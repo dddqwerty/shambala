@@ -39,7 +39,7 @@ export const Easy = () => {
               <motion.div variants={item} className="h-[360px] flex flex-col  justify-between">
                 <div>
                   <div className="  hidden md:block lg:block w-[65px] h-[5px] bg-primary-yellow rounded-2xl mb-[24px] "></div>
-                  <Typography className="text-center opacity-60 md:opacity-100 lg:opacity-100 flex w-[311px] md:w-auto  lg:w-auto max-w-[585px] text-bodyMobile font-normal  leading-[26px] md:text-title2 md:leading-[37.2px] lg:text-title2 lg:leading-[37.2px]  text-white">
+                  <Typography className="text-center opacity-60 md:opacity-100 lg:opacity-100 flex w-[311px] md:w-auto  lg:w-auto max-w-[585px] text-bodyMobile font-normal  leading-[26px] text-sm md:text-title2 md:leading-[37.2px]  text-white">
                     Уг лэнд арт нь эртний чойжүн тамгын хэлбэртэй бөгөөд үүний бэлэгдэл болох хүмүүн, тэнгэр, газар гэх
                     гурван их мандлыг онгин тамга буюу наран тамганд уяж, аргамжсан гэсэн санааг илэрхийлж байгаа юм.
                   </Typography>
