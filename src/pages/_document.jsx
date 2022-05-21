@@ -13,6 +13,17 @@ class MyDocument extends Document {
           <meta charSet="UTF-8" />
           <meta name="geo.placename" content="Ulaanbaatar" />
           <meta name="geo.region" content="MN" />
+          <meta
+            property="og:desription"
+            content="2056 он гэхэд Монгол Улсын тогтвортой хөгжлийн зорилтонд нийцсэн олон улсын инженер, судалгааны хүрээлэнг байгуулна."
+          />
+          <meta property="og:title" content="Shambala 2056" />
+          <meta property="og:image" content="/be human 1.webp" />
+          <meta
+            property="twitter:description"
+            content="2056 он гэхэд Монгол Улсын тогтвортой хөгжлийн зорилтонд нийцсэн олон улсын инженер, судалгааны хүрээлэнг байгуулна."
+          />
+          <meta property="twitter:title" content="Shambala 2056" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
           <link
