@@ -9,7 +9,7 @@ const Naadam = () => {
     <MainLayout classname={'bg-mainBg'}>
       <FirstPart
         btext={
-          'Монгол орны цөлжилттэй бүс нутагт Дэлхийн Тогтвортой Хөгжлийн зорилтуудын хүрээнд үндэсний соёл уламжлал, Монгол хүний оюуны бүтээлийг инноваци, зохиогчийн эрхэд тулгуурлан эдийн засгийн эргэлтэд оруулж, соёлын үйлдвэрлэлийг хөгжүүлэх замаар Монгол соёлын нөлөөг дэлхий нийтэд сурталчлан таниулахад оршино.'
+          "Within the framework of the Global Sustainable Development Goals in Mongolia's desertified region, the aim is to promote the influence of Mongolian culture to the world by circulating national culture and Mongolian intellectual creations based on innovation and copyright, and developing cultural production."
         }
         loc={'location'}
         location={'Dornogobi aimag'}

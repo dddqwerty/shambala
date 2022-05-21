@@ -44,7 +44,7 @@ export default function Home() {
         </div>
         <div className='flex w-[90%] md:w-[70%] flex-col text-center gap-14 mt-20'>
           <Emphasis content='Our company' />
-          <Typography variant='body-web' className='text-primary-white opacity-60'>Бидний "Art-Tech Empire" Лэнд Арт төсөл маань Дорноговь аймгийн, Төхөмийн хөндий, Ар цацын ус гэх байршлын 5 га газарт нийт 30,000 ширхэг буюу 10,000 бортоготой мод тарих төсөл юм</Typography>
+          <Typography variant='body-web' className='text-primary-white opacity-60'>In 2056, an international engineering and research institute will be established in Mongolia that meets the Sustainable Development Goals.</Typography>
         </div>
         <div className='grid grid-cols-2 md:grid-cols-4 mt-40 mb-72 gap-y-12 mx-auto gap-x-6'>
           {members[0].map((member, index) => {
@@ -81,25 +81,25 @@ export default function Home() {
             <img src="assets/shambalaIcon.svg" alt="" />
           </div>
           <Emphasis content='Company goals' />
-          <Typography variant='body-web' className='text-primary-white opacity-60'>Бидний "Art-Tech Empire" Лэнд Арт төсөл маань Дорноговь аймгийн, Төхөмийн хөндий, Ар цацын ус гэх байршлын 5 га газарт нийт 30,000 ширхэг буюу 10,000 бортоготой мод тарих төсөл юм.</Typography>
+          <Typography variant='body-web' className='text-primary-white opacity-60'>In 2056, an international engineering and research institute will be established in Mongolia that meets the Sustainable Development Goals.</Typography>
         </div>
         <div className='md:block mt-48 hidden w-[120%]'>
           <div className='grid grid-cols-3 justify-center'>
-            <GoalCard index='01' desc='Цөлжилттэй газар нутагт тухайн газрын онцлогт тохирох модыг тарьж ургуулан нөхөн сэргээх' />
-            <GoalCard index='03' desc='Газрын доройтлыг тогтвортой' />
-            <GoalCard index='05' desc='Дотоодын технологийн шинэчлэлийг өсөн дэвжихэд нь туслах, дэмжих' />
+            <GoalCard index='01' desc='Rehabilitation will be carried out in desert areas by planting trees suitable for the specifics of the land.' />
+            <GoalCard index='03' desc='Renewable energy infrastructure development.' />
+            <GoalCard index='05' desc='Promoting innovation.' />
           </div>
           <div className='flex px-[30px] mt-[50px] justify-around'>
-            <GoalCard index='02' desc='Хөгжлийн зорилтын хүрээн д урьдчилан сэргийлэх' />
-            <GoalCard index='04' desc='Дорноговь аймагт сэргээгдэх эрчим хүчний дэд бүтцийг хөгжүүлэх' />
+            <GoalCard index='02' desc='Work within the framework of the Sustainable Development Goals.' />
+            <GoalCard index='04' desc='Reduce urban concentration by combining art and technology.' />
           </div>
         </div>
         <div className='md:hidden mt-48 grid gap-[32px] md:w-[100%] w-[95%]'>
-          <GoalCard index='01' desc='Цөлжилттэй газар нутагт тухайн газрын онцлогт тохирох модыг тарьж ургуулан нөхөн сэргээх' />
-          <GoalCard index='02' desc='Хөгжлийн зорилтын хүрээн д урьдчилан сэргийлэх' />
-          <GoalCard index='03' desc='Газрын доройтлыг тогтвортой' />
-          <GoalCard index='04' desc='Дорноговь аймагт сэргээгдэх эрчим хүчний дэд бүтцийг хөгжүүлэх' />
-          <GoalCard index='05' desc='Дотоодын технологийн шинэчлэлийг өсөн дэвжихэд нь туслах, дэмжих' />
+          <GoalCard index='01' desc='Rehabilitation will be carried out in desert areas by planting trees suitable for the specifics of the land.' />
+          <GoalCard index='02' desc='Work within the framework of the Sustainable Development Goals.' />
+          <GoalCard index='03' desc='Renewable energy infrastructure development.' />
+          <GoalCard index='04' desc='Reduce urban concentration by combining art and technology.' />
+          <GoalCard index='05' desc='Promoting innovation.' />
         </div>
         <div className='grid grid-cols-2 md:grid-cols-4 mt-40 gap-y-12 mx-auto gap-x-6'>
           {members[1].map((member, index) => {

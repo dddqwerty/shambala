@@ -40,18 +40,18 @@ export const Easy = () => {
                 <div>
                   <div className="  hidden md:block lg:block w-[65px] h-[5px] bg-primary-yellow rounded-2xl mb-[24px] "></div>
                   <Typography className="opacity-60 md:opacity-100 lg:opacity-100 flex w-[311px] md:w-auto  lg:w-auto max-w-[585px] text-bodyMobile font-normal text-sm  leading-[26px] md:text-title2 md:leading-[37.2px]  text-white">
-                    Уг лэнд арт нь эртний чойжүн тамгын хэлбэртэй бөгөөд үүний бэлэгдэл болох хүмүүн, тэнгэр, газар гэх
-                    гурван их мандлыг онгин тамга буюу наран тамганд уяж, аргамжсан гэсэн санааг илэрхийлж байгаа юм.
+                    The land art is in the form of an ancient Choijun seal, which symbolizes the fact that the three
+                    great mandalas, man, heaven and earth, are flexible and flexible in the ongin seal or sun seal.
                   </Typography>
                 </div>
                 <div className="flex-row hidden  md:flex lg:flex">
                   <img className="hidden md:block lg:block w-20 h-20 mr-[50px]" src="assets/arc.webp" />
                   <div className="flex flex-col justify-center">
-                    <Typography className=" text-bodyMobile font-normal  leading-[26px] md:semi-bold md:text-[22px] lg:semi-bold lg:text-[22px]  text-white">
-                      Хээ
+                    <Typography className="mb-2 text-bodyMobile font-normal  leading-[26px] md:semi-bold md:text-[22px] lg:semi-bold lg:text-[22px]  text-white">
+                      Symbol
                     </Typography>
                     <Typography className=" text-bodyMobile font-normal  leading-[26px] md:font-light lg:text-[18px] lg:font-light md:text-[18px]  text-white">
-                      Чойжүн тамганы хээ
+                      Choijun seal
                     </Typography>
                   </div>
                 </div>

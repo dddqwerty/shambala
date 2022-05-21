@@ -53,10 +53,10 @@ const OurGoalsPart = () => {
                     </motion.div>
                     <motion.div variants={item}> 
                         <div className="grid md:gap-20 gap-[60px] md:w-[100%] w-[97%]">
-                            <GoalCard desc="Дорнговь аймагт сэргээгдэх эрчим хүчний дэд бүтцийг хөгжүүлэх" index="01" />
-                            <GoalCard desc="Газрын доройтлыг тогтвортой хөгжлийн зорилтын хүрээнд урьдчилсан сэргийлэх" index="02" />
-                            <GoalCard desc="Цөлжилттэй газар нутагт тухайн газрын онцлогт тохирох модыг тарьж ургуулан нөхөн сэргээх" index="03" />
-                            <GoalCard desc="Дотоодын технологийн шинэчлэлийг өсөн дэвжихэд нь туслах, дэмжих" index="04" />
+                            <GoalCard desc="Renewable energy infrastructure will be developed in Dornogovi aimag." index="01" />
+                            <GoalCard desc="Land degradation will be prevented within the framework of the Sustainable Development Goals." index="02" />
+                            <GoalCard desc="Rehabilitate by establishing green zones in accordance with the specifics of desertified areas." index="03" />
+                            <GoalCard desc="Support domestic technological innovation." index="04" />
                         </div>
                     </motion.div>
 
