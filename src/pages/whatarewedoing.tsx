@@ -59,8 +59,8 @@ const WhatWeDoing = () => {
           </div>
           <Mod />
         </div>
-        <Easy />
-        <Apart />
+        {/* <Easy />
+        <Apart /> */}
       </MainLayout>
     </>
   )
