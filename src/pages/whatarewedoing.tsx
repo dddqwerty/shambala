@@ -1,13 +1,17 @@
-import { } from 'react'
+import {} from 'react'
 import { MainLayout } from 'layout'
 import { Yellow, Bonusnuud, GarchigBonus, Mod } from 'components'
 import { handleIcon } from 'utils'
 import { PADDINGX } from 'constants/layout'
+import { useTheme } from '@mui/material/styles'
+import useMediaQuery from '@mui/material/useMediaQuery'
 // import { Easy } from 'components/telmun/arttecheasy'
 // import Apart from 'components/telmun/tusdaa'
 import Text from 'components/text/text1'
 
 const WhatWeDoing = () => {
+  const theme = useTheme()
+  const matches = useMediaQuery(theme.breakpoints.down('sm'))
   return (
     <>
       <MainLayout classname={'bg-backgroundColor-darkGray'}>
@@ -16,27 +20,35 @@ const WhatWeDoing = () => {
             <img src="assets/shono.webp" className="absolute left-0 top-0 w-screen h-screen" />
             <div style={{ background: '#060B27' }} className="absolute top-0 left-0 w-screen h-screen opacity-40 " />
             <div style={{ background: '#060B27' }} className="absolute top-0 left-0 w-screen h-screen opacity-40" />
-
           </div>
 
-
-          <div className={`h-screen relative flex flex-col items-center md:items-start max-w-shambWidth mx-auto ${PADDINGX}`}>
-            <img src="assets/homelogo.webp" alt="" className="max-w-[65%] md:max-w-full md:hidden z-10 my-28 md:mt-52" />
+          <div
+            className={`h-screen relative flex flex-col items-center md:items-start max-w-shambWidth mx-auto ${PADDINGX}`}
+          >
+            <img
+              src="assets/homelogo.webp"
+              alt=""
+              className="max-w-[65%] md:max-w-full md:hidden z-10 my-28 md:mt-52"
+            />
             <Yellow
-              className='md:mt-[15%]'
+              className="md:mt-[15%] "
               title={'Art Tech Empire'}
               desc={
                 'In 2056, an international engineering and research institute will be established in Mongolia that meets the Sustainable Development Goals.'
               }
-              headerEl={handleIcon({ icon: 'nav', size: 30 })}
+              headerEl={handleIcon({ icon: 'nav', size: matches ? 25 : 30 })}
+
             />
             <div className="hidden md:block z-10 absolute bottom-24 left-1/2 transform -translate-x-1/2">
               <img src="assets/svgs/mouse.svg" alt="" />
             </div>
           </div>
-          <div style={{
-            background: "linear-gradient(180deg, rgba(0, 0, 0, 0) 4.13%, #212222 100%)"
-          }} className={`absolute md:bottom-0 h-[100px] md:h-[40%] z-10 w-full`} />
+          <div
+            style={{
+              background: 'linear-gradient(180deg, rgba(0, 0, 0, 0) 4.13%, #212222 100%)',
+            }}
+            className={`absolute md:bottom-0 h-[100px] md:h-[40%] z-10 w-full`}
+          />
         </div>
 
         <Text />
@@ -49,9 +61,9 @@ const WhatWeDoing = () => {
             className="absolute w-full h-[656px] bottom-[10%] md:bottom-0  md:hidden"
           />
 
-          <div className={`flex z-40 flex-col h-screen max-w-shambWidth mx-auto ${PADDINGX} w-full`}>
-            <div className="flex space-x-4">
-              <div className="flex flex-col items-start gap-28">
+          <div className={`flex z-40 flex-col h-screen max-w-shambWidth justify-center mx-auto ${PADDINGX} w-full`}>
+            <div className="flex space-x-4 ">
+              <div className="flex flex-col items-start gap-28 h-100%">
                 <GarchigBonus />
                 <Bonusnuud />
               </div>

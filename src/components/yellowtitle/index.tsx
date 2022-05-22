@@ -19,7 +19,7 @@ const Yellow = (props: Props) => {
   const { desc, title, headerEl, className } = props
   return (
     <div className={`flex flex-col ${className} gap-10`}>
-      
+
       <div className="flex flex-col gap-6 mt-10">
         <div className='flex flex-col gap-2'>
           <div className='md:hidden'>
@@ -42,18 +42,18 @@ const Yellow = (props: Props) => {
         <hr className="hidden md:flex justify-center w-[79px] h-[5px] border-0 bg-primary-yellow" />
       </div>
 
-      <div className="flex flex-row md:w-[324px]">
-        <div className="mr-[20px]">
-          <div className="bg-[#404040] w-[60px] h-[60px] rounded-[8px] flex items-center">
-            <p className="text-primary-white m-[15px]">{headerEl}</p>
+      <div className="flex flex-row md:w-[324px] z-20">
+        <div className="mr-[20px] flex">
+          <div className={`bg-[#404040] ${matches ? 'w-[48px] h-[48px]' : 'w-[60px] h-[60px]'} rounded-[8px]`}>
+            <p className={`text-primary-white ${matches ? 'm-[11px]' : 'm-[15px]'}`}>{headerEl}</p>
           </div>
         </div>
-        <div className='flex flex-col justify-center gap-2.5'>
+        <div className='flex flex-col justify-center gap-2.5 z-20'>
           <Typography variant="p-big" className="text-primary-white">
             Location
           </Typography>
           <Typography variant="p-small" className="text-primary-white opacity-50">
-          Dornogobi aimag
+            Dornogobi aimag
           </Typography>
         </div>
       </div>

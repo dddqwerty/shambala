@@ -9,8 +9,9 @@ const Info = () => {
   return (
     <div className="flex flex-col items-center  md:flex-row max-w-shambWidth mx-auto md:gap-20 pt-36">
       <div className="bg-components-30 h-[200px] md:h-[283px] gap-y-3.5 w-[365px] flex flex-col justify-center  items-center rounded-[8px] md:bg-too">
+        
         <Typography variant={matches ? 'h4' : 'h2'} className=" text-primary-white ">
-          <CountUp start={0} end={2832000} duration={1} separator="," decimals={0} decimal=",">
+          <CountUp start={0} end={2832000} duration={2} separator="," decimals={0} decimal=",">
             {({ countUpRef, start }) => (
               <div>
                 <span ref={countUpRef} />
@@ -24,7 +25,7 @@ const Info = () => {
       </div>
       <div className=" bg-components-30 h-[200px] md:h-[283px] gap-y-3.5 w-[365px] flex flex-col justify-center items-center rounded-[8px] md:bg-too ">
         <Typography variant={matches ? 'h4' : 'h2'} className=" text-primary-white ">
-          <CountUp start={0} end={494} duration={1} separator="," decimals={0} decimal="," suffix="тн">
+          <CountUp start={0} end={494} duration={2} separator="," decimals={0} decimal="," suffix="тн">
             {({ countUpRef, start }) => (
               <div>
                 <span ref={countUpRef} />
@@ -38,7 +39,7 @@ const Info = () => {
       </div>
       <div className=" bg-components-30 h-[200px] md:h-[283px] gap-y-3.5 w-[365px] flex flex-col justify-center items-center rounded-[8px] md:bg-too ">
         <Typography variant={matches ? 'h4' : 'h2'} className=" text-primary-white ">
-          <CountUp start={0} end={539726} duration={1} separator="," decimals={0} decimal="," suffix="кг">
+          <CountUp start={0} end={539726} duration={2} separator="," decimals={0} decimal="," suffix="кг">
             {({ countUpRef, start }) => (
               <div>
                 <span ref={countUpRef} />
