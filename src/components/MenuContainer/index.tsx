@@ -1,6 +1,7 @@
 import * as React from "react";
 import { motion } from "framer-motion";
 import MenuItem from '../MenuItem'
+import { useRouter } from 'next/router'
 
 const variants = {
     open: {
@@ -13,22 +14,29 @@ const variants = {
 
 export const Navigation = () => (
     <motion.ul className="m-0 flex flex-col py-5 absolute w-full" variants={variants}>
-        {itemIds.map(({ name, isSelected }, index) => (
-            <MenuItem name={name} isSelected={isSelected} key={index} />
+        {itemIds.map(({ name, isSelected ,path}, index) => (
+            <MenuItem name={name} isSelected={isSelected} key={index} onclick={path} />
         ))}
     </motion.ul>
 );
 
 const itemIds = [{
     name: "Who we are",
-    isSelected: true
+    isSelected: true,
+    path:"/whoarewe"
 }, {
     name: "What we do",
-    isSelected: false
+    isSelected: false,
+    path:"/whatarewedoing"
+
 }, {
     name: "Recommended projects",
-    isSelected: false
+    isSelected: false,
+    path:"/recomended"
+
 }, {
     name: "Naadam",
-    isSelected: false
+    isSelected: false,
+    path:"/Naadam"
+
 }];

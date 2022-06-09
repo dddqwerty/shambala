@@ -1,7 +1,7 @@
 import * as React from "react";
 import { motion } from "framer-motion";
 import Typography from "components/typography";
-
+import Link from "next/link";
 const variants = {
     open: {
         y: 0,
@@ -19,9 +19,11 @@ const variants = {
     }
 };
 
-const MenuItem = ({ name, isSelected }) => {
+const MenuItem = ({ name, isSelected,onclick}) => {
     return (
-        <motion.li
+        <Link href={onclick}>
+          <motion.li
+
             variants={variants}
             whileTap={{ scale: 0.95 }}
             style={{
@@ -37,6 +39,8 @@ const MenuItem = ({ name, isSelected }) => {
                 {name}
             </Typography>
         </motion.li>
+        </Link>
+      
     );
 };
 

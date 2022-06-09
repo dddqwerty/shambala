@@ -5,7 +5,7 @@ import useMediaQuery from '@mui/material/useMediaQuery'
 export const MainLayout = (props) => {
   const { children, classname } = props
   const theme = useTheme()
-  const matches = useMediaQuery(theme.breakpoints.down('hbr'))
+  const matches = useMediaQuery(theme.breakpoints.down('sm'))
 
   return (
     <div>

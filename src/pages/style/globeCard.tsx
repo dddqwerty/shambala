@@ -22,7 +22,7 @@ const Whatarewedoing = () => {
     return (
         <div className="grid place-items-center">
             <img src="/assets/davalgaa.svg" className='w-full hidden md:block mb-[130px]' alt="" />
-            <div className={`h-screen relative flex max-w-shambWidth mx-auto ${PADDINGX}`}>
+            <div className={`relative flex max-w-shambWidth mx-auto ${PADDINGX}`}>
 
                 <Buurunhii />
 

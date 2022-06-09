@@ -1,16 +1,20 @@
 import Typography from 'components/typography'
 import { PADDINGX } from 'constants/layout'
 import { motion } from 'framer-motion'
+import { useTheme } from '@mui/material/styles'
+import useMediaQuery from '@mui/material/useMediaQuery'
 
 const Text = () => {
+  const theme = useTheme()
+  const matches = useMediaQuery(theme.breakpoints.down('sm'))
   const item = {
     hidden: { x: -40, opacity: 0 },
     visible: {
       x: 0,
       opacity: 1,
-      // transition: {
-      //   delay: 0.2
-      // }
+      transition: {
+        delay: 0.4,
+      },
     },
   }
   const item2 = {
@@ -18,52 +22,61 @@ const Text = () => {
     visible: {
       x: 0,
       opacity: 1,
-      // transition: {
-      //   delay: 0.2
-      // }
+      transition: {
+        delay: 0.5,
+      },
     },
   }
   return (
-    <div className={`h-screen relative flex max-w-shambWidth mx-auto flex-col ${PADDINGX}`}>
-      <motion.div initial="hidden" className='hidden md:block' whileInView="visible" variants={item2}>
-        <div className="absolute right-0 top-20">
+    <div className={`relative flex max-w-shambWidth py-36 mx-auto flex-col ${PADDINGX}`}>
+      <motion.div
+        initial="hidden"
+        className="hidden md:block"
+        viewport={{ once: true }}
+        whileInView="visible"
+        variants={item2}
+      >
+        <div className="absolute right-0 top-60">
           <img src="/assets/blue-dots.svg" alt="" />
         </div>
       </motion.div>
-      <motion.div initial="hidden" whileInView="visible" variants={item}>
+      <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={item}>
         <div className="bg-primary-yellow w-[61px] h-[5px] rounded-lg md:hidden mb-6" />
-        <div className="flex flex-col">
+        <div className="flex flex-col  gap-[38px]">
           <div>
-            <Typography variant="h2" className="text-primary-white pb-1">
+            <Typography variant={matches ? 'h3' : 'h2'} className="text-primary-white ">
               816 year
             </Typography>
-            <Typography variant="title-small" className="text-primary-white opacity-70">
-              Их Монгол улс байгуулагдсаны
+            <Typography variant={matches ? 'body-mobile' : 'title-small'} className="text-primary-white opacity-70">
+              816th anniversary of the Great Mongol Empire
             </Typography>
           </div>
-          <div className="py-8">
-            <Typography variant="h2" className="text-primary-white pb-1">
+          <div className="gap-[38px]">
+            <Typography variant={matches ? 'h3' : 'h2'} className="text-primary-white ">
               2231 year
             </Typography>
-            <Typography variant="title-small" className="text-primary-white opacity-70">
-              Тулгар Төрийн
+            <Typography variant={matches ? 'body-mobile' : 'title-small'} className="text-primary-white opacity-70">
+              2231th anniversary of Foundation of the first Mongolian Statehood
             </Typography>
           </div>
           <div>
-            <Typography variant="h2" className="text-primary-white pb-1">
+            <Typography variant={matches ? 'h3' : 'h2'} className="text-primary-white ">
               101 year
             </Typography>
-            <Typography variant="title-small" className="text-primary-white opacity-70">
-              Тусгаар Тогтнолоо сэргээн мандуулсны
+            <Typography variant={matches ? 'body-mobile' : 'title-small'} className="text-primary-white opacity-70">
+              101th anniversary of the People’s Revolution of Mongolia
             </Typography>
           </div>
         </div>
       </motion.div>
       <div className="flex flex-col  gap-y-9 gap-x-12">
         <div className="flex flex-col gap-6">
-          <Typography variant="body-web" className="text-primary-white opacity-70 md:w-[488px]  pt-16">
-            Хүрээнд түүхчид, эрдэмтэд, судлаачид, инженерүүд хамтран цөлжилттэй бүс нутагт 30,000 модоор Урлаг
-            Технологийн Эзэнт Гүрэн бэлэгдлийн лэнд артыг бүтээн байгуулж байна.
+          <Typography
+            variant={matches ? 'body-mobile' : 'body-web'}
+            className="text-primary-white opacity-70 md:w-[488px]  pt-16"
+          >
+            As part of these celebrations, historians, scientists and engineers are working together to create a
+            36,000-tree "Art-Tech Empire" Land in the desert region.
           </Typography>
           <div className="bg-primary-yellow w-[61px] h-[5px] rounded-lg hidden md:block" />
         </div>
@@ -86,9 +99,14 @@ const Text = () => {
         </div>
         <div className="flex md:justify-end">
           <div className="flex flex-col gap-6">
-            <Typography variant="body-web" className="text-primary-white md:w-[608px] align-items ">
-              Энэ лэнд артын онцлог нь таримал модоор хийгдсэн дэлхийн 2 дахь лэнд арт бөгөөд хэмжээгээрээ хамгийн том
-              анхны лэнд арт болох юм. Мөн Худалдаа Хөгжлийн банктай хамтран <span className='font-semibold text-title1'>HAPPY TREE</span> багц болон худалдаалагдаж байна.
+            <Typography
+              variant={matches ? 'body-mobile' : 'body-web'}
+              className="text-primary-white opacity-70 md:opacity-100 md:w-[608px] align-items "
+            >
+              This Land Art is the second largest Land Art in the world made of planted trees and will be the largest
+              Land Art by size. It is also being sold as{' '}
+              <span className="md:font-semibold md:text-title1 uppercase text-sm">"Happy Tree"</span> set in cooperation with the Trade and
+              Development Bank.
             </Typography>
             <div className="bg-primary-yellow w-[61px] h-[5px] rounded-lg hidden md:block" />
           </div>
