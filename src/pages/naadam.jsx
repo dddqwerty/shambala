@@ -3,6 +3,7 @@ import { MainLayout } from 'layout'
 import FirstPart from 'layout/indexPageComponents/firstNaadam'
 import { GoalCard, Emphasis } from 'components'
 import { PADDINGX } from 'constants/layout'
+import NaadamPlan from 'layout/naadamPage/naadamPlan'
 
 const Naadam = () => {
   return (
@@ -45,6 +46,8 @@ const Naadam = () => {
             
           </div>
         </div> */}
+          <NaadamPlan />
+
           <div id="spacer" className="h-32"></div>
         </div>
       </div>

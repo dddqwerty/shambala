@@ -1,6 +1,7 @@
 @tailwind components;
 @tailwind utilities;
 @tailwind base;
+@import '~react-image-gallery/styles/css/image-gallery.css';
 
 /** i hate this and you'll probably hate this too */
 /* * {
@@ -27,9 +28,8 @@ body {
   }
 }
 
-
 li {
-  list-style: none; 
+  list-style: none;
 }
 
 .icon-placeholder {
@@ -46,4 +46,3 @@ li {
   height: 20px;
   flex: 1;
 }
-
