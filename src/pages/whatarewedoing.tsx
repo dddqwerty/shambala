@@ -5,8 +5,8 @@ import { handleIcon } from 'utils'
 import { PADDINGX } from 'constants/layout'
 import { useTheme } from '@mui/material/styles'
 import useMediaQuery from '@mui/material/useMediaQuery'
-// import { Easy } from 'components/telmun/arttecheasy'
-// import Apart from 'components/telmun/tusdaa'
+import { Easy } from 'components/telmun/arttecheasy'
+import Apart from 'components/telmun/tusdaa'
 import Text from 'components/text/text1'
 
 const WhatWeDoing = () => {
@@ -71,8 +71,8 @@ const WhatWeDoing = () => {
           </div>
           <Mod />
         </div>
-        {/* <Easy />
-        <Apart /> */}
+        <Easy />
+        <Apart />
       </MainLayout>
     </>
   )

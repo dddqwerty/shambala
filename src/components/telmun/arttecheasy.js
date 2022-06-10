@@ -22,7 +22,7 @@ export const Easy = () => {
   }
 
   return (
-    <div className="relative ">
+    <div className="relative h-[180px] md:h-[900px] lg:h-[900px]  ">
       <motion.div variants={container} initial="hidden" whileInView="visible" className="mt-24 relative">
         <div>
           <div className="h-[40vh] md:h-[100vh] lg:h-[100vh] w-full  flex flex-row">
@@ -39,7 +39,7 @@ export const Easy = () => {
               <motion.div variants={item} className="h-[360px] flex flex-col  justify-between">
                 <div>
                   <div className="  hidden md:block lg:block w-[65px] h-[5px] bg-primary-yellow rounded-2xl mb-[24px] "></div>
-                  <Typography className="text-center opacity-60 md:opacity-100 lg:opacity-100 flex w-[311px] md:w-auto  lg:w-auto max-w-[585px] text-bodyMobile font-normal  leading-[26px] text-sm md:text-title2 md:leading-[37.2px]  text-white">
+                  <Typography className=" opacity-60 text-left md:opacity-100 lg:opacity-100 flex w-[311px] md:w-auto  lg:w-auto max-w-[585px] text-bodyMobile font-normal  leading-[26px] text-sm md:text-title2 md:leading-[37.2px]  text-white">
                     The land art is in the form of an ancient Choijun seal, which symbolizes the fact that the three
                     great mandalas, man, heaven and earth, are flexible and flexible in the ongin seal or sun seal.
                   </Typography>

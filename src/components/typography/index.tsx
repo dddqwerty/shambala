@@ -20,7 +20,7 @@ type Props = {
   children: React.ReactNode
 }
 
-const Typography: FC<Props> = ({ variant = 'h1', className = '', children }) => {
+const Typography: FC<Props> = ({ variant , className = '', children }) => {
   const getClasses = (variant: TypographyTypes) => {
     switch (variant) {
       case 'h1':
