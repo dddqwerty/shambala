@@ -3,6 +3,8 @@ import Fournumber from 'components/telmun/hedentoo'
 import FirstPart from 'layout/indexPageComponents/first'
 import OurGoalsPart from 'layout/indexPageComponents/ourGoalsPart'
 import Titi from 'layout/bobo'
+import CardWithIconn from './style/cardWithIcon'
+
 import { Plans } from 'components/Plans'
 import { Info } from 'components'
 import Whatarewedoing from './style/globeCard'
@@ -15,6 +17,7 @@ export default function Home() {
     <MainLayout classname={'bg-mainBg'}>
       <FirstPart />
       <Titi />
+      <CardWithIconn />
       <Fournumber />
       <Plans />
       <Info />
