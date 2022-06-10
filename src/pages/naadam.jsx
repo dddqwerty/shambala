@@ -47,7 +47,6 @@ const Naadam = () => {
           </div>
         </div> */}
           <NaadamPlan />
-
           <div id="spacer" className="h-32"></div>
         </div>
       </div>

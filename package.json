@@ -29,7 +29,8 @@
     "react-simply-carousel": "^7.0.0",
     "react-slick": "^0.29.0",
     "react-slideshow-image": "^3.7.5",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "swiper": "^8.2.3"
   },
   "lint-staged": {
     "*.{js, jsx, ts, tsx}": [

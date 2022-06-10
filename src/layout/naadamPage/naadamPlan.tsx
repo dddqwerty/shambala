@@ -45,13 +45,13 @@ const NaadamPlan = () => {
           />
           <HoveringCard
             text="There are also three types of competitions and technologies from traditional festivals Exhibitions, comedies and podcasts will be broadcast live."
-            picture="assets/hoverCardImages/zadgaiKino.png"
+            picture="assets/hoverCardImages/zadgaiKino.jpg"
           />
         </div>
       </div>
-      <div className="">
+      {/* <div className="">
         <ImageSlider />
-      </div>
+      </div> */}
     </div>
   )
 }
