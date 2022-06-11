@@ -17,8 +17,8 @@ export default function Home() {
       opacity: 1,
       transition: {
         delay: 0.2,
-        delayChildren: 0.5,
-        staggerChildren: 0.5,
+        delayChildren: 0.8,
+        staggerChildren: 0.3,
       },
     },
   }
@@ -148,7 +148,7 @@ export default function Home() {
             <Emphasis content='Company goals' />
             <Typography variant='body-web' className='text-primary-white opacity-60'>In 2056, an international engineering and research institute will be established in Mongolia that meets the Sustainable Development Goals.</Typography>
           </motion.div>
-          <motion.div variants={item} className={matches ? 'mt-48 grid gap-[32px] md:w-[100%] w-[95%]' : ' mt-48 '}>
+          <motion.div variants={item} className='md:block mt-48 hidden '>
             <div className='grid grid-cols-3 gap-x-[125px] place-content-center'>
               <GoalCard index='01' desc='Rehabilitation will be carried out in desert areas by planting trees suitable for the specifics of the land.' />
               <GoalCard index='03' desc='Renewable energy infrastructure development.' />
@@ -159,8 +159,7 @@ export default function Home() {
               <GoalCard index='04' desc='Reduce urban concentration by combining art and technology.' />
             </div>
           </motion.div>
-          
-          <motion.div variants={item} className='mt-48 grid gap-[32px] md:w-[100%] w-[95%]'>
+          <motion.div variants={item} className='md:hidden mt-48 grid gap-[32px] md:w-[100%] w-[95%]'>
             <GoalCard index='01' desc='Rehabilitation will be carried out in desert areas by planting trees suitable for the specifics of the land.' />
             <GoalCard index='02' desc='Work within the framework of the Sustainable Development Goals.' />
             <GoalCard index='03' desc='Renewable energy infrastructure development.' />
