@@ -27,7 +27,7 @@ const Titi = ({ classname }) => {
   return (
     <div className={`w-full ${PADDINGX}`}>
       {/* <div className="hidden md:block lg:block md:absolute lg:absolute border-solid border-2 w-[455px] h-[455px] rounded-full opacity-40   top-[115px] left-[-170px]" /> */}
-      <div className={`max-w-shambWidth relative mx-auto flex flex-col ${classname} mb-60 mt-10 md:mt-32`}>
+      <div className={`max-w-shambWidth relative mx-auto flex flex-col ${classname} mb-36 md:mb-60 mt-10 md:mt-32`}>
         <div className="absolute w-[170%] z-0 t-25 md:w-[90%] lg:w-[90%] left-[29%] md:top-4 md:left-1/2 md:transform md:-translate-x-1/2 lg:top-4 lg:left-1/2 lg:transform lg:-translate-x-1/2 ">
           <img src="assets/trangle.svg" />
           <div className="hidden md:block md:top-[47%] md:left-1/2 md:transform md:-translate-x-1/2 md:absolute lg:block lg:top-[47%] lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:absolute">

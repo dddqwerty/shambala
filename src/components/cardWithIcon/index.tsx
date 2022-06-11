@@ -11,7 +11,7 @@ const CardWithIcon = (props: Props) => {
   const { headerEl, title, desc } = props
 
   return (
-    <div className="flex flex-col hidden md:block">
+    <div className="flex-col hidden md:block">
       <div className="w-full">
         <p className="">{headerEl}</p>
         <Typography variant="title-big">
