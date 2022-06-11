@@ -4,27 +4,65 @@ import { MainLayout } from 'layout'
 import { members } from '../../public/assets/membersInfo'
 import { PADDINGX } from 'constants/layout'
 import { motion } from 'framer-motion'
+import { useTheme } from '@mui/material/styles'
+import useMediaQuery from '@mui/material/useMediaQuery'
 
 export default function Home() {
+
+  const theme = useTheme()
+  const matches = useMediaQuery(theme.breakpoints.down('sm'))
 
   const container = {
     visible: {
       opacity: 1,
       transition: {
-        delayChildren: 0.3,
+        delay: 0.2,
+        delayChildren: 0.5,
         staggerChildren: 0.5,
+      },
+    },
+  }
+  const titlecon = {
+    visible: {
+      opacity: 1,
+      transition: {
+        delayChildren: 0.03,
+        staggerChildren: 0.05,
       },
     },
   }
 
   const item = {
-    hidden: { y: 20, opacity: 0 },
+    hidden: { y: 40, opacity: 0 },
     visible: {
       y: 0,
       opacity: 1,
     },
   }
+  const logoo = {
+    hidden: { y: 40, opacity: 0 },
+    visible: {
+      y: 0,
+      // transition:{
+      //   duration: 0.7,
+      //   delay: 0.7,
+      // },
+      opacity: 1,
+    },
 
+  }
+  const cards = {
+    hidden: { y: 40, opacity: 0 },
+    visible: {
+      y: 0,
+      // transition:{
+      //   duration: 0.7,
+      //   delay: 0.7,
+      // },
+      opacity: 1,
+    },
+
+  }
   return (
     <MainLayout classname='bg-backgroundColor-darkGray relative pt-36 md:pb-[400px] pb-[220px]'>
       <div style={{
@@ -36,22 +74,43 @@ export default function Home() {
         }}>
       </div>
       <div className={`flex flex-col items-center max-w-shambWidth mx-auto z-20 relative ${PADDINGX}`}>
-        <div className='w-10 hidden md:block'>
-          <img src="assets/footer1.png" alt="" className='max-w' />
-        </div>
-        <div className='md:hidden'>
-          <img src="assets/mainlogo.svg" alt="" />
-        </div>
-        <div className='flex w-[90%] md:w-[70%] flex-col text-center gap-14 mt-20'>
-          <Emphasis content='Our company' />
-          <Typography variant='body-web' className='text-primary-white opacity-60'>In 2056, an international engineering and research institute will be established in Mongolia that meets the Sustainable Development Goals.</Typography>
-        </div>
-        <div className='grid grid-cols-2 md:grid-cols-4 mt-40 mb-72 gap-y-12 mx-auto gap-x-6'>
-          {members[0].map((member, index) => {
-            return < MemberCard firstName={member.firstName} lastName={member.lastName} job={member.job} picture={member.picture} key={index} />
-          })}
-        </div>
 
+        <motion.div
+          variants={container}
+          initial='hidden'
+          whileInView={'visible'}
+          className={matches ? '' : `flex flex-col max-w-shambWidth mx-auto z-20 relative ${PADDINGX}`}>
+
+          <motion.div
+            variants={titlecon}
+            initial='hidden'
+            whileInView={'visible'}
+            className={`flex flex-col items-center`}>
+
+            <motion.div
+              variants={item}
+              className='w-10 hidden md:block'>
+              <img src="assets/footer1.png" alt="" className='max-w' />
+            </motion.div>
+            <motion.div
+              variants={logoo}
+              className='md:hidden'>
+              <img src="assets/mainlogo.svg" alt="" />
+            </motion.div>
+            <motion.div
+              variants={item}
+              className='flex w-[90%] md:w-[70%] flex-col text-center gap-14 mt-20'>
+              <Emphasis content='Our company' />
+              <Typography variant='body-web' className='text-primary-white opacity-60'>In 2056, an international engineering and research institute will be established in Mongolia that meets the Sustainable Development Goals.</Typography>
+            </motion.div>
+
+          </motion.div>
+          <motion.div variants={cards} className='grid grid-cols-2 md:grid-cols-4 mt-40 mb-72 gap-y-12 mx-auto gap-x-6'>
+            {members[0].map((member, index) => {
+              return < MemberCard firstName={member.firstName} lastName={member.lastName} job={member.job} picture={member.picture} key={index} />
+            })}
+          </motion.div>
+        </motion.div>
 
         <div className='hidden md:block absolute -right-[40%] -top-[3%]'>
           <img src="assets/ellipse/ellipse513.svg" alt="" className='w-[284px]' />
@@ -75,38 +134,53 @@ export default function Home() {
           <img src="assets/ellipse/ellipse513.svg" alt="" className='w-[138px]' />
         </div>
 
-
-        <div className='flex items-center flex-col text-center gap-14 w-4/5 relative'>
-          <div className='md:hidden absolute -top-[45%]'>
-            <img src="assets/shambalaIcon.svg" alt="" />
-          </div>
-          <Emphasis content='Company goals' />
-          <Typography variant='body-web' className='text-primary-white opacity-60'>In 2056, an international engineering and research institute will be established in Mongolia that meets the Sustainable Development Goals.</Typography>
-        </div>
-        <div className='md:block mt-48 hidden w-[120%]'>
-          <div className='grid grid-cols-3 justify-center'>
+        <motion.div
+          variants={container}
+          initial='hidden'
+          whileInView={'visible'}
+          className={matches ? '' : 'flex items-center flex-col gap-14 w-4/5 relative'}>
+          <motion.div
+            variants={item}
+            className='flex items-center flex-col text-center gap-14 relative'>
+            <div className='md:hidden absolute -top-[45%]'>
+              <img src="assets/shambalaIcon.svg" alt="" />
+            </div>
+            <Emphasis content='Company goals' />
+            <Typography variant='body-web' className='text-primary-white opacity-60'>In 2056, an international engineering and research institute will be established in Mongolia that meets the Sustainable Development Goals.</Typography>
+          </motion.div>
+          <motion.div variants={item} className={matches ? 'mt-48 grid gap-[32px] md:w-[100%] w-[95%]' : ' mt-48 '}>
+            <div className='grid grid-cols-3 gap-x-[125px] place-content-center'>
+              <GoalCard index='01' desc='Rehabilitation will be carried out in desert areas by planting trees suitable for the specifics of the land.' />
+              <GoalCard index='03' desc='Renewable energy infrastructure development.' />
+              <GoalCard index='05' desc='Promoting innovation.' />
+            </div>
+            <div className='flex px-[30px] mt-[50px] justify-around'>
+              <GoalCard index='02' desc='Work within the framework of the Sustainable Development Goals.' />
+              <GoalCard index='04' desc='Reduce urban concentration by combining art and technology.' />
+            </div>
+          </motion.div>
+          
+          <motion.div variants={item} className='mt-48 grid gap-[32px] md:w-[100%] w-[95%]'>
             <GoalCard index='01' desc='Rehabilitation will be carried out in desert areas by planting trees suitable for the specifics of the land.' />
-            <GoalCard index='03' desc='Renewable energy infrastructure development.' />
-            <GoalCard index='05' desc='Promoting innovation.' />
-          </div>
-          <div className='flex px-[30px] mt-[50px] justify-around'>
             <GoalCard index='02' desc='Work within the framework of the Sustainable Development Goals.' />
+            <GoalCard index='03' desc='Renewable energy infrastructure development.' />
             <GoalCard index='04' desc='Reduce urban concentration by combining art and technology.' />
-          </div>
-        </div>
-        <div className='md:hidden mt-48 grid gap-[32px] md:w-[100%] w-[95%]'>
-          <GoalCard index='01' desc='Rehabilitation will be carried out in desert areas by planting trees suitable for the specifics of the land.' />
-          <GoalCard index='02' desc='Work within the framework of the Sustainable Development Goals.' />
-          <GoalCard index='03' desc='Renewable energy infrastructure development.' />
-          <GoalCard index='04' desc='Reduce urban concentration by combining art and technology.' />
-          <GoalCard index='05' desc='Promoting innovation.' />
-        </div>
-        <div className='grid grid-cols-2 md:grid-cols-4 mt-40 gap-y-12 mx-auto gap-x-6'>
-          {members[1].map((member, index) => {
-            return < MemberCard firstName={member.firstName} lastName={member.lastName} job={member.job} picture={member.picture} key={index} />
-          })}
-        </div>
+            <GoalCard index='05' desc='Promoting innovation.' />
+          </motion.div>
+
+        </motion.div>
+        <motion.div
+          variants={container}
+          initial='hidden'
+          whileInView={'visible'}>
+          <motion.div variants={item} className='grid grid-cols-2 md:grid-cols-4 mt-40 gap-y-12 mx-auto gap-x-6'>
+            {members[1].map((member, index) => {
+              return < MemberCard firstName={member.firstName} lastName={member.lastName} job={member.job} picture={member.picture} key={index} />
+            })}
+          </motion.div>
+        </motion.div>
       </div>
+      {/* </motion.div> */}
 
     </MainLayout >
 

@@ -2,11 +2,13 @@ import Typography from 'components/typography'
 import { useTheme } from '@mui/material/styles'
 import useMediaQuery from '@mui/material/useMediaQuery'
 import { motion } from 'framer-motion'
+import AnimatingNumber from 'components/numbrr/animatethatnumberbabe'
 
 const Fournumber = () => {
   const theme = useTheme()
   const matches = useMediaQuery(theme.breakpoints.down('sm'))
 
+  console.log(matches)
   const container = {
     visible: {
       opacity: 1,
@@ -42,7 +44,7 @@ const Fournumber = () => {
             return (
               <motion.div key={index} variants={item} className="flex flex-col items-center">
                 <Typography variant={matches ? 'h4' : 'h2'} className=" text-white">
-                  24,533
+                  <AnimatingNumber value={'24533'} />
                 </Typography>
                 <Typography variant="title-small" className="text-white opacity-50">
                   Tree

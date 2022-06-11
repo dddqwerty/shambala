@@ -26,7 +26,7 @@ const CardWithIconn = () => {
   }
 
   return (
-    <div className="flex-col items-center md:p-20 relative flex max-w-shambWidth mx-auto ${PADDINGX} mb-36 md:mb-96">
+    <div className="flex-col items-center md:p-20 relative flex max-w-shambWidth mx-auto ${PADDINGX} mb-36 md:mb-[304px]">
       <img src="/assets/enjinerxd.webp" className='md:w-[512px] md:opacity-30 w-[200px] absolute transform -translate-x-1/2 left-1/2' alt="" />
       <div className='mt-[60px] md:mt-[190px]'>
         {/* <motion.div variants={container} initial="hidden" whileInView="visible" className=""> */}
@@ -36,7 +36,7 @@ const CardWithIconn = () => {
         {/* </motion.div> */}
 
         <motion.div variants={container} initial="hidden" whileInView="visible" className="hidden md:block">
-          <div className="grid grid-cols-2 gap-x-72 pt-16 pb-48 gap-y-[155px] ">
+          <div className="grid grid-cols-2 gap-x-72 pt-16  gap-y-[155px] ">
             <motion.div variants={item} className="flex flex-col items-center">
               <CardWithIcon
                 headerEl={handleIcon({ icon: 'riDirection', size: 33, className: 'text-[#A3935B]' })}

@@ -2,6 +2,7 @@ import Typography from '../typography'
 import CountUp from 'react-countup'
 import { useTheme } from '@mui/material/styles'
 import useMediaQuery from '@mui/material/useMediaQuery'
+import AnimatingNumber from 'components/numbrr/animatethatnumberbabe'
 
 const Info = () => {
   const theme = useTheme()
@@ -11,13 +12,7 @@ const Info = () => {
       <div className="bg-components-30 h-[200px] md:h-[283px] gap-y-3.5 w-[365px] flex flex-col justify-center  items-center rounded-[8px] md:bg-too">
         
         <Typography variant={matches ? 'h4' : 'h2'} className=" text-primary-white ">
-          <CountUp start={0} end={2832000} duration={2} separator="," decimals={0} decimal=",">
-            {({ countUpRef, start }) => (
-              <div>
-                <span ref={countUpRef} />
-              </div>
-            )}
-          </CountUp>
+          <AnimatingNumber value={"2832000"} />
         </Typography>
         <Typography variant={matches ? 'p-small' : 'title-small'} className="text-white opacity-50">
           Produced Oxygen
@@ -25,13 +20,7 @@ const Info = () => {
       </div>
       <div className=" bg-components-30 h-[200px] md:h-[283px] gap-y-3.5 w-[365px] flex flex-col justify-center items-center rounded-[8px] md:bg-too ">
         <Typography variant={matches ? 'h4' : 'h2'} className=" text-primary-white ">
-          <CountUp start={0} end={494} duration={2} separator="," decimals={0} decimal="," suffix="тн">
-            {({ countUpRef, start }) => (
-              <div>
-                <span ref={countUpRef} />
-              </div>
-            )}
-          </CountUp>
+          <AnimatingNumber value={'494'}/>
         </Typography>
         <Typography variant={matches ? 'p-small' : 'title-small'} className="text-white opacity-50">
           GENERATED BIOMASS
@@ -39,13 +28,14 @@ const Info = () => {
       </div>
       <div className=" bg-components-30 h-[200px] md:h-[283px] gap-y-3.5 w-[365px] flex flex-col justify-center items-center rounded-[8px] md:bg-too ">
         <Typography variant={matches ? 'h4' : 'h2'} className=" text-primary-white ">
-          <CountUp start={0} end={539726} duration={2} separator="," decimals={0} decimal="," suffix="кг">
+          <AnimatingNumber value={539726}/>
+          {/* <CountUp start={0} end={539726} duration={2} separator="," decimals={0} decimal="," suffix="кг">
             {({ countUpRef, start }) => (
               <div>
                 <span ref={countUpRef} />
               </div>
             )}
-          </CountUp>
+          </CountUp> */}
         </Typography>
         <Typography variant={matches ? 'p-small' : 'title-small'} className="text-white opacity-50">
               ABSORBED CARBON
