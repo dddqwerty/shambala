@@ -19,13 +19,13 @@ const Fournumber = () => {
     },
   }
 
-  const item = {
-    hidden: { y: 20, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-    },
-  }
+  // const item = {
+  //   hidden: { y: 20, opacity: 0 },
+  //   visible: {
+  //     y: 0,
+  //     opacity: 1,
+  //   },
+  // }
 
   return (
     <motion.div
@@ -40,10 +40,59 @@ const Fournumber = () => {
       </div>
       <div className="flex w-full mx-auto max-w-shambWidth z-20">
         <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 w-full gap-[40px]">
-          {Array.from({ length: 4 }).map((_, index) => {
+          <div className="flex flex-col items-center">
+            <Typography variant="h2" className="hidden md:block text-white">
+              <AnimatingNumber value={'24533'} />
+            </Typography>
+            <Typography variant="h4" className="md:hidden text-white">
+              <AnimatingNumber value={'24533'} />
+            </Typography>
+            <Typography variant="title-small" className="text-white opacity-50">
+              Tree
+            </Typography>
+          </div>
+          <div className="flex flex-col items-center">
+            <Typography variant="h2" className="hidden md:block text-white">
+              <AnimatingNumber value={'7200'} />
+            </Typography>
+            <Typography variant="h4" className="md:hidden text-white">
+              <AnimatingNumber value={'7200'} />
+            </Typography>
+            <Typography variant="title-small" className="text-white opacity-50">
+              Reserved water
+            </Typography>
+          </div>
+          <div className="flex flex-col items-center">
+            <Typography variant="h2" className="hidden md:block text-white">
+              <AnimatingNumber value={'4000'} suffix="m2" />
+            </Typography>
+            <Typography variant="h4" className="md:hidden text-white">
+              <AnimatingNumber value={'4000'} suffix="m2" />
+            </Typography>
+            <Typography variant="title-small" className="text-white opacity-50">
+              Restored
+            </Typography>
+          </div>
+          <div className="flex flex-col items-center">
+            <Typography variant="h2" className="hidden md:block text-white">
+              <AnimatingNumber value={'166133'} />
+            </Typography>
+            <Typography variant="h4" className="md:hidden text-white">
+              <AnimatingNumber value={'166133'} />
+            </Typography>
+            <Typography variant="title-small" className="text-white opacity-50">
+              Organic access
+            </Typography>
+          </div>
+        </div>
+
+        {/* {Array.from({ length: 4 }).map((_, index) => {
             return (
               <motion.div key={index} variants={item} className="flex flex-col items-center">
-                <Typography variant={matches ? 'h4' : 'h2'} className=" text-white">
+                <Typography variant="h2" className="hidden md:block text-white">
+                  <AnimatingNumber value={'24533'} />
+                </Typography>
+                <Typography variant="h4" className="md:hidden text-white">
                   <AnimatingNumber value={'24533'} />
                 </Typography>
                 <Typography variant="title-small" className="text-white opacity-50">
@@ -51,33 +100,7 @@ const Fournumber = () => {
                 </Typography>
               </motion.div>
             )
-          })}
-
-          {/* <div className="flex flex-col items-center">
-            <Typography variant={matches ? 'h4' : 'h2'} className=" text-white">
-              24,533
-            </Typography>
-            <Typography variant="title-small" className="text-white opacity-50">
-              Tree
-            </Typography>
-          </div>
-          <div className="flex flex-col items-center">
-            <Typography variant={matches ? 'h4' : 'h2'} className=" text-white">
-              24,533
-            </Typography>
-            <Typography variant="title-small" className="text-white opacity-50">
-              Tree
-            </Typography>
-          </div>
-          <div className="flex flex-col items-center">
-            <Typography variant={matches ? 'h4' : 'h2'} className=" text-white">
-              24,533
-            </Typography>
-            <Typography variant="title-small" className="text-white opacity-50">
-              Tree
-            </Typography>
-          </div> */}
-        </div>
+          })} */}
 
         {/*
         <div className="flex flex-col items-center  ">

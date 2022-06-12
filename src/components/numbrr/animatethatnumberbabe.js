@@ -52,11 +52,12 @@ function NumberColumn({ digit }) {
   )
 }
 
-export default function AnimatingNumber({ value }) {
+export default function AnimatingNumber({ value, suffix }) {
   const numArray = formatForDisplay(value)
 
   return (
-    <div className="ticker-view ">
+    <div className="ticker-view">
+      <span>{suffix}</span>
       {numArray.map((number, index) => (
         <NumberColumn key={index} digit={number} />
       ))}
