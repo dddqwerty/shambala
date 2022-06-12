@@ -12,6 +12,9 @@ module.exports = {
       'dark-gray': '#2A2C2C',
     },
   },
+  menu: {
+    gray: '#C5C6CD',
+  },
   backgroundColor: {
     'dark-gray': '#202121',
     hover: 'radial-gradient(50% 123.02% at 50% 50%, #FFE48B 0%, #FFD217 100%)',

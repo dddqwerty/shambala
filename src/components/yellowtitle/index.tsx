@@ -2,6 +2,7 @@ import { Typography, Emphasis } from 'components'
 import * as React from 'react'
 import useMediaQuery from '@mui/material/useMediaQuery'
 import { useTheme } from '@mui/material/styles'
+import {motion} from 'framer-motion'
 
 type Props = React.PropsWithChildren<{
   content?: string
@@ -15,6 +16,20 @@ type Props = React.PropsWithChildren<{
 const Yellow = (props: Props) => {
   const theme = useTheme()
   const matches = useMediaQuery(theme.breakpoints.down('sm'))
+
+  const item = {
+    hidden: {
+      opacity: 0,
+      x: -50,
+    },
+    visible: {
+      transition: {
+        duration: 0.7,
+      },
+      opacity: 1,
+      x: 0,
+    }
+  }
 
   const { desc, title, headerEl, className } = props
   return (
@@ -42,7 +57,7 @@ const Yellow = (props: Props) => {
         <hr className="hidden md:flex justify-center w-[79px] h-[5px] border-0 bg-primary-yellow" />
       </div>
 
-      <div className="flex flex-row md:w-[324px] z-20">
+      <motion.div variants={item} className="flex flex-row md:w-[324px] z-20">
         <div className="mr-[20px] flex">
           <div className={`bg-[#404040] ${matches ? 'w-[48px] h-[48px]' : 'w-[60px] h-[60px]'} rounded-[8px]`}>
             <p className={`text-primary-white ${matches ? 'm-[11px]' : 'm-[15px]'}`}>{headerEl}</p>
@@ -56,7 +71,7 @@ const Yellow = (props: Props) => {
             Dornogobi aimag
           </Typography>
         </div>
-      </div>
+      </motion.div>
     </div>
   )
 }

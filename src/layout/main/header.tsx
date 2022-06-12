@@ -199,36 +199,44 @@ export const Header = () => {
       <div className="items-center justify-between h-full hidden md:flex lg:flex gap-14">
         <div className="h-full shrink-0 flex items-center">
           <Link href={'/whoarewe'}>
-            <div className={`${router.pathname == '/whoarewe' && "border-primary-yellow bg-textColor-secondary-darkGray"} flex items-center border-transparent h-full px-[35px] hover: text-white border-b-2  hover:cursor-pointer`}>
+            <div className={`${router.pathname == '/whoarewe' && "border-primary-yellow bg-textColor-secondary-darkGray"} group flex items-center border-transparent h-full px-[35px] text-white border-b-2  hover:cursor-pointer`}>
               <a>
-                <Typography variant="p-small" className="text-textColor-secondary-lightGray">
+                <Typography
+                  variant="mobile-menu"
+                  className={`${router.pathname == '/whoarewe' ? "" : 'text-white/70 '}group-hover:text-white`}>
                   Who we are
                 </Typography>
               </a>
             </div>
           </Link>
           <Link href={'/whatarewedoing'}>
-          <div className={`${router.pathname == '/whatarewedoing' && "border-primary-yellow bg-textColor-secondary-darkGray"} flex items-center border-transparent h-full px-[35px] hover: text-white border-b-2  hover:cursor-pointer`}>
+            <div className={`${router.pathname == '/whatarewedoing' && "border-primary-yellow bg-textColor-secondary-darkGray"} group flex items-center border-transparent h-full px-[35px] text-white border-b-2  hover:cursor-pointer`}>
               <a>
-                <Typography variant="p-small" className="text-textColor-secondary-lightGray">
+                <Typography
+                  variant="mobile-menu"
+                  className={`${router.pathname == '/whatarewedoing' ? "" : 'text-white/70 '}group-hover:text-white`}>
                   What are we doing
                 </Typography>
               </a>
             </div>
           </Link>
           <Link href={'/recomended'}>
-          <div className={`${router.pathname == '/recomended' && "border-primary-yellow bg-textColor-secondary-darkGray"} flex items-center border-transparent h-full px-[35px] hover: text-white border-b-2  hover:cursor-pointer`}>
+            <div className={`${router.pathname == '/recomended' && "border-primary-yellow bg-textColor-secondary-darkGray"} group flex items-center border-transparent h-full px-[35px] border-b-2 text-white hover:cursor-pointer`}>
               <a>
-                <Typography variant="p-small" className="text-textColor-secondary-lightGray">
-                  Recomended Projects
+                <Typography
+                  variant="mobile-menu"
+                  className={`${router.pathname == '/recomended' ? "" : 'text-white/70 '}group-hover:text-white`}>
+                  Who we work with
                 </Typography>
               </a>
             </div>
           </Link>
           <Link href={'/naadam'}>
-          <div className={`${router.pathname == '/naadam' && "border-primary-yellow bg-textColor-secondary-darkGray"} flex items-center border-transparent h-full px-[35px] hover: text-white border-b-2  hover:cursor-pointer`}>
+            <div className={`${router.pathname == '/naadam' && "border-primary-yellow bg-textColor-secondary-darkGray"} group flex items-center border-transparent h-full px-[35px] border-b-2 hover:cursor-pointer text-white`}>
               <a>
-                <Typography variant="p-small" className="text-textColor-secondary-lightGray">
+                <Typography
+                  variant="mobile-menu"
+                  className={`${router.pathname == '/naadam' ? "" : 'text-white/70 '}group-hover:text-white`}>
                   Naadam
                 </Typography>
               </a>
@@ -242,7 +250,7 @@ export const Header = () => {
               {handleIcon({
                 icon: 'facebook',
                 size: 16,
-                className: 'text-white hover:text-primary-yellow',
+                className: 'text-menuIcon-gray hover:text-primary-yellow',
               })}
             </a>
           </Link>
@@ -252,7 +260,7 @@ export const Header = () => {
               {handleIcon({
                 icon: 'twitter',
                 size: 16,
-                className: 'text-white hover:text-primary-yellow',
+                className: 'text-menuIcon-gray hover:text-primary-yellow',
               })}
             </a>
           </Link>
@@ -261,7 +269,7 @@ export const Header = () => {
               {handleIcon({
                 icon: 'mail',
                 size: 16,
-                className: 'text-white hover:text-primary-yellow',
+                className: 'text-menuIcon-gray hover:text-primary-yellow',
               })}
             </a>
           </Link>
@@ -270,7 +278,7 @@ export const Header = () => {
               {handleIcon({
                 icon: 'instagram',
                 size: 16,
-                className: 'text-white hover:text-primary-yellow',
+                className: 'text-menuIcon-gray hover:text-primary-yellow',
               })}
             </a>
           </Link>

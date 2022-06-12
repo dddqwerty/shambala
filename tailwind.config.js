@@ -24,6 +24,9 @@ module.exports = {
             darkGray: colors.textColor.secondary['dark-gray'],
           },
         },
+        menuIcon: {
+          gray: colors.menu['gray'],
+        },
         backgroundColor: {
           darkGray: colors.backgroundColor['dark-gray'],
           hover: colors.backgroundColor.hover,
