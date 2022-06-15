@@ -11,9 +11,9 @@ type Props = {
 const GoalCard = (props: Props) => {
     const { index, desc, className, bclass } = props
 
-    return <div className={`md:w-[290px] flex gap-8  ${className}`}>
+    return <div className={`md:w-[397px] flex gap-8  ${className}`}>
         <Typography variant='title-big' className='text-[#646464] mt-2 opacity-70'>{index}</Typography>
-        <Typography variant='body-web' className={`md:text-primary-white text-start text-[#A6A6A6] font-normal ${bclass}`}>{desc}</Typography>
+        <Typography variant='body-web' className={`md:text-primary-white text-start text-[#A6A6A6] font-normal w-[328px] ${bclass}`}>{desc}</Typography>
     </div >
 
 }

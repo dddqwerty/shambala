@@ -61,6 +61,7 @@ module.exports = {
       },
       maxWidth: {
         shambWidth: '1180px',
+        araiUrt: '1440px',
       },
       width: {
         planWidth: '100%',
