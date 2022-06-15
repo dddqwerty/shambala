@@ -67,19 +67,19 @@ export default function Home() {
     <MainLayout classname='bg-backgroundColor-darkGray relative pt-36 md:pb-[400px] pb-[220px]'>
       <div style={{
         background: 'linear-gradient(180deg, rgba(32, 33, 33, 0) 0%, #202121 100%)'
-      }} className='absolute top-0 left-0 w-screen h-screen z-10 hidden md:block lg:block' />
+      }} className='absolute top-0 left-0 w-screen h-screen z-10 hidden md:block lg:block ' />
       <div className='absolute top-0 left-0 z-0 h-screen w-screen bg-no-repeat bg-cover hidden md:block lg:block'
         style={{
           background: `linear-gradient(0deg, rgba(32, 33, 33, 0.7), rgba(32, 33, 33, 0.7)), url('assets/homePageBg.webp')`
         }}>
       </div>
-      <div className={`flex flex-col items-center max-w-shambWidth mx-auto z-20 relative ${PADDINGX}`}>
+      <div className={`flex flex-col items-center max-w-araiUrt mx-auto z-20 relative ${PADDINGX}`}>
 
         <motion.div
           variants={container}
           initial='hidden'
           whileInView={'visible'}
-          className={matches ? '' : `flex flex-col max-w-shambWidth mx-auto z-20 relative ${PADDINGX}`}>
+          className={matches ? '' : `flex flex-col mx-auto z-20 relative ${PADDINGX}`}>
 
           <motion.div
             variants={titlecon}
@@ -105,7 +105,7 @@ export default function Home() {
             </motion.div>
 
           </motion.div>
-          <motion.div variants={cards} className='grid grid-cols-2 md:grid-cols-4 mt-40 mb-72 gap-y-12 mx-auto gap-x-6'>
+          <motion.div variants={cards} className='grid grid-cols-2 md:grid-cols-4 mt-40 mb-72 gap-y-12 md:gap-y-[126px] mx-auto gap-x-6'>
             {members[0].map((member, index) => {
               return < MemberCard firstName={member.firstName} lastName={member.lastName} job={member.job} picture={member.picture} key={index} />
             })}
@@ -146,7 +146,7 @@ export default function Home() {
               <img src="assets/shambalaIcon.svg" alt="" />
             </div>
             <Emphasis content='Company goals' />
-            <Typography variant='body-web' className='text-primary-white opacity-60'>In 2056, an international engineering and research institute will be established in Mongolia that meets the Sustainable Development Goals.</Typography>
+            <Typography variant='body-web' className='text-primary-white opacity-60 w-[72%]'>In 2056, an international engineering and research institute will be established in Mongolia that meets the Sustainable Development Goals.</Typography>
           </motion.div>
           <motion.div variants={item} className='md:block mt-48 hidden '>
             <div className='grid grid-cols-3 gap-x-[125px] place-content-center'>
@@ -172,7 +172,7 @@ export default function Home() {
           variants={container}
           initial='hidden'
           whileInView={'visible'}>
-          <motion.div variants={item} className='grid grid-cols-2 md:grid-cols-4 mt-40 gap-y-12 mx-auto gap-x-6'>
+          <motion.div variants={item} className='grid grid-cols-2 md:grid-cols-4 mt-40 gap-y-12 md:gap-y-[126px] mx-auto gap-x-6'>
             {members[1].map((member, index) => {
               return < MemberCard firstName={member.firstName} lastName={member.lastName} job={member.job} picture={member.picture} key={index} />
             })}

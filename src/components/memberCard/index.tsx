@@ -11,7 +11,7 @@ type Props = {
 const MemberCard = (props: Props) => {
     const { picture, firstName, lastName, job } = props
 
-    return <div className='flex w-36 flex-col  md:w-52 md:rounded-none'>
+    return <div className='flex w-36 flex-col  md:w-[218px] md:rounded-none md:h-[256px]'>
         {/* <div className='relative bg-primary-white w-full h-44 md:h-64 rounded-[8px] md:rounded-none'> */}
             <img src={picture} className='max-w-full rounded-[8px] md:rounded-none' />
         {/* </div> */}
