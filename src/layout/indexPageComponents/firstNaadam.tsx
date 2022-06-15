@@ -32,7 +32,7 @@ const NaadamFirst = (props) => {
       <div style={{
         bottom: `calc(100vh - ${height * 2}px)`,
         background: 'linear-gradient(180deg, rgba(0, 0, 0, 0) 4.13%, #141515 100%)',
-      }} className={`absolute md:bottom-0 h-[100px] md:h-[40%] z-10 w-full`} />
+      }} className={`invisible md:visible absolute md:bottom-0 h-[100px] md:h-[40%] z-10 w-full`} />
       <img
         ref={imageRef}
         src="assets/taiz shono 1.webp"
