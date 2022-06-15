@@ -25,7 +25,7 @@ const Card = (props: Props) => {
         <Typography  variant={matches ? 'p-small' : 'title-normal'} className="text-[#C7B36D] opacity-80 uppercase">
           {headerEl}
         </Typography>
-        <Typography variant={matches ? 'h4' : 'h3'} className="text-primary-white">
+        <Typography variant={matches ? 'h4' : 'h3'} className="text-primary-white w-[496px]">
           {title}
         </Typography>
       </div>
