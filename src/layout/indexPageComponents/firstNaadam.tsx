@@ -20,7 +20,7 @@ const NaadamFirst = (props) => {
   }, [imageRef])
 
   return (
-    <div className="relative w-screen h-screen">
+    <div className="relative w-screen z-[2] h-screen">
       <div
         style={{
           background: '#1A2025',
