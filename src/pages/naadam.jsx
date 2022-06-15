@@ -1,12 +1,12 @@
 import React from 'react'
 import { MainLayout } from 'layout'
 import FirstPart from 'layout/indexPageComponents/firstNaadam'
-import { GoalCard, Emphasis } from 'components'
 import { PADDINGX } from 'constants/layout'
+import { NaadamEvents, BigPicture, NaadamPlanText, GoalCard, Emphasis, Pictures } from 'components'
 
 const Naadam = () => {
   return (
-    <MainLayout classname={'bg-mainBg'}>
+    <MainLayout classname={'bg-mainBg flex flex-col items-center'}>
       <FirstPart
         btext={
           "Within the framework of the Global Sustainable Development Goals in Mongolia's desertified region, the aim is to promote the influence of Mongolian culture to the world by circulating national culture and Mongolian intellectual creations based on innovation and copyright, and developing cultural production."
@@ -48,6 +48,13 @@ const Naadam = () => {
           <div id="spacer" className="h-32"></div>
         </div>
       </div>
+
+      <NaadamEvents />
+      <BigPicture />
+      <div className="h-[55px]"></div>
+      <NaadamPlanText />
+      <div className="h-[55px]"></div>
+      <Pictures />
     </MainLayout>
   )
 }
