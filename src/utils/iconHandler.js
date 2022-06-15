@@ -10,6 +10,9 @@ import { AiOutlineMenu } from 'react-icons/ai'
 import { BsMouse } from 'react-icons/bs'
 import { IoMdPulse } from 'react-icons/io'
 import { BiMap } from 'react-icons/bi'
+import { TbDrone } from 'react-icons/tb'
+import { BsController } from 'react-icons/bs'
+import { TbRocket } from 'react-icons/tb'
 
 export const handleIcon = ({ icon, size = 24, className = '' }) => {
   switch (icon) {
@@ -55,6 +58,12 @@ export const handleIcon = ({ icon, size = 24, className = '' }) => {
     return <FiStar className={className} style={{ width: size, height: size }} />
   case 'pulse':
     return <IoMdPulse className={className} style={{ width: size, height: size }} />
+  case 'drone':
+    return <TbDrone className={className} style={{ width: size, height: size }} />
+  case 'controller':
+    return <BsController className={className} style={{ width: size, height: size }} />
+  case 'rocket-2':
+    return <TbRocket className={className} style={{ width: size, height: size }} />
   default:
     return <></>
   }

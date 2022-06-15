@@ -18,3 +18,7 @@ export { default as Mod } from './bonus/mod'
 export {default as Modd} from './bonus/doneee'
 export { default as Arttech} from './arttech'
 export * from './cartInfo'
+export {default as NaadamEvents} from "./naadamEvents"
+export {default as BigPicture} from "./BigPicture"
+export {default as NaadamPlanText} from "./naadamPlanText"
+export {default as Pictures} from "./Pictures"
