@@ -53,15 +53,13 @@ const Naadam = () => {
         </div>
       </div>
 
-      <div className="z-10">
-        <NaadamEvents />
-        <BigPicture />
-        <div className="h-[55px]"></div>
-        <NaadamPlanText />
-        <div className="h-[55px]"></div>
-        <Pictures />
-        <div className=" h-[55px] md:h-[200px]"></div>
-      </div>
+      <NaadamEvents />
+      <BigPicture />
+      <div className="h-[55px]"></div>
+      <NaadamPlanText />
+      <div className="h-[55px]"></div>
+      <Pictures />
+      <div className=" h-[55px] md:h-[200px]"></div>
     </MainLayout>
   )
 }
