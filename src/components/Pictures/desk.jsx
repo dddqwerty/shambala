@@ -6,7 +6,7 @@ const data = [
     text: 'There are also three types of competitions and technologies from traditional festivals Exhibitions, comedies and podcasts will be broadcast live.',
   },
   {
-    pic: 'assets/pond4.png',
+    pic: 'assets/Pond4.png',
     text: 'There are also three types of competitions and technologies from traditional festivals Exhibitions, comedies and podcasts will be broadcast live.',
   },
   {
