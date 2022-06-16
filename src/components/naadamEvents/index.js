@@ -1,16 +1,60 @@
 import { Box } from './box'
 import { PBox } from './pBox'
 import { Emphasis } from 'components'
+import { motion } from 'framer-motion'
 
 const list = [
   { icon: 'drone', text: 'Replace horse racing with drone racing' },
   { icon: 'controller', text: 'Replace wrestling with e-sports and information security competitions' },
   { icon: 'rocket-2', text: 'Replacing archery with missiles and free flight' },
 ]
+const cont = {
+  visible: {
+    opacity: 1,
+    transition: {
+      delayChildren: 0.8,
+      staggerChildren: 0.2,
+      duration: 0.8,
+    },
+  },
+}
+const head = {
+  hidden: {
+    opacity: 0,
+    y: -20,
+  },
+  visible: {
+    transition: {
+      delay: 0.4,
+      duration: 0.8,
+    },
+    opacity: 1,
+    y: 0,
+  },
+}
+const item = {
+  hidden: {
+    opacity: 0,
+    y: 40,
+  },
+  visible: {
+    transition: {
+      delay: 0.5,
+      duration: 0.8,
+    },
+    opacity: 1,
+    y: 0,
+  },
+}
 
 export const NaadamEvents = () => {
   return (
-    <div className="max-w-shambWidth mx-auto w-screen flex flex-col items-center justify-center">
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      variants={cont}
+      className="max-w-shambWidth mx-auto w-screen flex flex-col items-center justify-center"
+    >
       <div className="absolute mt-96 visible md:invisible ">
         <svg width="451" height="405" viewBox="0 0 451 405" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -124,20 +168,22 @@ export const NaadamEvents = () => {
           </defs>
         </svg>
       </div>
-      <Emphasis left={true}>Naadam events</Emphasis>
+      <motion.div variants={head} initial="hidden" whileInView={'visible'}>
+        <Emphasis left={true}>Naadam events</Emphasis>
+      </motion.div>
       <div className="h-[55px]"></div>
       <div className=" w-full flex flex-col justify-between md:flex-row">
         {list.map((el, index) => {
           return (
-            <div key={`kay${index}`}>
+            <motion.div variants={item} key={`kay${index}`}>
               <Box icon={el.icon} text={el.text} />
               <PBox icon={el.icon} text={el.text} />
-            </div>
+            </motion.div>
           )
         })}
       </div>
       <div className="h-[55px]"></div>
-    </div>
+    </motion.div>
   )
 }
 

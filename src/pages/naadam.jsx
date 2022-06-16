@@ -3,6 +3,36 @@ import { MainLayout } from 'layout'
 import FirstPart from 'layout/indexPageComponents/firstNaadam'
 import { PADDINGX } from 'constants/layout'
 import { NaadamEvents, BigPicture, NaadamPlanText, GoalCard, Emphasis, Pictures } from 'components'
+import { motion } from 'framer-motion'
+
+const goal = {
+  hidden: {
+    opacity: 0,
+    y: -20,
+  },
+  visible: {
+    transition: {
+      delay: 0.3,
+      duration: 0.8,
+    },
+    opacity: 1,
+    y: 0,
+  },
+}
+const smallGoal = {
+  hidden: {
+    opacity: 0,
+    y: 30,
+  },
+  visible: {
+    transition: {
+      delay: 0.3,
+      duration: 0.8,
+    },
+    opacity: 1,
+    y: 0,
+  },
+}
 
 const Naadam = () => {
   return (
@@ -148,10 +178,15 @@ const Naadam = () => {
           </svg>
         </div>
 
-        <div className="text-center z-10">
+        <motion.div variants={goal} initial="hidden" whileInView={'visible'} className="text-center z-10">
           <Emphasis children="Goals" left={true} />
-        </div>
-        <div className={`max-w-shambWidth mx-auto flex justify-center ${PADDINGX}`}>
+        </motion.div>
+        <motion.div
+          variants={smallGoal}
+          initial="hidden"
+          whileInView={'visible'}
+          className={`max-w-shambWidth mx-auto flex justify-center ${PADDINGX}`}
+        >
           <div className="md:flex md:justify-around md:flex-wrap z-50 w-[80%] md:w-full">
             <GoalCard
               className="m-2"
@@ -169,7 +204,7 @@ const Naadam = () => {
             <GoalCard className="m-2" index={'06'} desc="Introduce the value of art and technology to society" />
           </div>
           <div id="spacer" className="h-32"></div>
-        </div>
+        </motion.div>
       </div>
 
       <div id="spacer" className=" h-24 md:h-32"></div>
