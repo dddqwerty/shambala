@@ -1,8 +1,30 @@
 import { Emphasis } from 'components'
 import Typography from 'components/typography'
+import { motion } from 'framer-motion'
+
+const item = {
+  hidden: {
+    opacity: 0,
+    y: 40,
+  },
+  visible: {
+    transition: {
+      delay: 0.5,
+      duration: 0.8,
+    },
+    opacity: 1,
+    y: 0,
+  },
+}
+
 export const NaadamPlanText = () => {
   return (
-    <div className="max-w-shambWidth w-full flex items-center flex-col justify-center">
+    <motion.div
+      variants={item}
+      initial="hidden"
+      whileInView={'visible'}
+      className="max-w-shambWidth w-full flex items-center flex-col justify-center"
+    >
       <div className="absolute mt-20 visible md:invisible">
         <svg width="244" height="168" viewBox="0 0 244 168" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g filter="url(#filter0_d_452_1383)">
@@ -95,7 +117,7 @@ export const NaadamPlanText = () => {
         experts on the topic.
       </Typography>
       <div className="h-[55px]"></div>
-    </div>
+    </motion.div>
   )
 }
 
