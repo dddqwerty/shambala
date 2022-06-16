@@ -24,5 +24,3 @@ export {default as NaadamPlanText} from "./naadamPlanText"
 export {default as Pictures} from "./Pictures"
 export {default as Shartseg} from './tsng/shartseg'
 export {default as IGMLAB} from './tsng/igmlab/igmbuten'
-export * from "./zavaan"
-export * from "./zavaan2"
