@@ -6,7 +6,6 @@ export default function Home() {
     return (
         <MainLayout classname='bg-backgroundColor-darkGray relative py-[70px]'>
             <OurplanetHeader />
-            <div className='h-[4000px]'></div>
             <div>
                 <img src="assets/realearth.webp" alt="" />
             </div>

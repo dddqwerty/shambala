@@ -15,12 +15,13 @@ export { default as Yellow } from './yellowtitle'
 export { default as MenuButton } from './MenuButton'
 export { default as CardWithIcon } from './cardWithIcon'
 export { default as Mod } from './tsng/bonus/mod'
-export {default as Modd} from './tsng/bonus/doneee'
-export { default as Arttech} from './arttech'
+export { default as Modd } from './tsng/bonus/doneee'
+export { default as Arttech } from './arttech'
 export * from './cartInfo'
-export {default as NaadamEvents} from "./naadamEvents"
-export {default as BigPicture} from "./BigPicture"
-export {default as NaadamPlanText} from "./naadamPlanText"
-export {default as Pictures} from "./Pictures"
-export {default as Shartseg} from './tsng/shartseg'
-export {default as IGMLAB} from './tsng/igmlab/igmbuten'
+export { default as NaadamEvents } from './naadamEvents'
+export { default as BigPicture } from './BigPicture'
+export { default as NaadamPlanText } from './naadamPlanText'
+export { default as Pictures } from './Pictures'
+export { default as Shartseg } from './tsng/shartseg'
+export { default as IGMLAB } from './tsng/igmlab/igmbuten'
+export { default as IgmSecondPart } from './igmSecondPart'
