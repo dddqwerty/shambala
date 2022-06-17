@@ -1,4 +1,4 @@
-export const data = [
+export const NaadamPlanPictureData = [
     {
         picture: '/assets/naadamPlanPictures/hogiinSavBioNoil.jpg',
         text: 'There are also three types of competitions and technologies from traditional festivals Exhibitions, comedies and podcasts will be broadcast live.',

@@ -10,7 +10,7 @@ const IGMLAB = () => {
     const theme = useTheme()
     const matches = useMediaQuery(theme.breakpoints.down('sm'))
     return (
-        <div className={` flex items-center flex-col justify-center`}>
+        <div className={`flex items-center flex-col justify-center`}>
             <div className="grid grid-rows-2 place-items-center gap-[25px] mb-[150px]">
                 <Emphasis>
                     <Typography variant={matches ? 'title-big' : 'h1'}>IGM ЛАБ</Typography>

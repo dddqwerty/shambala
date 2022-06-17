@@ -7,16 +7,17 @@ import "swiper/css/pagination";
 type Props = {
     data: object[],
     dataLength: number,
+    slideClassName: string,
 }
 
 const MobileSwiper = (props: Props) => {
-    const { dataLength, data } = props;
+    const { dataLength, data, slideClassName } = props;
     console.log(data)
 
     return (
         <div style={{ width: `calc(${dataLength} * 230px)` }}>
             <Swiper
-                slidesPerView={4}
+                slidesPerView={dataLength - 2}
                 centeredSlides={true}
                 spaceBetween={30}
                 grabCursor={true}
@@ -34,7 +35,7 @@ const MobileSwiper = (props: Props) => {
                             {({ isActive }) => (
                                 <div className='relative w-[310px] h-[381px] flex  items-center'>
                                     <img src={info.picture} alt="" className={isActive ? 'brightness-[.56] duration-300 z-[2]' : 'opacity-[0]'} />
-                                    <div className={isActive ? 'absolute left-[20%] w-[60%] duration-300 opacity-[100] z-[3] text-primary-white' : 'opacity-[0]'}>
+                                    <div className={isActive ? `absolute opacity-[100] z-[3] text-primary-white ${slideClassName}` : 'opacity-[0]'}>
                                         <Typography variant='title-big' className='text-center'>{index + 1}</Typography>
                                         <div id="spacer" className=" h-6"></div>
                                         <Typography variant='body-mobile' className='text-left' >{info.text}</Typography>
