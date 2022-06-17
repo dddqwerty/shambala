@@ -37,6 +37,8 @@ const smallGoal = {
 const Naadam = () => {
   return (
     <MainLayout classname={'bg-mainBg flex flex-col items-center'}>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
       <FirstPart
         btext={
           "Within the framework of the Global Sustainable Development Goals in Mongolia's desertified region, the aim is to promote the influence of Mongolian culture to the world by circulating national culture and Mongolian intellectual creations based on innovation and copyright, and developing cultural production."
@@ -187,7 +189,7 @@ const Naadam = () => {
           whileInView={'visible'}
           className={`max-w-shambWidth mx-auto flex justify-center ${PADDINGX}`}
         >
-          <div className="md:flex md:justify-around md:flex-wrap z-50 w-[80%] md:w-full">
+          <div className="md:flex md:justify-around md:flex-wrap z-40 w-[80%] md:w-full">
             <GoalCard
               className="m-2"
               index={'01'}
