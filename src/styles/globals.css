@@ -1,74 +1,74 @@
-        @tailwind components;
-        @tailwind utilities;
-        @tailwind base;
-        /** i hate this and you'll probably hate this too */
-        /* * {
+@tailwind components;
+@tailwind utilities;
+@tailwind base;
+/** i hate this and you'll probably hate this too */
+/* * {
     border: 1px solid red;
 } */
-        
-        html,
-        body {
-            background: #2a2c2c;
-            overflow-x: hidden;
-            scroll-behavior: smooth;
-        }
-        
-        body {
-            position: relative;
-        }
-        
-        @keyframes spin {
-            from {
-                transform: rotate(0deg);
-            }
-            to {
-                transform: rotate(360deg);
-            }
-        }
-        
-        li {
-            list-style: none;
-        }
-        
-        .icon-placeholder {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            flex: 40px 0;
-            margin-right: 20px;
-        }
-        
-        .text-placeholder {
-            border-radius: 5px;
-            width: 200px;
-            height: 20px;
-            flex: 1;
-        }
-        
-        @layer components {
-            .ticker-view {
-                height: 100%;
-                margin: auto;
-                display: flex;
-                flex-direction: row-reverse;
-                overflow: hidden;
-                /* font-size: 56px; */
-                position: relative;
-                color: white;
-            }
-            .number-placeholder {
-                visibility: hidden;
-            }
-            .ticker-column-container {
-                position: relative;
-            }
-            .ticker-column {
-                position: absolute;
-                height: 1000%;
-                bottom: 0;
-            }
-            .ticker-digit {
-                text-align: center;
-                height: 10%;
-            }
-        }
+
+html,
+body {
+  background: #2a2c2c;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+li {
+  list-style: none;
+}
+
+.icon-placeholder {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  flex: 40px 0;
+  margin-right: 20px;
+}
+
+.text-placeholder {
+  border-radius: 5px;
+  width: 200px;
+  height: 20px;
+  flex: 1;
+}
+
+@layer components {
+  .ticker-view {
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    overflow: hidden;
+    /* font-size: 56px; */
+    position: relative;
+    color: white;
+  }
+  .number-placeholder {
+    visibility: hidden;
+  }
+  .ticker-column-container {
+    position: relative;
+  }
+  .ticker-column {
+    position: absolute;
+    height: 1000%;
+    bottom: 0;
+  }
+  .ticker-digit {
+    text-align: center;
+    height: 10%;
+  }
+}
