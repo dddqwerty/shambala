@@ -55,7 +55,7 @@ export const NaadamEvents = () => {
       variants={cont}
       className="max-w-shambWidth mx-auto w-screen flex flex-col items-center justify-center"
     >
-      <div className="absolute mt-96 visible md:invisible ">
+      <div className="absolute mt-[60%] visible md:invisible ">
         <svg width="451" height="405" viewBox="0 0 451 405" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M107 187C107 263.215 83.0472 325 53.5 325C23.9528 325 0 263.215 0 187C0 110.785 23.9528 49 53.5 49C83.0472 49 107 110.785 107 187Z"
