@@ -1,3 +1,4 @@
+import { useEffect, useRef } from 'react'
 import React, { useState } from 'react'
 import { Typography } from 'components'
 import { handleIcon } from 'utils'
@@ -5,15 +6,6 @@ import { PADDINGX } from 'constants/layout'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { Drawer, Button, SwipeableDrawer } from '@mui/material'
-import Box from '@mui/material/Box'
-import List from '@mui/material/List'
-import Divider from '@mui/material/Divider'
-import ListItem from '@mui/material/ListItem'
-import ListItemButton from '@mui/material/ListItemButton'
-import ListItemIcon from '@mui/material/ListItemIcon'
-import ListItemText from '@mui/material/ListItemText'
-import InboxIcon from '@mui/icons-material/MoveToInbox'
-import MailIcon from '@mui/icons-material/Mail'
 
 const data = [
   { link: '/whoarewe', name: 'Who are we' },
@@ -43,13 +35,13 @@ export const Bighead = () => {
       {data.map((el) => {
         const selected = router.pathname == el.link
         return (
-          <Link href = {el.link}>
+          <Link href={el.link}>
             <div
               style={{
                 background:
                   selected && 'linear-gradient(90deg, rgba(255, 210, 23, 0.2) 0%, rgba(255, 210, 23, 0) 100%)',
               }}
-              className="w-full h-14 flex justify-center items-center hover:text-white hover:cursor-pointer"
+              className={` w-full h-14 flex justify-center items-center hover:text-white hover:cursor-pointer`}
             >
               {selected && (
                 <img
@@ -78,7 +70,7 @@ export const Bighead = () => {
       style={{
         backgroundColor: 'rgba(32, 33, 33, 0.5)',
       }}
-      className={`fixed  z-50   flex justify-between backdrop-blur-[10px]  items-center w-full h-[70px] px-32`}
+      className={`fixed z-50 flex justify-between backdrop-blur-[10px]  items-center w-full h-[70px] px-10`}
     >
       <div className="h-10 w-[181px]">
         <Link href={'/'}>
@@ -110,72 +102,28 @@ export const Bighead = () => {
       </div>
       <div className="items-center justify-between h-full headerBpoint:flex hidden gap-14">
         <div className="h-full shrink-0 flex items-center">
-          <Link href={'/whoarewe'}>
-            <div
-              className={`${
-                router.pathname == '/whoarewe' && 'border-primary-yellow bg-textColor-secondary-darkGray'
-              } group flex items-center border-transparent h-full px-[35px] text-white border-b-2  hover:cursor-pointer`}
-            >
-              <a>
-                <Typography
-                  variant="mobile-menu"
-                  className={`${router.pathname == '/whoarewe' ? '' : 'text-white/70 '}group-hover:text-white`}
+          {data.map((el) => {
+            const sele = router.pathname == el.link
+            return (
+              <Link href={el.link}>
+                <div
+                  key={'deez' + el.name}
+                  id={el.name}
+                  className={`${router.pathname == el.link ? "border-primary-yellow bg-textColor-secondary-darkGray" : " border-transparent"} group flex items-center h-full px-[35px] border-b-2 hover:cursor-pointer text-white`}
                 >
-                  Who we are
-                </Typography>
-              </a>
-            </div>
-          </Link>
-          <Link href={'/whatarewedoing'}>
-            <div
-              className={`${
-                router.pathname == '/whatarewedoing' && 'border-primary-yellow bg-textColor-secondary-darkGray'
-              } group flex items-center border-transparent h-full px-[35px] text-white border-b-2  hover:cursor-pointer`}
-            >
-              <a>
-                <Typography
-                  variant="mobile-menu"
-                  className={`${router.pathname == '/whatarewedoing' ? '' : 'text-white/70 '}group-hover:text-white`}
-                >
-                  What are we doing
-                </Typography>
-              </a>
-            </div>
-          </Link>
-          <Link href={'/recomended'}>
-            <div
-              className={`${
-                router.pathname == '/recomended' && 'border-primary-yellow bg-textColor-secondary-darkGray'
-              } group flex items-center border-transparent h-full px-[35px] border-b-2 text-white hover:cursor-pointer`}
-            >
-              <a>
-                <Typography
-                  variant="mobile-menu"
-                  className={`${router.pathname == '/recomended' ? '' : 'text-white/70 '}group-hover:text-white`}
-                >
-                  Who we work with
-                </Typography>
-              </a>
-            </div>
-          </Link>
-          <Link href={'/naadam'}>
-            <div
-              className={`${
-                router.pathname == '/naadam' && 'border-primary-yellow bg-textColor-secondary-darkGray'
-              } group flex items-center border-transparent h-full px-[35px] border-b-2 hover:cursor-pointer text-white`}
-            >
-              <a>
-                <Typography
-                  variant="mobile-menu"
-                  className={`${router.pathname == '/naadam' ? '' : 'text-white/70 '}group-hover:text-white`}
-                >
-                  Naadam
-                </Typography>
-              </a>
-            </div>
-          </Link>
+                  <a>
+                    <Typography
+                      variant="mobile-menu"
+                      className={`${router.pathname == el.link ? '' : 'text-white/70 '}group-hover:text-white `}
+                    >
+                      {el.name}
+                    </Typography>
+                  </a>
+                </div>
+              </Link>
+            )
+          })}
         </div>
-
         <div id="icons" className="flex gap-[30px]">
           <Link href={'/'}>
             <a className="hover:scale-125">

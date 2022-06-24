@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        headerBpoint: '1140px',
+        headerBpoint: '1040px',
       },
       fontFamily: {
         sans: ['Poppins', ...defaultTheme.fontFamily.sans],

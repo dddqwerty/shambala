@@ -30,13 +30,13 @@ const CardWithIconn = () => {
       <img src="/assets/enjinerxd.webp" className='md:w-[512px] md:opacity-30 w-[200px] absolute transform -translate-x-1/2 left-1/2' alt="" />
       <div className='mt-[60px] md:mt-[190px]'>
         {/* <motion.div variants={container} initial="hidden" whileInView="visible" className=""> */}
-        <motion.div variants={item} initial="hidden" whileInView="visible" className="flex flex-col items-center text-center">
+        <motion.div variants={item} initial="hidden" whileInView="visible" className="mb-20 flex flex-col items-center text-center">
           <Emphasis>Terrain Features </Emphasis>
         </motion.div>
         {/* </motion.div> */}
 
-        <motion.div variants={container} initial="hidden" whileInView="visible" className="hidden md:block">
-          <div className="grid grid-cols-2 gap-x-72 pt-16  gap-y-[155px] ">
+        <motion.div variants={container} initial="hidden" whileInView="visible" className="">
+          <div className="flex flex-wrap justify-center max-w-shambWidth w-screen">
             <motion.div variants={item} className="flex flex-col items-center">
               <CardWithIcon
                 headerEl={handleIcon({ icon: 'riDirection', size: 33, className: 'text-[#A3935B]' })}
