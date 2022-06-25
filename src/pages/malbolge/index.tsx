@@ -1,4 +1,3 @@
-import { Header } from 'layout/main'
 import { MainLayout } from 'layout'
 import React from 'react'
 import Home from 'pages/whoarewe'

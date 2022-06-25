@@ -8,7 +8,7 @@ const Text = () => {
   const theme = useTheme()
   const matches = useMediaQuery(theme.breakpoints.down('sm'))
   const item = {
-    hidden: { x: -40, opacity: 0 },
+    hidden: { x: -40, y: 0, opacity: 0, transform: "none" },
     visible: {
       x: 0,
       opacity: 1,
@@ -17,8 +17,9 @@ const Text = () => {
       },
     },
   }
+
   const item2 = {
-    hidden: { x: 40, opacity: 0 },
+    hidden: { x: 40, y: 0, opacity: 0, transform: "none" },
     visible: {
       x: 0,
       opacity: 1,
@@ -31,7 +32,7 @@ const Text = () => {
     <div className={`relative flex max-w-shambWidth py-36 mx-auto flex-col ${PADDINGX}`}>
       <motion.div
         initial="hidden"
-        className="hidden md:block"
+        className="hidden md:block !transform-none"
         viewport={{ once: true }}
         whileInView="visible"
         variants={item2}
