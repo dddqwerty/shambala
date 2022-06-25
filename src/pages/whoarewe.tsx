@@ -105,9 +105,9 @@ export default function Home() {
             </motion.div>
 
           </motion.div>
-          <motion.div variants={cards} className='grid grid-cols-2 md:grid-cols-4 mt-40 mb-72 gap-y-12 md:gap-y-[126px] mx-auto gap-x-6'>
+          <motion.div variants={cards} className=' max-w-shambWidth flex flex-wrap justify-center my-20'>
             {members[0].map((member, index) => {
-              return < MemberCard firstName={member.firstName} lastName={member.lastName} job={member.job} picture={member.picture} key={index} />
+              return < MemberCard className='m-5 my-10' firstName={member.firstName} lastName={member.lastName} job={member.job} picture={member.picture} key={index} />
             })}
           </motion.div>
         </motion.div>
@@ -148,6 +148,7 @@ export default function Home() {
             <Emphasis content='Company goals' />
             <Typography variant='body-web' className='text-primary-white opacity-60 w-[72%]'>In 2056, an international engineering and research institute will be established in Mongolia that meets the Sustainable Development Goals.</Typography>
           </motion.div>
+
           <motion.div variants={item} className='md:block mt-48 hidden '>
             <div className='grid grid-cols-3 gap-x-[125px] place-content-center'>
               <GoalCard index='01' desc='Rehabilitation will be carried out in desert areas by planting trees suitable for the specifics of the land.' />
@@ -172,9 +173,9 @@ export default function Home() {
           variants={container}
           initial='hidden'
           whileInView={'visible'}>
-          <motion.div variants={item} className='grid grid-cols-2 md:grid-cols-4 mt-40 gap-y-12 md:gap-y-[126px] mx-auto gap-x-6'>
+          <motion.div variants={item} className=' max-w-shambWidth flex flex-wrap justify-center my-20'>
             {members[1].map((member, index) => {
-              return < MemberCard firstName={member.firstName} lastName={member.lastName} job={member.job} picture={member.picture} key={index} />
+              return < MemberCard className='m-5 my-10' firstName={member.firstName} lastName={member.lastName} job={member.job} picture={member.picture} key={index} />
             })}
           </motion.div>
         </motion.div>
