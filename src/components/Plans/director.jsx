@@ -40,7 +40,7 @@ export const Dir = (props) => {
     styleTop = 'rounded-t-[10px]'
   }
   if (b) {
-    styleB = 'min-h-[500px]'
+    styleB = 'min-h-[500px] '
   }
   if (active) {
     styleActive1 = 'bg-primary-yellow'
@@ -53,7 +53,7 @@ export const Dir = (props) => {
   if (!l) {
     return (
       <div className={`${styleB}  h-fit w-full flex flex-row justify-center  ${className}`}>
-        <motion.div variants={item1} className=" flex flex-col w-planWidth h-full mx-6 justify-center">
+        <motion.div variants={item1} className=" flex flex-col w-planWidth h-[450px] mx-6 justify-center ">
           <Typography variant="title-big" className="text-white ">
             {headText}
           </Typography>
@@ -64,7 +64,7 @@ export const Dir = (props) => {
 
         <AtLine icon={icon} style={styleTop} b={b} act1={styleActive1} act2={styleActive2} />
 
-        <div className=" flex flex-col w-planWidth h-full justify-center mx-6">
+        <div className=" flex flex-col w-planWidth h-[450px] justify-center mx-6">
           <Typography variant="p-small" className="w-planWidth text-textColor-secondary-lightGray/40">
             {date}
           </Typography>
@@ -74,13 +74,13 @@ export const Dir = (props) => {
   } else {
     return (
       <div className={`${styleB}  h-fit w-full flex flex-row justify-center  ${className}`}>
-        <div className=" flex flex-col w-planWidth h-full justify-center mx-6">
+        <div className={` flex flex-col w-planWidth h-[450px] justify-center mx-6`}>
           <Typography variant="p-small" className="w-planWidth text-textColor-secondary-lightGray/40">
             {date}
           </Typography>
         </div>
         <AtLine icon={icon} style={styleTop} b={b} act1={styleActive1} act2={styleActive2} />
-        <motion.div variants={item2} className=" flex flex-col w-planWidth h-full justify-center mx-6">
+        <motion.div variants={item2} className=" flex flex-col w-planWidth h-[450px] justify-center mx-6">
           <Typography variant="title-big" className="text-white ">
             {headText}
           </Typography>

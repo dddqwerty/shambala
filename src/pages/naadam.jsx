@@ -189,7 +189,7 @@ const Naadam = () => {
           whileInView={'visible'}
           className={`max-w-shambWidth mx-auto flex justify-center ${PADDINGX}`}
         >
-          <div className="md:flex md:justify-around md:flex-wrap z-40 w-[80%] md:w-full">
+          <div className="md:flex md:justify-around md:flex-wrap z-40 w-[90%] md:w-full">
             <GoalCard
               className="m-2"
               index={'01'}
