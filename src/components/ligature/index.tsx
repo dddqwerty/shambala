@@ -4,7 +4,7 @@ import * as React from 'react'
 import { useMediaQuery } from "@mui/material";
 import { useTheme } from '@mui/material/styles'
 
-type Props = React.PropsWithChildren<{ content?: string; right?: boolean, left?: boolean }>
+type Props = React.PropsWithChildren<{ content?: string; right?: boolean, left?: boolean, className ?:string }>
 
 export const Emphasis = (props: Props) => {
   const DEFAULT_CLASSES = "w-full flex justify-center row";
@@ -18,7 +18,7 @@ export const Emphasis = (props: Props) => {
 
   return (
     <div className="inline-flex flex-row justify-center">
-      <div className=''>
+      <div className={props.className}>
         <Typography variant={matches ? 'title-big' : 'h1'} className='text-primary-white text-center'>
           <div className={classNames(DEFAULT_CLASSES, props.left && ADDITIONAL_CLASSES.left, props.right && ADDITIONAL_CLASSES.right)}>
             <hr className="flex justify-center rounded-buttonRadius w-[42px] md:w-[68px] bg-secondary-blue h-2 mb-[10px] border-0" />

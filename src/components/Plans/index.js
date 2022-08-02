@@ -23,7 +23,7 @@ const item = {
   },
 }
 
-export const Plans = () => {
+export const Plans = ({ data }) => {
   return (
     <motion.div
       variants={container}
@@ -59,72 +59,56 @@ export const Plans = () => {
         >
           <div id="backthing" className="absolute blur-3xl bg-white/20 w-[15%] h-[100px]"></div>
           <div className="flex flex-col items-center gap-5">
-            <Emphasis left={true}>Our future plan</Emphasis>
+            <Emphasis left={true}>{data.title}</Emphasis>
             <Typography
               variant={'title-big'}
               className={'text-[#bababa] font-light md:font-semibold md:text-h3 md:text-white'}
             >
-              2020 - 2032
+              {data.date}
             </Typography>
           </div>
         </motion.div>
 
-        <Phone
-          className=" md:-z-50 md:absolute"
-          index={'middle'}
-          icon={'rocket'}
-          headText={'The second four years'}
-          bodyText={'The infrastructure of the Renewable Energy Research Center.'}
-          date={'Apr 15, 2020 - Nov 1, 2024'}
-          active
-          top
-        />
-        <Phone
-          className=" md:-z-50 md:absolute"
-          index={'middle'}
-          icon={'rocket'}
-          headText={'The second four years'}
-          bodyText={'The infrastructure of the Renewable Energy Research Center.'}
-          date={'Apr 15, 2020 - Nov 1, 2024'}
-        />
-        <Phone
-          className=" md:-z-50 md:absolute"
-          index={'middle'}
-          icon={'plane'}
-          headText={'The second four years'}
-          bodyText={'The infrastructure of the Renewable Energy Research Center.'}
-          date={'Apr 15, 2020 - Nov 1, 2024'}
-          btm
-        />
-
-        <Dir
-          className=" md:visible md:z-40 md:relative sm:-z-50 sm: absolute sm: invisible"
-          index={'first'}
-          icon={'location'}
-          headText={'The first four years'}
-          bodyText={'A Green zone will be established on an area of 16 hectares.'}
-          date={'Apr 15, 2020 - Nov 1, 2024'}
-          top
-          active
-        />
-        <Dir
-          className=" md:visible md:z-40 md:relative sm:-z-50 sm: absolute sm: invisible"
-          l
-          index={'middle'}
-          icon={'plane'}
-          headText={'The second four years'}
-          bodyText={'The infrastructure of the Renewable Energy Research Center.'}
-          date={'Apr 15, 2020 - Nov 1, 2024'}
-        />
-        <Dir
-          className=" md:visible md:z-40 md:relative sm:-z-50 sm: absolute sm: invisible"
-          index={'end'}
-          icon={'rocket'}
-          headText={'The third four years'}
-          bodyText={'The Research Center building and other construction will be completed.'}
-          date={'Apr 15, 2020 - Nov 1, 2024'}
-          b
-        />
+        <div>
+          {data.listOfPlans.map((el, index) => {
+            return (
+              <div key={`t1${index}`}>
+                <Phone
+                  className=" md:-z-50 md:absolute"
+                  // index={ index == 0 ? "first" : index == data.listOfPlans.length-1 ? "end"}
+                  index={'middle'}
+                  icon={el.icon}
+                  headText={el.head}
+                  bodyText={el.body}
+                  date={el.date}
+                  active={el.act == true ? true : false}
+                  top={index == 0 ? true : false}
+                  btm={index == data.listOfPlans.length - 1 ? true : false}
+                />
+              </div>
+            )
+          })}
+        </div>
+        <div>
+          {data.listOfPlans.map((el, index) => {
+            return (
+              <div key={`t1${index}`}>
+                <Dir
+                  className=" md:visible md:z-40 md:relative sm:-z-50 sm: absolute sm: invisible"
+                  index={'first'}
+                  icon={el.icon}
+                  headText={el.head}
+                  bodyText={el.body}
+                  date={el.date}
+                  top={index == 0 ? true : false}
+                  b={index == data.listOfPlans.length - 1 ? true : false}
+                  active={el.act == true ? true : false}
+                  l={index % 2 == 0 ? false : true}
+                />
+              </div>
+            )
+          })}
+        </div>
 
         <div id="spacer" className=" h-[100px]"></div>
       </div>

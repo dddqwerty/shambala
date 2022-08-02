@@ -12,6 +12,7 @@ type Props = React.PropsWithChildren<{
   title?: string
   headerEl: React.ReactNode
   className?: string
+  loc ?: string
 }>
 const Yellow = (props: Props) => {
   const theme = useTheme()
@@ -31,7 +32,7 @@ const Yellow = (props: Props) => {
     }
   }
 
-  const { desc, title, headerEl, className } = props
+  const { desc, title, headerEl, className, loc } = props
   return (
     <div className={`flex flex-col ${className} gap-10`}>
 
@@ -68,7 +69,7 @@ const Yellow = (props: Props) => {
             Location
           </Typography>
           <Typography variant="p-small" className="text-primary-white opacity-50">
-            Dornogobi aimag
+            {props.loc}
           </Typography>
         </div>
       </motion.div>

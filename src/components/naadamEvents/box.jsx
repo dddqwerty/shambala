@@ -5,7 +5,7 @@ export const Box = (props) => {
   const { icon, text } = props
 
   return (
-    <div className="invisible absolute -z-50 md:relative md:z-0 md:visible max-w-[370px] h-[250px] rounded-[8px] m-[5px] bg-[#373A3A4D] flex justify-center flex-col items-center">
+    <div className="invisible absolute -z-50 md:relative md:z-0 md:visible max-w-[370px] h-full rounded-[8px] m-[5px] bg-[#373A3A4D] flex justify-center flex-col items-center">
       <div className="h-[50%] w-full flex justify-center items-end">
         {handleIcon({
           icon: icon,

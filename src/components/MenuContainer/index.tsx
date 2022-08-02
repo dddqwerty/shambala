@@ -1,42 +1,57 @@
-import * as React from "react";
-import { motion } from "framer-motion";
+import * as React from 'react'
+import { motion } from 'framer-motion'
 import MenuItem from '../MenuItem'
 import { useRouter } from 'next/router'
 
 const variants = {
-    open: {
-        transition: { staggerChildren: 0.07, delayChildren: 0.2 }
-    },
-    closed: {
-        transition: { staggerChildren: 0.05, staggerDirection: -1 }
-    }
-};
+  open: {
+    transition: { staggerChildren: 0.07, delayChildren: 0.2 },
+  },
+  closed: {
+    transition: { staggerChildren: 0.05, staggerDirection: -1 },
+  },
+}
 
-export const Navigation = () => (
+const itemIds = [
+  {
+    name: 'Home',
+    path: '/',
+    id: '',
+  },
+  {
+    name: 'Who we are',
+    path: '/whoarewe',
+    id: 'whoarewe',
+  },
+  {
+    name: 'Artech',
+    path: '/artech',
+    id: 'whatarewedoing',
+  },
+  {
+    name: 'Our Planet',
+    path: '/ourplanet',
+    id: 'whatarewedoing',
+  },
+  {
+    name: 'Recommended projects',
+    path: '/recomended',
+    id: 'recomended',
+  },
+  {
+    name: 'Naadam',
+    path: '/naadam',
+    id: 'naadam',
+  },
+]
+
+export const Navigation = () => {
+  const router = useRouter()
+  return (
     <motion.ul className="m-0 flex flex-col py-5 absolute w-full" variants={variants}>
-        {itemIds.map(({ name, isSelected ,path}, index) => (
-            <MenuItem name={name} isSelected={isSelected} key={index} onclick={path} />
-        ))}
+      {itemIds.map(({ name, path }, index) => (
+        <MenuItem name={name} isSelected={router.pathname == path} key={index} path={path} />
+      ))}
     </motion.ul>
-);
-
-const itemIds = [{
-    name: "Who we are",
-    isSelected: true,
-    path:"/whoarewe"
-}, {
-    name: "What we do",
-    isSelected: false,
-    path:"/whatarewedoing"
-
-}, {
-    name: "Recommended projects",
-    isSelected: false,
-    path:"/recomended"
-
-}, {
-    name: "Naadam",
-    isSelected: false,
-    path:"/Naadam"
-
-}];
+  )
+}

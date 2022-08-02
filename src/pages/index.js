@@ -8,6 +8,9 @@ import CardWithIconn from './style/cardWithIcon'
 import { Plans } from 'components/Plans'
 import { Info } from 'components'
 import Whatarewedoing from './style/globeCard'
+import Content from '../../public/assets/data.js'
+
+const data = Content.index
 
 // import { Easy } from 'components/telmun/arttecheasy'
 import Urs from 'components/telmun/urs'
@@ -15,16 +18,15 @@ import Urs from 'components/telmun/urs'
 export default function Home() {
   return (
     <MainLayout classname={'bg-mainBg'}>
-      <FirstPart />
-      <Titi />
-      <CardWithIconn />
-      <Fournumber />
-      <Plans />
-      <Info />
-      <OurGoalsPart />
-      <Whatarewedoing />
+      <FirstPart data={data.firstPart} />
+      <Titi data={data.titi} />
+      <CardWithIconn data={data.cardWithIconn} />
+      <Fournumber data={data.fournumbers} />
+      <Plans data={data.plans} />
+      <Info data={data.info} />
+      <OurGoalsPart data={data.ourGoals} />
+      <Whatarewedoing data={data.whatAreWeDoing} />
       <Urs />
     </MainLayout>
   )
 }
-1
