@@ -5,6 +5,10 @@ import { PADDINGX } from 'constants/layout'
 import { NaadamEvents, BigPicture, NaadamPlanText, GoalCard, Emphasis, Pictures } from 'components'
 import { motion } from 'framer-motion'
 
+import Content from '../../public/assets/data.js'
+
+const data = Content.naadam
+
 const goal = {
   hidden: {
     opacity: 0,
@@ -40,11 +44,12 @@ const Naadam = () => {
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 
       <FirstPart
-        btext={
-          "Within the framework of the Global Sustainable Development Goals in Mongolia's desertified region, the aim is to promote the influence of Mongolian culture to the world by circulating national culture and Mongolian intellectual creations based on innovation and copyright, and developing cultural production."
-        }
-        loc={'location'}
-        location={'Dornogobi aimag'}
+        btext={data.btext}
+        loc={data.loc}
+        location={data.location}
+        title={data.title1}
+        bgPicture={data.bgPicture1}
+        locationPicture={data.locationPicture}
       ></FirstPart>
 
       <div className="absolute top-[55vh] right-0 visible md:invisible ">
@@ -190,20 +195,9 @@ const Naadam = () => {
           className={`max-w-shambWidth mx-auto flex justify-center ${PADDINGX}`}
         >
           <div className="md:flex md:justify-around md:flex-wrap z-40 w-[90%] md:w-full">
-            <GoalCard
-              className="m-2"
-              index={'01'}
-              desc="To promote Mongolia's heritage, art and culture internationally through technology"
-            />
-            <GoalCard className="m-2" index={'02'} desc="Rehabilitation through desertification in Mongolia's arts" />
-            <GoalCard className="m-2" index={'03'} desc="Long-term protection of Mongolia's terrestrial ecosystem" />
-            <GoalCard
-              className="m-2"
-              index={'04'}
-              desc="To introduce the development of Mongolian art and technology to the world and to exchange international experience"
-            />
-            <GoalCard className="m-2" index={'05'} desc="Disseminate Mongolian heritage" />
-            <GoalCard className="m-2" index={'06'} desc="Introduce the value of art and technology to society" />
+            {data.goals.map((el) => {
+              return <GoalCard className="  md:min-w-[370px] m-2" index={el.index} desc={el.text} />
+            })}
           </div>
           <div id="spacer" className="h-32"></div>
         </motion.div>
@@ -211,12 +205,12 @@ const Naadam = () => {
 
       <div id="spacer" className=" h-24 md:h-32"></div>
 
-      <NaadamEvents />
-      <BigPicture />
+      <NaadamEvents title={data.title2} list={data.list} />
+      <BigPicture bgPicture={data.bgPicture2} mainPicture={data.mainPicture} />
       <div className="h-[55px] md:h-[150px]"></div>
-      <NaadamPlanText />
+      <NaadamPlanText title={data.title3} paragraph={data.paragraph1} />
       <div className="h-[55px]"></div>
-      <Pictures />
+      <Pictures pictures={data.pictures} />
       <div className=" h-[55px] md:h-[200px]"></div>
     </MainLayout>
   )

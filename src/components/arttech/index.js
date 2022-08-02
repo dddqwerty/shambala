@@ -4,7 +4,8 @@ import { PADDINGX } from 'constants/layout'
 import { handleIcon } from 'utils'
 import { useTheme } from '@mui/material/styles'
 import useMediaQuery from '@mui/material/useMediaQuery'
-const Arttech = () => {
+
+const Arttech = ({ data }) => {
   const theme = useTheme()
   const matches = useMediaQuery(theme.breakpoints.down('sm'))
 
@@ -54,11 +55,10 @@ const Arttech = () => {
         >
           <motion.div variants={item} initial="hidden" whileInView={'visible'}>
             <Yellow
-              title={'Art Tech Empire'}
-              desc={
-                'In 2056, an international engineering and research institute will be established in Mongolia that meets the Sustainable Development Goals.'
-              }
-              headerEl={handleIcon({ icon: 'nav', size: matches ? 25 : 30 })}
+              title={data.title}
+              desc={data.subTitle}
+              headerEl={handleIcon({ icon: data.locationThing.icon, size: matches ? 25 : 30 })}
+              loc={data.locationThing.loc}
             />
           </motion.div>
           <motion.div

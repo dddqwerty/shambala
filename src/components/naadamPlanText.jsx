@@ -17,7 +17,9 @@ const item = {
   },
 }
 
-export const NaadamPlanText = () => {
+export const NaadamPlanText = (props) => {
+  const { title, paragraph } = props
+
   return (
     <motion.div
       variants={item}
@@ -109,12 +111,10 @@ export const NaadamPlanText = () => {
           </defs>
         </svg>
       </div>
-      <Emphasis children="‘’Naadam’’ plan" />
+      <Emphasis children={title} />
       <div className="h-[55px]"></div>
-      <Typography variant={'body-mobile'} className="text-center w-[90%] md:w-[60%] md:text-title2 text-white/50 ">
-        Power grid, space technology development, Blockchain technology development, Digital artists development,
-        sculpture development art installations, digital clothing design There will be a panel discussion with industry
-        experts on the topic.
+      <Typography variant={'body-mobile'} className="text-center w-[90%] md:w-[60%] md:text-title2 text-white/50">
+        {paragraph}
       </Typography>
       <div className="h-[55px]"></div>
     </motion.div>

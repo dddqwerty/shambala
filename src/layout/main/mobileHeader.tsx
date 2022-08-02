@@ -62,7 +62,7 @@ const MobileMenu = () => {
                 animate={name}
                 custom={height}
                 ref={containerRef}
-                className={`absolute bottom-0 w-full ${isOpen ? "h-[336px]" : "h-full"}`}
+                className={`absolute bottom-0 w-full ${isOpen ? "h-[365px]" : "h-full"}`}
             >
                 <motion.div className={`absolute top-0 left-0 bottom-0 w-full bg-[#202121]`} variants={sidebar} />
                 <Navigation />

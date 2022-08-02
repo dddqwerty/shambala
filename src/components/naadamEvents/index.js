@@ -3,11 +3,6 @@ import { PBox } from './pBox'
 import { Emphasis } from 'components'
 import { motion } from 'framer-motion'
 
-const list = [
-  { icon: 'drone', text: 'Replace horse racing with drone racing' },
-  { icon: 'controller', text: 'Replace wrestling with e-sports and information security competitions' },
-  { icon: 'rocket-2', text: 'Replacing archery with missiles and free flight' },
-]
 const cont = {
   visible: {
     opacity: 1,
@@ -47,7 +42,9 @@ const item = {
   },
 }
 
-export const NaadamEvents = () => {
+export const NaadamEvents = (props) => {
+  const { title, list } = props
+
   return (
     <motion.div
       initial="hidden"
@@ -169,10 +166,10 @@ export const NaadamEvents = () => {
         </svg>
       </div>
       <motion.div variants={head} initial="hidden" whileInView={'visible'}>
-        <Emphasis left={true}>Naadam events</Emphasis>
+        <Emphasis left={true}>{title}</Emphasis>
       </motion.div>
       <div className="h-[55px]"></div>
-      <div className=" w-full flex flex-col justify-between md:flex-row">
+      <div className=" w-full flex flex-col min-h-[290px] justify-between md:flex-row">
         {list.map((el, index) => {
           return (
             <motion.div variants={item} key={`kay${index}`}>

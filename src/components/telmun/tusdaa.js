@@ -21,7 +21,7 @@ const container = {
     },
   },
 }
-export default function Apart() {
+export default function Apart({ data }) {
   return (
     <motion.div
       variants={container}
@@ -34,9 +34,7 @@ export default function Apart() {
         <Typography
           className={`text-center w-[311px] opacity-60 md:opacity-100 lg:opacity-100 flex max-w-shambWidth md:w-auto  lg:w-auto  text-bodyMobile font-normal  leading-[26px] md:text-title2 md:leading-[37.2px] lg:text-title2 lg:leading-[37.2px]  text-white ${PADDINGX}`}
         >
-          In the past, we Mongolians have achieved everything we set out to do by calling for human power, the crest of
-          the heavens, and the blessings of the earth. But now we are expressing the idea that we will achieve our goal
-          of building a new empire by combining art and technology.
+          {data}
         </Typography>
       </motion.div>
     </motion.div>

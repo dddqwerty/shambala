@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import { useTheme } from '@mui/material/styles'
 import useMediaQuery from '@mui/material/useMediaQuery'
 
-const Text = () => {
+const Text = ({data}) => {
   const theme = useTheme()
   const matches = useMediaQuery(theme.breakpoints.down('sm'))
   const item = {
@@ -44,30 +44,18 @@ const Text = () => {
       <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={item}>
         <div className="bg-primary-yellow w-[61px] h-[5px] rounded-lg md:hidden mb-6" />
         <div className="flex flex-col  gap-[38px]">
-          <div>
-            <Typography variant={matches ? 'h3' : 'h2'} className="text-primary-white ">
-              816 year
-            </Typography>
-            <Typography variant={matches ? 'body-mobile' : 'title-small'} className="text-primary-white opacity-70">
-              816th anniversary of the Great Mongol Empire
-            </Typography>
-          </div>
-          <div className="gap-[38px]">
-            <Typography variant={matches ? 'h3' : 'h2'} className="text-primary-white ">
-              2231 year
-            </Typography>
-            <Typography variant={matches ? 'body-mobile' : 'title-small'} className="text-primary-white opacity-70">
-              2231th anniversary of Foundation of the first Mongolian Statehood
-            </Typography>
-          </div>
-          <div>
-            <Typography variant={matches ? 'h3' : 'h2'} className="text-primary-white ">
-              101 year
-            </Typography>
-            <Typography variant={matches ? 'body-mobile' : 'title-small'} className="text-primary-white opacity-70">
-              101th anniversary of the People’s Revolution of Mongolia
-            </Typography>
-          </div>
+        
+
+        {data.years.map((el)=>{
+          return           <div className="gap-[38px]">
+          <Typography variant={matches ? 'h3' : 'h2'} className="text-primary-white ">
+            {el.title}
+          </Typography>
+          <Typography variant={matches ? 'body-mobile' : 'title-small'} className="text-primary-white opacity-70">
+            {el.subTitle}
+          </Typography>
+        </div>
+        })}
         </div>
       </motion.div>
       <div className="flex flex-col  gap-y-9 gap-x-12">
@@ -76,8 +64,7 @@ const Text = () => {
             variant={matches ? 'body-mobile' : 'body-web'}
             className="text-primary-white opacity-70 md:w-[488px]  pt-16"
           >
-            As part of these celebrations, historians, scientists and engineers are working together to create a
-            36,000-tree "Art-Tech Empire" Land in the desert region.
+            {data.afterYearsText}
           </Typography>
           <div className="bg-primary-yellow w-[61px] h-[5px] rounded-lg hidden md:block" />
         </div>
@@ -104,10 +91,8 @@ const Text = () => {
               variant={matches ? 'body-mobile' : 'body-web'}
               className="text-primary-white opacity-70 md:opacity-100 md:w-[608px] align-items "
             >
-              This Land Art is the second largest Land Art in the world made of planted trees and will be the largest
-              Land Art by size. It is also being sold as{' '}
-              <span className="md:font-semibold md:text-title1 uppercase text-sm">"Happy Tree"</span> set in cooperation with the Trade and
-              Development Bank.
+              {data.lastText.first + ' '}
+              <span className="md:font-semibold md:text-title1 uppercase text-sm">{data.lastText.highlight}</span> {data.lastText.end}
             </Typography>
             <div className="bg-primary-yellow w-[61px] h-[5px] rounded-lg hidden md:block" />
           </div>

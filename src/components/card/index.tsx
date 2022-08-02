@@ -20,12 +20,12 @@ const Card = (props: Props) => {
 
 
   return (
-    <div className={`md:w-[527px] flex flex-col gap-[24px] ${className}`}>
-      <div className="flex flex-col gap-[8px]">
+    <div className={`md:w-[50%] w-full flex flex-col ${className}`}>
+      <div className="flex flex-col">
         <Typography  variant={matches ? 'p-small' : 'title-normal'} className="text-[#C7B36D] opacity-80 uppercase">
           {headerEl}
         </Typography>
-        <Typography variant={matches ? 'h4' : 'h3'} className="text-primary-white w-[496px]">
+        <Typography variant={matches ? 'h4' : 'h3'} className="text-primary-white">
           {title}
         </Typography>
       </div>
