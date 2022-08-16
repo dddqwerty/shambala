@@ -5,7 +5,8 @@ import { handleIcon } from 'utils'
 import { PADDINGX } from 'constants/layout'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { Drawer, Button, SwipeableDrawer } from '@mui/material'
+import { Drawer } from '@mui/material'
+import Divider from '@mui/material/Divider'
 import { SustainGoals } from './sustainGoals'
 const data = {
   tablet: [
@@ -58,6 +59,22 @@ export const Bighead = () => {
 
   const list = (anchor) => (
     <div className="w-96 h-full bg-mainBg flex flex-col z-50">
+      <div className="flex flex-row w-full justify-around items-center px-5 h-14">
+        {data.icons.map((el) => {
+          return (
+            <Link href={el.link}>
+              <a className="hover:scale-125" target="_blank">
+                {handleIcon({
+                  icon: el.icon,
+                  size: 16,
+                  className: 'text-menuIcon-gray hover:text-primary-yellow',
+                })}
+              </a>
+            </Link>
+          )
+        })}
+      </div>
+      <Divider className="bg-white/40" />
       {data.tablet.map((el) => {
         const selected = router.pathname == el.link
         return (
@@ -218,7 +235,11 @@ export const Bighead = () => {
       <div className={`w-full h-fit px-10  mt-3 ${router.pathname == '/ourplanet' ? 'block' : 'hidden'}`}>
         <SustainGoals />
       </div>
-      <div className={`absolute z-30 flex flex-col backdrop-blur-[5px] items-start h-[70px] w-full left-0 ${router.pathname == '/ourplanet' ? 'block' : 'hidden'}`}></div>
+      <div
+        className={`absolute z-30 flex flex-col backdrop-blur-[5px] items-start h-[70px] w-full left-0 ${
+          router.pathname == '/ourplanet' ? 'block' : 'hidden'
+        }`}
+      ></div>
     </div>
   )
 }
